@@ -1,0 +1,61 @@
+/\*
+ \*		64-bit Kernel's Virtual memory layout. (assuming 64 bit app)
+ \*							+-----------------------+
+ \*							|	psm 1-1 map			|
+ \*							|	exec args area		|
+ \* 0xFFFFFFFF.FFC00000  	|-----------------------|- ARGSBASE
+ \*							|	   debugger    		|
+ \* 0xFFFFFFFF.FF800000  	|-----------------------|- SEGDEBUGBASE
+ \*							|      unused    		|
+ \*							+-----------------------+
+ \*							|      Kernel Data		|
+ \* 0xFFFFFFFF.FBC00000  	|-----------------------|
+ \*							|      Kernel Text		|
+ \* 0xFFFFFFFF.FB800000  	|-----------------------|- KERNEL_TEXT
+ \* 						|     LUFS sinkhole		|
+ \* 0xFFFFFFFF.FB000000    -|-----------------------|- lufs_addr
+ \* ---                  	|-----------------------|- valloc_base + valloc_sz
+ \* 						|   early pp structures	|
+ \* 						|   memsegs, memlists, 	|
+ \* 						|   page hash, etc.		|
+ \* ---                  	|-----------------------|- valloc_base
+ \* 						|     ptable_va    		|
+ \* ---                  	|-----------------------|- ptable_va
+ \* 						|      Core heap		| (used for loadable modules)
+ \* 0xFFFFFFFF.C0000000  	|-----------------------|- core_base / ekernelheap
+ \*							|	 Kernel				|
+ \*							|	  heap				|
+ \* 0xFFFFFXXX.XXX00000  	|-----------------------|- kernelheap (floating)
+ \*							|	 segkmap			|
+ \* 0xFFFFFXXX.XXX00000     |-----------------------|- segkmap_start (floating)
+ \*							|    device mappings	|
+ \* 0xFFFFFXXX.XXX00000  	|-----------------------|- toxic_addr (floating)
+ \*							|	  segkp				|
+ \* ---                  	|-----------------------|- segkp_base
+ \*							|	 segkpm				|
+ \* 0xFFFFFE00.00000000  	|-----------------------|
+ \*							|	Red Zone			|
+ \* 0xFFFFFD80.00000000  	|-----------------------|- KERNELBASE
+ \*							|     User stack		|- User space memory
+ \* 						|			|
+ \* 						| shared objects, etc	|	(grows downwards)
+ \*							:			:
+ \* 						|			|
+ \* 0xFFFF8000.00000000  	|-----------------------|
+ \* 						|			|
+ \* 						| VA Hole / unused		|
+ \* 						|			|
+ \* 0x00008000.00000000  	|-----------------------|
+ \*							|			|
+ \*							|			|
+ \*							:			:
+ \*							|	user heap			|	(grows upwards)
+ \*							|			|
+ \*							|	user data			|
+ \*							|-----------------------|
+ \*							|	user text			|
+ \* 0x00000000.04000000  	|-----------------------|
+ \*							|	invalid		|
+ \* 0x00000000.00000000		+-----------------------+
+ \*/
+ 
