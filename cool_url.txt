@@ -1,0 +1,3 @@
+http://www.grpc.io/
+
+https://www.ibm.com/developerworks/cn/linux/l-memmod/
