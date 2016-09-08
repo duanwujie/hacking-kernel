@@ -6,6 +6,8 @@
 \usepackage{graphicx}
 \usepackage{skull}
 \usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{xcolor}
 \titleformat{\chapter}[display]{\centering\Huge\bfseries}{}{1em}{}
 \setCJKmainfont{SimSun}
 %\setCJKmainfont{仿宋}
@@ -68,13 +70,13 @@
 
 
 
-%\author{\href{mailto:dhacklove@163.com}{段武杰}}
+\author{\href{mailto:dhacklove@163.com}{段武杰}}
 
 \begin{document}    %文档开始
-%\maketitle          %插入标题
-%\setcounter{secnumdepth}{4}
-%\setcounter{tocdepth}{3}
-%\renewcommand{\contentsname}{目录}
+\maketitle          %插入标题
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+\renewcommand{\contentsname}{目录}
 
 \lhead{我生于贫穷，但不能死于贫穷}
 
@@ -84,12 +86,13 @@
 
 
 
-%\include{序言}
+%\include{序言}\textbf{•}
 %\include{计划}
 %\include{认识自己}       %认识自己
 %\include{交易系统胜算计算}   %交易系统胜算计算
 %\include{市场认知}       %市场认知
-\include{交易策略}       %交易策略
+\include{内存管理}       %交易策略
+\include{文件系统}
 %\include{经济数据分析}    %经济数据分析
 %\include{技术分析}
 %\include{反身性初步尝试}
