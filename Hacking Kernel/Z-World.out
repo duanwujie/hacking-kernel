@@ -1,2 +1,5 @@
 \BOOKMARK [0][]{chapter.1}{1 内存管理}{}% 1
 \BOOKMARK [0][]{chapter.2}{2 文件系统}{}% 2
+\BOOKMARK [1][]{section.2.1}{2.1\040inode}{chapter.2}% 3
+\BOOKMARK [1][]{section.2.2}{2.2\040inode_operations}{chapter.2}% 4
+\BOOKMARK [0][]{chapter.3}{3 模板}{}% 5
