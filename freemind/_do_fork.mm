@@ -1,7 +1,8 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1472533243764" ID="ID_1886077952" MODIFIED="1472533580067" TEXT="_do_fork">
-<node CREATED="1472533276056" ID="ID_82252127" MODIFIED="1472534171174" POSITION="right" TEXT="copy_process">
+<node CREATED="1472533243764" ID="ID_1886077952" MODIFIED="1472627522445" TEXT="&#x6838;&#x5fc3;&#x51fd;&#x6570;&#x5206;&#x6790;">
+<node CREATED="1472533556079" ID="ID_606549839" MODIFIED="1472627528432" POSITION="right" TEXT="_do_fork">
+<node CREATED="1472533276056" FOLDED="true" ID="ID_82252127" MODIFIED="1472627556765" TEXT="copy_process">
 <node CREATED="1472533274324" ID="ID_1838539312" MODIFIED="1472533587846" TEXT="dup_task_struct">
 <node CREATED="1472533611854" ID="ID_841266239" MODIFIED="1472533622359" TEXT="&#x68c0;&#x67e5;clone_flags&#x6807;&#x5fd7;"/>
 <node CREATED="1472533635947" ID="ID_125004461" MODIFIED="1472533702380" TEXT="security_task_create:&#x8c03;&#x7528;&#x8fdb;&#x7a0b;&#x521b;&#x5efa;&#x7684;hook&#x51fd;&#x6570;"/>
@@ -34,8 +35,11 @@
 <node CREATED="1472536223535" ID="ID_1323475583" MODIFIED="1472536253028" TEXT="vmacache_flush&#xff1a;&#x521d;&#x59cb;&#x5316;vmacache entry"/>
 <node CREATED="1472535865853" ID="ID_849710801" MODIFIED="1472536303390" TEXT="&#x5224;&#x65ad;clone_flags&#x662f;&#x5426;&#x8bbe;&#x7f6e;&#x4e86;CLONE_VM&#x6807;&#x5fd7;&#xff0c;&#x5982;&#x679c;&#x8bbe;&#x7f6e;&#x4e86;&#x5171;&#x4eab;&#x5185;&#x5b58;&#x63cf;&#x8ff0;&#x7b26;&#x548c;&#x6240;&#x6709;&#x9875;&#x8868;&#xff0c;&#x5e76;&#x5c06;&#x5185;&#x5b58;&#x63cf;&#x8ff0;&#x7b26;&#x5f15;&#x7528;&#x52a0;1&#xa;&#x5e76;&#x76f4;&#x63a5;&#x8fd4;&#x56de;"/>
 <node CREATED="1472536311097" ID="ID_1498716345" MODIFIED="1472536517746" TEXT="dup_mm&#xff1a;&#x5206;&#x914d;&#x4e00;&#x4e2a;&#x65b0;&#x7684;mm&#x5e76;&#x4f7f;&#x7528;&#x5f53;&#x524d;&#x8fdb;&#x7a0b;&#x7684;mm&#x5c06;&#x5176;&#x521d;&#x59cb;&#x5316;&#xff0c;&#x518d;&#x8c03;&#x7528;mm_init&#xff0c;&#x8fdb;&#x884c;&#x5dee;&#x5f02;&#x521d;&#x59cb;&#x5316;">
-<node CREATED="1472536512729" ID="ID_1952496389" MODIFIED="1472536525463" TEXT="&#x5206;&#x914d;&#x4e00;&#x4e2a;&#x65b0;&#x7684;mm&#x5e76;&#x4f7f;&#x7528;&#x5f53;&#x524d;&#x8fdb;&#x7a0b;&#x7684;mm&#x5c06;&#x5176;&#x521d;&#x59cb;&#x5316;"/>
+<node CREATED="1472536512729" ID="ID_1952496389" MODIFIED="1472606440113" TEXT="allocate_mm&#xff1a;&#x5206;&#x914d;&#x4e00;&#x4e2a;&#x65b0;&#x7684;mm&#x5e76;&#x4f7f;&#x7528;&#x5f53;&#x524d;&#x8fdb;&#x7a0b;&#x7684;mm&#x5c06;&#x5176;&#x521d;&#x59cb;&#x5316;"/>
 <node CREATED="1472536514300" ID="ID_1919957754" MODIFIED="1472536541508" TEXT="mm_init&#xff1a;&#x5dee;&#x5f02;&#x521d;&#x59cb;&#x5316;"/>
+<node CREATED="1472606416871" ID="ID_1072307862" MODIFIED="1472607127070" TEXT="dup_mmap">
+<node CREATED="1472607129594" ID="ID_834195244" MODIFIED="1472607130925" TEXT="&#x5faa;&#x73af;&#x904d;&#x5386;mmap&#x94fe;&#x8868;"/>
+</node>
 </node>
 </node>
 <node CREATED="1472535870716" ID="ID_426597216" MODIFIED="1472535871603" TEXT="copy_namespaces"/>
@@ -44,6 +48,8 @@
 <node CREATED="1472535900713" ID="ID_892701598" MODIFIED="1472535901596" TEXT="alloc_pid"/>
 </node>
 </node>
-<node CREATED="1472533556079" ID="ID_606549839" MODIFIED="1472533578707" POSITION="right" TEXT=""/>
+</node>
+<node CREATED="1472627539970" ID="ID_1173483862" MODIFIED="1472627549231" POSITION="right" TEXT="do_wp_page&#xff1a;&#x5199;&#x65f6;&#x590d;&#x5236;"/>
+<node CREATED="1472627497810" ID="ID_1509475543" MODIFIED="1472627497810" POSITION="left" TEXT=""/>
 </node>
 </map>

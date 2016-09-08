@@ -3,3 +3,14 @@ http://www.grpc.io/
 https://www.ibm.com/developerworks/cn/linux/l-memmod/
 
 http://my.oschina.net/zhengyijie/blog/551401
+
+http://blog.csdn.net/zhangskd/article/details/25708441
+http://blog.chinaunix.net/uid-24774106-id-3361500.html
+
+http://ceyes.github.io/2014-06/watch-kernel-function-by-kprobe-or-systemtap/
+
+
+https://fedorahosted.org/elfutils/
+
+
+http://blog.csdn.net/gdt_a20/article/details/7231652

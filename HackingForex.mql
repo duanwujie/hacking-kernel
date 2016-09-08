@@ -1,0 +1,126 @@
+
+#property copyright "dhacklove"
+#property link      "http://www.mql4.com"
+#property version   "1.00"
+#property strict
+#property indicator_separate_window
+//Build the Space tree
+
+//Build the Time tree
+
+//Build the Strength tree
+
+/*
+ *	Price: 		Open/Close/High/Low/(High+Low)/2 and so om
+ *	Timeframe:	PEROID_M5/PEROID_M15/PEROID_M30/PEROID_H1/PEROID_H4/PEROID_D1/PEROID_W1/PEROID_MN
+ *	Peroid:		5,8,13,21,34,55,89,144,233;//10,20,30,60,120
+ */
+
+/*
+double ixRSI(int peroid,int shift,int timeframe);
+double ixCCI();
+double ixMACD();
+double ixEMA();
+double ixSMA();
+double ixLWMA();
+double ixSupport();
+double ixResistense();
+double ixPossbility();
+
+
+//current rsi tree
+//current cci tree
+//current macd tree
+//current sma tree
+//current ema tree
+//current lwma tree
+//current support tree
+//current resistense tree.
+
+*/
+
+
+#define PEROID_TREE_ITEMS 9
+#define TIMEFRAME_TREE_ITEMS 7
+#define PRICE_TREE_ITEM 4
+#define RUNTIME_TIMEFRAME PEROID_M5
+
+int const_peroid_tree[PEROID_TREE_ITEMS]={5,8,13,21,34,55,89,144,233};
+int const_timeframe_tree[TIMEFRAME_TREE_ITEMS]={PEROID_M5,PEROID_M15,PEROID_M30,PEROID_H1,PEROID_H4,PEROID_D1,PEROID_W1};
+int const_price_tree[PRICE_TREE_ITEM]
+
+
+#define RSI_LEVEL_1 20
+#define RSI_LEVEL_2 30
+#define RSI_LEVEL_3 40
+#define RSI_LEVEL_4 50
+#define RSI_LEVEL_5 60
+#define RSI_LEVEL_6 70
+#define RSI_LEVLE_7	80
+
+
+
+/*
+ *
+ *	condition 1. All beyond
+ *	condition 2. All bellow
+ *  condition 3. All between
+ *  condition 4. High timeframe beyond,low timeframe between/bellow
+ *  condition 5. Low timeframe beyond,high timeframe between/bellow
+ *	
+ *
+ *
+ */
+
+
+//all timeframes' indicator values  between l1 and l2
+int all_between(double tree[],int numbers,int l1,int l2)
+{
+	for(int i =0;i<numbers;i++)
+	{
+		if(tree[i] <l1 || tree>l2)
+			return 0;
+	}
+	return 1;
+}
+
+
+//all timeframes' indicator values bellow the l1
+int all_bellow(double tree[],int numbers,int l1)
+{
+	for(int i=0;i<numbers;i++)
+	{
+		if(tree[i]>l1)
+			return 0;
+	}
+	return 1;
+}
+
+
+//all timeframes' indicator values beyond the l1
+int all_beyond(double tree[],int numbers,int l1)
+{
+	for(int i=0;i<numbers;i++)
+	{
+		if(tree[i]<l2)
+			return 0;
+	}
+	return 1;
+}
+
+
+int init()
+{
+
+	return 0;
+}
+
+
+int start()
+{
+
+	return 0;
+}
+
+
+
