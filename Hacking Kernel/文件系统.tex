@@ -14,6 +14,57 @@ VFS使用面向对象的设计思路，VFS中有4个主要的对象类型：
 
 VFS将目录当作文件来处理，所以不存在目录对象，目录项代表的是路径中的一个组成部分。
 
+
+
+\section{file\_system\_type}
+
+	内核使用该结构体来描述文件系统的功能和行为：
+
+\begin{lstlisting}[language={[ANSI]C},
+        basicstyle=\tiny\ttfamily,
+        stringstyle=\color{purple},
+        keywordstyle=\color{blue}\bfseries,
+        commentstyle=\color{olive},
+        directivestyle=\color{blue},
+        frame=shadowbox,
+        %framerule=0pt,
+        %backgroundcolor=\color{pink},
+        rulesepcolor=\color{red!20!green!20!blue!20}
+        %rulesepcolor=\color{brown}
+        %xleftmargin=2em,xrightmargin=2em,aboveskip=0em
+        ]
+        
+struct file_system_type {
+	const char *name;/* 文件系统名字 */
+	int fs_flags;	/* 文件系统类型标志 */
+#define FS_REQUIRES_DEV		1 
+#define FS_BINARY_MOUNTDATA	2
+#define FS_HAS_SUBTYPE		4
+#define FS_USERNS_MOUNT		8	/* Can be mounted by userns root */
+#define FS_USERNS_DEV_MOUNT	16 /* A userns mount does not imply MNT_NODEV */
+#define FS_USERNS_VISIBLE	32	/* FS must already be visible */
+#define FS_RENAME_DOES_D_MOVE	32768	/* FS will handle d_move() during rename() internally. */
+	struct dentry *(*mount) (struct file_system_type *, int,
+		       const char *, void *);
+	void (*kill_sb) (struct super_block *);/* 用来终止访问 super_block */
+	struct module *owner;/* 文件系统模块 */
+	struct file_system_type * next;
+	struct hlist_head fs_supers;/* supperblock list */
+
+	/* Runtime lock */
+	struct lock_class_key s_lock_key;
+	struct lock_class_key s_umount_key;
+	struct lock_class_key s_vfs_rename_key;
+	struct lock_class_key s_writers_key[SB_FREEZE_LEVELS];
+
+	struct lock_class_key i_lock_key;
+	struct lock_class_key i_mutex_key;
+	struct lock_class_key i_mutex_dir_key;
+};
+        
+        
+\end{lstlisting}
+
 \section{inode}
 
 内核处理文件的关键是inode，每个文件（和目录）都有且只有一个对应的inode,其中包含元数据（如访问权限，上次
@@ -203,54 +254,7 @@ struct inode_operations {
 } ____cacheline_aligned;
 \end{lstlisting}
 
-\section{file\_system\_type}
 
-	内核使用该结构体来描述文件系统的功能和行为：
-
-\begin{lstlisting}[language={[ANSI]C},
-        basicstyle=\tiny\ttfamily,
-        stringstyle=\color{purple},
-        keywordstyle=\color{blue}\bfseries,
-        commentstyle=\color{olive},
-        directivestyle=\color{blue},
-        frame=shadowbox,
-        %framerule=0pt,
-        %backgroundcolor=\color{pink},
-        rulesepcolor=\color{red!20!green!20!blue!20}
-        %rulesepcolor=\color{brown}
-        %xleftmargin=2em,xrightmargin=2em,aboveskip=0em
-        ]
-        
-struct file_system_type {
-	const char *name;/* 文件系统名字 */
-	int fs_flags;	/* 文件系统类型标志 */
-#define FS_REQUIRES_DEV		1 
-#define FS_BINARY_MOUNTDATA	2
-#define FS_HAS_SUBTYPE		4
-#define FS_USERNS_MOUNT		8	/* Can be mounted by userns root */
-#define FS_USERNS_DEV_MOUNT	16 /* A userns mount does not imply MNT_NODEV */
-#define FS_USERNS_VISIBLE	32	/* FS must already be visible */
-#define FS_RENAME_DOES_D_MOVE	32768	/* FS will handle d_move() during rename() internally. */
-	struct dentry *(*mount) (struct file_system_type *, int,
-		       const char *, void *);
-	void (*kill_sb) (struct super_block *);/* 用来终止访问 super_block */
-	struct module *owner;/* 文件系统模块 */
-	struct file_system_type * next;
-	struct hlist_head fs_supers;/* supperblock list */
-
-	/* Runtime lock */
-	struct lock_class_key s_lock_key;
-	struct lock_class_key s_umount_key;
-	struct lock_class_key s_vfs_rename_key;
-	struct lock_class_key s_writers_key[SB_FREEZE_LEVELS];
-
-	struct lock_class_key i_lock_key;
-	struct lock_class_key i_mutex_key;
-	struct lock_class_key i_mutex_dir_key;
-};
-        
-        
-\end{lstlisting}
 
 
 

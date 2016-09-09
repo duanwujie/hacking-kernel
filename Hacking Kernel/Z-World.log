@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  9 SEP 2016 16:51
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  9 SEP 2016 18:34
 entering extended mode
 **Z-World.tex
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.tex"
@@ -1027,22 +1027,17 @@ Requested font "[lmroman6-regular]:mapping=tex-text" at 6.0pt
 
 
 Package xeCJK Warning: Unknown CJK family `tt' is ignored.
-Use \setCJKfamilyfont to define a CJK family. on input line 34.
+Use \setCJKfamilyfont to define a CJK family. on input line 35.
 
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 34.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 35.
 
 (C:\CTEX\MiKTeX\tex\latex\euenc\eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Requested font "[lmmono8-regular]" at 6.0pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmono8-regular.otf
- [2
-
-
-
-]
 LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <6> not available
-(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 42.
+(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 37.
 Requested font "[lmmonolt10-bold]" at 6.0pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmonolt10-bold.otf
 Requested font "å¾®è½¯é^^9b^^85é»^^91" at 6.0pt
@@ -1065,6 +1060,11 @@ at 6.0pt
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
 at 6.0pt
  -> C:/windows/Fonts/msyh.ttc
+ [2
+
+
+
+]
 Requested font "[lmromanslant12-regular]:mapping=tex-text" at 12.0pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmromanslant12-regular.otf
 Requested font "å¾®è½¯é^^9b^^85é»^^91" at 12.0pt
@@ -1084,7 +1084,7 @@ Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 12.0pt
 
 
 LaTeX Font Warning: Font shape `EU1/微软雅黑(0)/m/sl' undefined
-(Font)              using `EU1/微软雅黑(0)/m/n' instead on input line 88.
+(Font)              using `EU1/微软雅黑(0)/m/n' instead on input line 101.
 
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
 at 12.0pt
@@ -1168,10 +1168,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  21880 strings out of 430478
  411647 string characters out of 3191503
- 512261 words of memory out of 3000000
+ 515308 words of memory out of 3000000
  24757 multiletter control sequences out of 15000+200000
  5200 words of font info for 59 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 50i,12n,76p,646b,1937s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 52i,12n,76p,646b,1870s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on Z-World.pdf (17 pages).

@@ -1,8 +1,8 @@
 \BOOKMARK [0][]{chapter.1}{1 内存管理}{}% 1
 \BOOKMARK [0][]{chapter.2}{2 文件系统}{}% 2
-\BOOKMARK [1][]{section.2.1}{2.1\040inode}{chapter.2}% 3
-\BOOKMARK [1][]{section.2.2}{2.2\040inode_operations}{chapter.2}% 4
-\BOOKMARK [1][]{section.2.3}{2.3\040file_system_type}{chapter.2}% 5
+\BOOKMARK [1][]{section.2.1}{2.1\040file_system_type}{chapter.2}% 3
+\BOOKMARK [1][]{section.2.2}{2.2\040inode}{chapter.2}% 4
+\BOOKMARK [1][]{section.2.3}{2.3\040inode_operations}{chapter.2}% 5
 \BOOKMARK [1][]{section.2.4}{2.4\040super_block}{chapter.2}% 6
 \BOOKMARK [1][]{section.2.5}{2.5\040dentry}{chapter.2}% 7
 \BOOKMARK [0][]{chapter.3}{3 中断处理}{}% 8
