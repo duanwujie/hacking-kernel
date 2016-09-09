@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  8 SEP 2016 15:24
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  9 SEP 2016 16:51
 entering extended mode
 **Z-World.tex
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.tex"
@@ -752,7 +752,11 @@ Writing nomenclature file Z-World.nlo
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.aux"
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\内存管理.au
 x") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\文件系�
-�.aux") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模板.
+�.aux") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\中断�
+��理.aux")
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\系统启动.au
+x") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模块实�
+�.aux") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模板.
 aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
@@ -885,35 +889,47 @@ Requested font "skull" at 7.0pt
  -> skull
 Requested font "cmr12" at 14.4pt
  -> cmr12
-Requested font "SimSun" at 14.4pt
- -> C:/windows/Fonts/simsun.ttc
-Requested font "SimSun/ICU" at 14.4pt
- -> C:/windows/Fonts/simsun.ttc
-\g_fontspec_family_SimSun_int=\count197
+Requested font "å¾®è½¯é^^9b^^85é»^^91" at 14.4pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 14.4pt
+ -> C:/windows/Fonts/msyh.ttc
+\g_fontspec_family_微软雅黑_int=\count197
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 14.4pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 14.4pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 14.4pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 14.4pt
+ -> C:/windows/Fonts/msyh.ttc
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'SimSun(0)' created for font 'SimSun' with options
-. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}},ItalicFont={SimSun}
-,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={SimSun},BoldItalicFea
-tures={RawFeature={embolden=4,slant=0.17}}].
+. Font family '微软雅黑(0)' created for font '微软雅黑' with options
+. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
+��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
+黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->"SimSun/ICU:script=latn;language=DFLT;"
+. <->"微软雅黑/ICU:script=latn;language=DFLT;"
 . 
 . * 'bold' with NFSS spec.:
-. <->"SimSun/ICU:script=latn;language=DFLT;embolden=4;"
+. <->"微软雅黑/ICU:script=latn;language=DFLT;embolden=4;"
 . 
 . * 'italic' with NFSS spec.:
-. <->"SimSun/ICU:script=latn;language=DFLT;slant=0.17;"
+. <->"微软雅黑/ICU:script=latn;language=DFLT;slant=0.17;"
 . 
 . * 'bold italic' with NFSS spec.:
-. <->"SimSun/ICU:script=latn;language=DFLT;embolden=4,slant=0.17;"
+. <->"微软雅黑/ICU:script=latn;language=DFLT;embolden=4,slant=0.17;"
 .................................................
-Requested font "SimSun/ICU:script=latn;language=DFLT;" at 14.4pt
- -> C:/windows/Fonts/simsun.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
+at 14.4pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
+at 14.4pt
+ -> C:/windows/Fonts/msyh.ttc
 
 (C:\CTEX\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
 File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
@@ -928,48 +944,78 @@ Requested font "[lmroman17-regular]:mapping=tex-text" at 24.88pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman17-regular.otf
 Requested font "[lmroman12-bold]:mapping=tex-text" at 24.88pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman12-bold.otf
-Requested font "SimSun" at 24.88pt
- -> C:/windows/Fonts/simsun.ttc
-Requested font "SimSun/ICU" at 24.88pt
- -> C:/windows/Fonts/simsun.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91" at 24.88pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 24.88pt
+ -> C:/windows/Fonts/msyh.ttc
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'SimSun(0)' created for font 'SimSun' with options
-. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}},ItalicFont={SimSun}
-,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={SimSun},BoldItalicFea
-tures={RawFeature={embolden=4,slant=0.17}}].
+. Font family '微软雅黑(0)' created for font '微软雅黑' with options
+. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
+��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
+黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
 . 
 . This font family consists of the following shapes:
 .................................................
-Requested font "SimSun/ICU:script=latn;language=DFLT;embolden=4;" at 24.88pt
- -> C:/windows/Fonts/simsun.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
+bolden=4;" at 24.88pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
+bolden=4;" at 24.88pt
+ -> C:/windows/Fonts/msyh.ttc
 ) [1
 
 
 ] ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\文件系统.
 tex"
 Chapter 2.
+Requested font "[lmroman12-bold]:mapping=tex-text" at 12.0pt
+ -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman12-bold.otf
+Requested font "å¾®è½¯é^^9b^^85é»^^91" at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family '微软雅黑(0)' created for font '微软雅黑' with options
+. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
+��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
+黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
+bolden=4;" at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
+bolden=4;" at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91" at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family '微软雅黑(0)' created for font '微软雅黑' with options
+. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
+��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
+黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
+at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
+at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
 Requested font "[lmroman17-regular]:mapping=tex-text" at 17.28pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman17-regular.otf
 Requested font "[lmroman12-bold]:mapping=tex-text" at 17.28pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman12-bold.otf
-Requested font "SimSun" at 12.0pt
- -> C:/windows/Fonts/simsun.ttc
-Requested font "SimSun/ICU" at 12.0pt
- -> C:/windows/Fonts/simsun.ttc
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'SimSun(0)' created for font 'SimSun' with options
-. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}},ItalicFont={SimSun}
-,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={SimSun},BoldItalicFea
-tures={RawFeature={embolden=4,slant=0.17}}].
-. 
-. This font family consists of the following shapes:
-.................................................
-Requested font "SimSun/ICU:script=latn;language=DFLT;" at 12.0pt
- -> C:/windows/Fonts/simsun.ttc
 (C:\CTEX\MiKTeX\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
@@ -981,60 +1027,112 @@ Requested font "[lmroman6-regular]:mapping=tex-text" at 6.0pt
 
 
 Package xeCJK Warning: Unknown CJK family `tt' is ignored.
-Use \setCJKfamilyfont to define a CJK family. on input line 23.
+Use \setCJKfamilyfont to define a CJK family. on input line 34.
 
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 23.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 34.
 
 (C:\CTEX\MiKTeX\tex\latex\euenc\eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Requested font "[lmmono8-regular]" at 6.0pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmono8-regular.otf
-LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <6> not available
-(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 31.
-Requested font "[lmmonolt10-bold]" at 6.0pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmonolt10-bold.otf
-Requested font "SimSun" at 6.0pt
- -> C:/windows/Fonts/simsun.ttc
-Requested font "SimSun/ICU" at 6.0pt
- -> C:/windows/Fonts/simsun.ttc
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'SimSun(0)' created for font 'SimSun' with options
-. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}},ItalicFont={SimSun}
-,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={SimSun},BoldItalicFea
-tures={RawFeature={embolden=4,slant=0.17}}].
-. 
-. This font family consists of the following shapes:
-.................................................
-Requested font "SimSun/ICU:script=latn;language=DFLT;" at 6.0pt
- -> C:/windows/Fonts/simsun.ttc
  [2
 
 
 
 ]
-Requested font "[lmromanslant12-regular]:mapping=tex-text" at 12.0pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmromanslant12-regular.otf
+LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <6> not available
+(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 42.
+Requested font "[lmmonolt10-bold]" at 6.0pt
+ -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmonolt10-bold.otf
+Requested font "å¾®è½¯é^^9b^^85é»^^91" at 6.0pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 6.0pt
+ -> C:/windows/Fonts/msyh.ttc
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'SimSun(0)' created for font 'SimSun' with options
-. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}},ItalicFont={SimSun}
-,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={SimSun},BoldItalicFea
-tures={RawFeature={embolden=4,slant=0.17}}].
+. Font family '微软雅黑(0)' created for font '微软雅黑' with options
+. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
+��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
+黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
+at 6.0pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
+at 6.0pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "[lmromanslant12-regular]:mapping=tex-text" at 12.0pt
+ -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmromanslant12-regular.otf
+Requested font "å¾®è½¯é^^9b^^85é»^^91" at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family '微软雅黑(0)' created for font '微软雅黑' with options
+. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
+��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
+黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
 . 
 . This font family consists of the following shapes:
 .................................................
 
 
-LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
-(Font)              using `EU1/SimSun(0)/m/n' instead on input line 98.
+LaTeX Font Warning: Font shape `EU1/微软雅黑(0)/m/sl' undefined
+(Font)              using `EU1/微软雅黑(0)/m/n' instead on input line 88.
 
-[3] [4]) [5]
-("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模板.tex"
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
+at 12.0pt
+ -> C:/windows/Fonts/msyh.ttc
+[3] [4] [5] [6] [7] [8]) [9]
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\中断处理.te
+x"
 Chapter 3.
+) [10
+
+
+
+] ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\系统启动.
+tex"
+Requested font "å¾®è½¯é^^9b^^85é»^^91" at 17.28pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 17.28pt
+ -> C:/windows/Fonts/msyh.ttc
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family '微软雅黑(0)' created for font '微软雅黑' with options
+. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
+��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
+黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
+bolden=4;" at 17.28pt
+ -> C:/windows/Fonts/msyh.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
+bolden=4;" at 17.28pt
+ -> C:/windows/Fonts/msyh.ttc
+) [11
+
+
+]
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模块实现.te
+x"
+Chapter 4.
+[12
+
+
+
+] [13] [14]) [15]
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模板.tex"
+Chapter 5.
 Requested font "[lmroman10-regular]:mapping=tex-text" at 10.95pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman10-regular.otf
 Requested font "[lmmono10-regular]" at 10.95pt
@@ -1043,33 +1141,37 @@ LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 18.
 Requested font "[lmmonolt10-bold]" at 10.95pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmonolt10-bold.otf
-) [6
+) [16
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
 
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.aux"
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\内存管理.au
 x") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\文件系�
-�.aux") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模板.
+�.aux") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\中断�
+��理.aux")
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\系统启动.au
+x") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模块实�
+�.aux") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模板.
 aux"))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 110.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 114.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 114.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21366 strings out of 430478
- 402930 string characters out of 3191503
- 497826 words of memory out of 3000000
- 24269 multiletter control sequences out of 15000+200000
- 5160 words of font info for 54 fonts, out of 3000000 for 9000
+ 21880 strings out of 430478
+ 411647 string characters out of 3191503
+ 512261 words of memory out of 3000000
+ 24757 multiletter control sequences out of 15000+200000
+ 5200 words of font info for 59 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,12n,76p,646b,1937s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,12n,76p,646b,1937s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Z-World.pdf (7 pages).
+Output written on Z-World.pdf (17 pages).
