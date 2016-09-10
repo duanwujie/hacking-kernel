@@ -30,8 +30,8 @@
 
 \titleformat{\chapter}[display]{\centering\Huge\bfseries}{}{1em}{}
 %\setCJKmainfont{SimSun}
-%\setCJKmainfont{仿宋}
-\setCJKmainfont{微软雅黑}
+\setCJKmainfont{仿宋}
+%\setCJKmainfont{微软雅黑}
 \setmainfont{Arial Unicode MS}
 
 
@@ -69,8 +69,8 @@
 %据说可以调整行距
 \renewcommand{\baselinestretch}{1.62}
 \title{\textit{内核笔记}}
-
-\pagestyle{fancy}                    % 设置页眉
+\date{2016-09-09}
+%\pagestyle{fancy}                    % 设置页眉
 
 
 
@@ -81,15 +81,15 @@
 
 \begin{document}    %文档开始
 \maketitle          %插入标题
-\setcounter{secnumdepth}{4}
+\setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 \renewcommand{\contentsname}{目录}
 \renewcommand{\bibname}{参考文献}
 %\lhead{我生于贫穷，但不能死于贫穷}
 
-%\pdfbookmark[1]{目录}{anchor} %将目录加入标签
-%\tableofcontents    %插入目录
-%\mainmatter % book mode only
+\pdfbookmark[1]{目录}{anchor} %将目录加入标签
+\tableofcontents    %插入目录
+\mainmatter % book mode only
 
 
 

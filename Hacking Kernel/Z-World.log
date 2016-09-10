@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  10 SEP 2016 14:26
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  10 SEP 2016 17:36
 entering extended mode
 **Z-World.tex
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.tex"
@@ -921,47 +921,50 @@ LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/m/it' undefined
 (Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 84.
 
 
-Requested font "å¾®è½¯é^^9b^^85é»^^91" at 20.74pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 20.74pt
- -> C:/windows/Fonts/msyh.ttc
-\g_fontspec_family_微软雅黑_int=\count198
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 20.74pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 20.74pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 20.74pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 20.74pt
- -> C:/windows/Fonts/msyh.ttc
+Requested font "ä»¿å®^^8b" at 20.74pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 20.74pt
+ -> C:/windows/Fonts/simfang.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font 仿宋 does not contain any OpenType `Script' information.
+.................................................
+\g_fontspec_family_仿宋_int=\count198
+Requested font "ä»¿å®^^8b/ICU" at 20.74pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 20.74pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 20.74pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 20.74pt
+ -> C:/windows/Fonts/simfang.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family '微软雅黑(0)' created for font '微软雅黑' with options
-. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
-��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
-黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
+. Font family '仿宋(0)' created for font '仿宋' with options
+. [BoldFont={仿宋},BoldFeatures={RawFeature={embolden=4}},ItalicFont={仿宋}
+,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={仿宋},BoldItalicFea
+tures={RawFeature={embolden=4,slant=0.17}}].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->"微软雅黑/ICU:script=latn;language=DFLT;"
+. <->"仿宋/ICU:"
 . 
 . * 'bold' with NFSS spec.:
-. <->"微软雅黑/ICU:script=latn;language=DFLT;embolden=4;"
+. <->"仿宋/ICU:embolden=4;"
 . 
 . * 'italic' with NFSS spec.:
-. <->"微软雅黑/ICU:script=latn;language=DFLT;slant=0.17;"
+. <->"仿宋/ICU:slant=0.17;"
 . 
 . * 'bold italic' with NFSS spec.:
-. <->"微软雅黑/ICU:script=latn;language=DFLT;embolden=4,slant=0.17;"
+. <->"仿宋/ICU:embolden=4,slant=0.17;"
 .................................................
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;sl
-ant=0.17;" at 20.74pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;sl
-ant=0.17;" at 20.74pt
- -> C:/windows/Fonts/msyh.ttc
+Requested font "ä»¿å®^^8b/ICU:slant=0.17;" at 20.74pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU:slant=0.17;" at 20.74pt
+ -> C:/windows/Fonts/simfang.ttf
 Requested font "Arial Unicode MS/ICU:" at 14.4pt
  -> C:/windows/Fonts/ARIALUNI.TTF
 Requested font "Arial Unicode MS/ICU:" at 7.0pt
@@ -982,148 +985,181 @@ Requested font "skull" at 7.0pt
  -> skull
 Requested font "cmr12" at 14.4pt
  -> cmr12
-Requested font "å¾®è½¯é^^9b^^85é»^^91" at 14.4pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 14.4pt
- -> C:/windows/Fonts/msyh.ttc
+Requested font "ä»¿å®^^8b" at 14.4pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 14.4pt
+ -> C:/windows/Fonts/simfang.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font 仿宋 does not contain any OpenType `Script' information.
+.................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family '微软雅黑(0)' created for font '微软雅黑' with options
-. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
-��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
-黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
+. Font family '仿宋(0)' created for font '仿宋' with options
+. [BoldFont={仿宋},BoldFeatures={RawFeature={embolden=4}},ItalicFont={仿宋}
+,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={仿宋},BoldItalicFea
+tures={RawFeature={embolden=4,slant=0.17}}].
 . 
 . This font family consists of the following shapes:
 .................................................
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
-at 14.4pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
-at 14.4pt
- -> C:/windows/Fonts/msyh.ttc
+Requested font "ä»¿å®^^8b/ICU:" at 14.4pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU:" at 14.4pt
+ -> C:/windows/Fonts/simfang.ttf
 (C:\CTEX\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
 File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
 ) [1
 
 
 ]
-("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\内存管理.te
-x"
+Requested font "Arial Unicode MS/ICU:" at 24.88pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+
+
+LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/bx/n' undefined
+(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 91.
+
+
+Requested font "ä»¿å®^^8b" at 24.88pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 24.88pt
+ -> C:/windows/Fonts/simfang.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font 仿宋 does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family '仿宋(0)' created for font '仿宋' with options
+. [BoldFont={仿宋},BoldFeatures={RawFeature={embolden=4}},ItalicFont={仿宋}
+,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={仿宋},BoldItalicFea
+tures={RawFeature={embolden=4,slant=0.17}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 24.88pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 24.88pt
+ -> C:/windows/Fonts/simfang.ttf
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.toc")
+\tf@toc=\write5
+
+[1
+
+] ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\内存管理.
+tex"
 Chapter 1.
 Requested font "Arial Unicode MS/ICU:" at 24.88pt
  -> C:/windows/Fonts/ARIALUNI.TTF
-
-LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/bx/n' undefined
-(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 1.
-
-Requested font "å¾®è½¯é^^9b^^85é»^^91" at 24.88pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 24.88pt
- -> C:/windows/Fonts/msyh.ttc
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family '微软雅黑(0)' created for font '微软雅黑' with options
-. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
-��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
-黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
-. 
-. This font family consists of the following shapes:
-.................................................
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
-bolden=4;" at 24.88pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
-bolden=4;" at 24.88pt
- -> C:/windows/Fonts/msyh.ttc
+Requested font "Arial Unicode MS/ICU:" at 12.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
 Requested font "Arial Unicode MS/ICU:" at 17.28pt
  -> C:/windows/Fonts/ARIALUNI.TTF
 Requested font "Arial Unicode MS/ICU:" at 17.28pt
  -> C:/windows/Fonts/ARIALUNI.TTF
-Requested font "å¾®è½¯é^^9b^^85é»^^91" at 17.28pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 17.28pt
- -> C:/windows/Fonts/msyh.ttc
+Requested font "ä»¿å®^^8b" at 17.28pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 17.28pt
+ -> C:/windows/Fonts/simfang.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font 仿宋 does not contain any OpenType `Script' information.
+.................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family '微软雅黑(0)' created for font '微软雅黑' with options
-. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
-��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
-黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
+. Font family '仿宋(0)' created for font '仿宋' with options
+. [BoldFont={仿宋},BoldFeatures={RawFeature={embolden=4}},ItalicFont={仿宋}
+,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={仿宋},BoldItalicFea
+tures={RawFeature={embolden=4,slant=0.17}}].
 . 
 . This font family consists of the following shapes:
 .................................................
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
-bolden=4;" at 17.28pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
-bolden=4;" at 17.28pt
- -> C:/windows/Fonts/msyh.ttc
-File: va-to-pa.png Graphic file (type QTm)
-<use  "va-to-pa.png" >
-Requested font "å¾®è½¯é^^9b^^85é»^^91" at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
+Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 17.28pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 17.28pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font 仿宋 does not contain any OpenType `Script' information.
+.................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family '微软雅黑(0)' created for font '微软雅黑' with options
-. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
-��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
-黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
+. Font family '仿宋(0)' created for font '仿宋' with options
+. [BoldFont={仿宋},BoldFeatures={RawFeature={embolden=4}},ItalicFont={仿宋}
+,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={仿宋},BoldItalicFea
+tures={RawFeature={embolden=4,slant=0.17}}].
 . 
 . This font family consists of the following shapes:
 .................................................
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
-at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
-at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
-File: pte.png Graphic file (type QTm)
- <use  "pte.png" > [1
+Requested font "ä»¿å®^^8b/ICU:" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU:" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+File: slowvava.png Graphic file (type QTm)
+<use  "slowvava.png" > [1
+
 
 
 ]
-Requested font "Arial Unicode MS/ICU:" at 12.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
-)
 
 LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/m/sl' undefined
-(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 101
-.
+(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 55.
 
-Requested font "å¾®è½¯é^^9b^^85é»^^91" at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
+
+Requested font "ä»¿å®^^8b" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font 仿宋 does not contain any OpenType `Script' information.
+.................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family '微软雅黑(0)' created for font '微软雅黑' with options
-. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
-��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
-黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
+. Font family '仿宋(0)' created for font '仿宋' with options
+. [BoldFont={仿宋},BoldFeatures={RawFeature={embolden=4}},ItalicFont={仿宋}
+,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={仿宋},BoldItalicFea
+tures={RawFeature={embolden=4,slant=0.17}}].
 . 
 . This font family consists of the following shapes:
 .................................................
 
-LaTeX Font Warning: Font shape `EU1/微软雅黑(0)/m/sl' undefined
-(Font)              using `EU1/微软雅黑(0)/m/n' instead on input line 101.
+LaTeX Font Warning: Font shape `EU1/仿宋(0)/m/sl' undefined
+(Font)              using `EU1/仿宋(0)/m/n' instead on input line 55.
 
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
-at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
+Requested font "ä»¿å®^^8b/ICU:" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+[2]
+File: highvava.png Graphic file (type QTm)
+ <use  "highvava.png" >
+File: va-to-pa.png Graphic file (type QTm)
+ <use  "va-to-pa.png" >
+
+LaTeX Warning: Citation `linuxmm' on page 3 undefined on input line 77.
+
 Requested font "Arial Unicode MS/ICU:" at 12.0pt
  -> C:/windows/Fonts/ARIALUNI.TTF
-[2] ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.bbl
-" ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.brf")
-\tf@brf=\write5
-Requested font "Arial Unicode MS/ICU:" at 24.88pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+[3]
+File: pte.png Graphic file (type QTm)
+ <use  "pte.png" > [4]) [5]
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.bbl"
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.brf")
+\tf@brf=\write6
+
 
 Package xeCJK Warning: Unknown CJK family `tt' is ignored.
 Use \setCJKfamilyfont to define a CJK family. on input line 5.
@@ -1168,7 +1204,7 @@ Requested font "cmr6" at 6.0pt
  -> cmr6
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
- [3
+ [6
 
 
 ]
@@ -1183,14 +1219,20 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 20971 strings out of 430478
- 397636 string characters out of 3191503
- 429224 words of memory out of 3000000
- 23881 multiletter control sequences out of 15000+200000
- 7627 words of font info for 63 fonts, out of 3000000 for 9000
+ 20994 strings out of 430478
+ 397614 string characters out of 3191503
+ 429933 words of memory out of 3000000
+ 23902 multiletter control sequences out of 15000+200000
+ 7611 words of font info for 61 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 50i,11n,53p,646b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,6n,50p,646b,416s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Z-World.pdf (4 pages).
+Output written on Z-World.pdf (8 pages).
