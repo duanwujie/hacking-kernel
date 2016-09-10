@@ -27,8 +27,14 @@
 #define T 4 //Ticket
 #define P 5 //Pending
 
+
+
+
+
+
+
 //+-----------------------------------------------------------------+
-//| External Parameters Set                                         |
+//| 外部参数集                                       |
 //+-----------------------------------------------------------------+
 
 extern string   Version.3.9.5       = "EA Settings:";
@@ -212,7 +218,7 @@ extern int      TPArray4            = 0;
 extern int      TPArray5            = 0;
 
 //+-----------------------------------------------------------------+
-//| Internal Parameters Set                                         |
+//| 内部参数集                                        |
 //+-----------------------------------------------------------------+
 int         ca;
 int         Magic,hMagic;
@@ -263,8 +269,10 @@ int init()
 
 	FirstRun=true;
 	AllowTrading=true;
-	if(EANumber<1)EANumber=1;
-	if(Testing)EANumber=0;
+	if(EANumber<1)
+        EANumber=1;
+	if(Testing)
+        EANumber=0;
 	Magic=GenerateMagicNumber();
 	hMagic=JenkinsHash(Magic);
 	FileName="B3_"+Magic+".dat";
@@ -2567,14 +2575,20 @@ int JenkinsHash(string Input)
 }
 
 //+-----------------------------------------------------------------+
-//| Normalize Double                                                |
+//| 格式化浮点数                                                |
 //+-----------------------------------------------------------------+
-double ND(double Value,int Precision){return(NormalizeDouble(Value,Precision));}
+double ND(double Value,int Precision)
+{
+	return(NormalizeDouble(Value,Precision));
+}
 
 //+-----------------------------------------------------------------+
-//| Double To String                                                |
+//| 将double类型转换成String                                              |
 //+-----------------------------------------------------------------+
-string DTS(double Value,int Precision){return(DoubleToStr(Value,Precision));}
+string DTS(double Value,int Precision)
+{
+	return(DoubleToStr(Value,Precision));
+}
 
 //+-----------------------------------------------------------------+
 //| Create Label Function (OBJ_LABEL ONLY)                          |
@@ -2645,7 +2659,10 @@ void LabelDelete(){for(y=ObjectsTotal();y>=0;y--){if(StringSubstr(ObjectName(y),
 //+------------------------------------------------------------------+
 //| Delete Object Function                                           |
 //+------------------------------------------------------------------+
-void ObjDel(string Name){if(ObjectFind(Name)!=-1)ObjectDelete(Name);}
+void ObjDel(string Name){
+        if(ObjectFind(Name)!=-1)
+                ObjectDelete(Name);
+}
 
 //+-----------------------------------------------------------------+
 //| Create Object List Function                                     |
