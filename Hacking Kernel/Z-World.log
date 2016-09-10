@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  10 SEP 2016 12:06
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  10 SEP 2016 14:26
 entering extended mode
 **Z-World.tex
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.tex"
@@ -550,7 +550,7 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen149
 \titlewidthfirst=\dimen150
 )
-(C:\CTEX\MiKTeX\tex\latex\skull\skull.sty
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\skull.sty"
 Invalid UTF-8 byte or sequence at line 8 replaced by U+FFFD.
 Package: skull 2002/01/23 v0.1 (c) Henrik Christian Grove <grove@math.ku.dk>
 \symSKULL=\mathgroup4
@@ -740,6 +740,51 @@ Package: stringenc 2010/03/01 v1.8 Converts strings between encodings (HO)
 \c@bookmark@seq@number=\count194
 \Hy@SectionHShift=\skip60
 )
+Requested font "Arial Unicode MS" at 10.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+Requested font "Arial Unicode MS/ICU" at 10.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Arial Unicode MS does not contain any OpenType `Script' information.
+.................................................
+\g_fontspec_family_Arial Unicode MS_int=\count195
+Requested font "Arial Unicode MS/B/ICU" at 10.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Arial Unicode MS/B (it probably doesn't exist).
+.................................................
+Requested font "Arial Unicode MS/I/ICU" at 10.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Arial Unicode MS/I (it probably doesn't exist).
+.................................................
+Requested font "Arial Unicode MS/BI/ICU" at 10.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Arial Unicode MS/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'ArialUnicodeMS(0)' created for font 'Arial Unicode MS' with
+. options [].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"Arial Unicode MS/ICU:"
+.................................................
+Requested font "Arial Unicode MS/ICU:" at 10.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+
 (C:\CTEX\MiKTeX\tex\latex\nomencl\nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 \nomlabelwidth=\dimen158
@@ -751,40 +796,33 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 Writing nomenclature file Z-World.nlo
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.aux"
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\内存管理.au
-x") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\文件系�
-�.aux") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\中断�
-��理.aux")
-("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模板.aux"
-
-LaTeX Warning: Label `fig:1' multiply defined.
-
-))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 81.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 81.
+x"))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 82.
  (C:\CTEX\MiKTeX\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-Requested font "[lmroman12-regular]:mapping=tex-text" at 12.0pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman12-regular.otf
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+Requested font "Arial Unicode MS/ICU:" at 12.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -792,64 +830,73 @@ Requested font "[lmroman12-regular]:mapping=tex-text" at 12.0pt
 .................................................
 \symlegacymaths=\mathgroup5
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 81.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 81.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 81.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 81.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 81.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 81.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 81.
-LaTeX Font Info:    Redeclaring math accent \check on input line 81.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 81.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 81.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 81.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 81.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 82.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 82.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 82.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 82.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 82.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 82.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 82.
+LaTeX Font Info:    Redeclaring math accent \check on input line 82.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 82.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 82.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 82.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 82.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 81.
+(Font)              `operators' in the math version `normal' on input line 82.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 81.
+(Font)                  OT1/cmr/m/n --> EU1/ArialUnicodeMS(0)/m/n on input line
+ 82.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 81.
+(Font)              `operators' in the math version `bold' on input line 82.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 81.
+(Font)                  OT1/cmr/bx/n --> EU1/ArialUnicodeMS(0)/m/n on input lin
+e 82.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 81.
+(Font)                  EU1/ArialUnicodeMS(0)/m/n --> EU1/ArialUnicodeMS(0)/m/n
+ on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 81.
+(Font)                  EU1/ArialUnicodeMS(0)/m/n --> EU1/ArialUnicodeMS(0)/m/n
+ on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 81.
+(Font)                  OT1/cmr/m/it --> EU1/ArialUnicodeMS(0)/m/it on input li
+ne 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 81.
+(Font)                  OT1/cmr/bx/n --> EU1/ArialUnicodeMS(0)/bx/n on input li
+ne 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 81.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 81.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 82.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 81.
+(Font)                  EU1/ArialUnicodeMS(0)/m/n --> EU1/ArialUnicodeMS(0)/bx/
+n on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 81.
+(Font)                  EU1/ArialUnicodeMS(0)/m/n --> EU1/ArialUnicodeMS(0)/bx/
+n on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 81.
+(Font)                  OT1/cmr/bx/it --> EU1/ArialUnicodeMS(0)/bx/it on input 
+line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 81.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 81.
-\c@lstlisting=\count195
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 82.
+\c@lstlisting=\count196
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring ON on input line 81.
+Package hyperref Info: Link coloring ON on input line 82.
 
 (C:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -857,24 +904,28 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (C:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count196
+\c@section@level=\count197
 )
-LaTeX Info: Redefining \ref on input line 81.
-LaTeX Info: Redefining \pageref on input line 81.
-LaTeX Info: Redefining \nameref on input line 81.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.out")
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.out")
 \@outlinefile=\write4
-Requested font "[lmroman17-regular]:mapping=tex-text" at 20.74pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman17-regular.otf
-Requested font "[lmroman12-italic]:mapping=tex-text" at 20.74pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman12-italic.otf
+Requested font "Arial Unicode MS/ICU:" at 20.74pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+
+
+LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/m/it' undefined
+(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 84.
+
+
 Requested font "å¾®è½¯é^^9b^^85é»^^91" at 20.74pt
  -> C:/windows/Fonts/msyh.ttc
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 20.74pt
  -> C:/windows/Fonts/msyh.ttc
-\g_fontspec_family_微软雅黑_int=\count197
+\g_fontspec_family_微软雅黑_int=\count198
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 20.74pt
  -> C:/windows/Fonts/msyh.ttc
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 20.74pt
@@ -911,18 +962,18 @@ ant=0.17;" at 20.74pt
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;sl
 ant=0.17;" at 20.74pt
  -> C:/windows/Fonts/msyh.ttc
-Requested font "[lmroman12-regular]:mapping=tex-text" at 14.4pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman12-regular.otf
-Requested font "[lmroman7-regular]:mapping=tex-text" at 7.0pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman7-regular.otf
+Requested font "Arial Unicode MS/ICU:" at 14.4pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+Requested font "Arial Unicode MS/ICU:" at 7.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
 Requested font "cmmi12" at 14.4pt
  -> cmmi12
 Requested font "cmsy10" at 14.4pt
  -> cmsy10
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 83.
+(Font)              <14.4> on input line 84.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 83.
+(Font)              <7> on input line 84.
 Requested font "skull" at 14.4pt
  -> skull
 Requested font "skull" at 10.0pt
@@ -951,7 +1002,6 @@ at 14.4pt
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
 at 14.4pt
  -> C:/windows/Fonts/msyh.ttc
-
 (C:\CTEX\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
 File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
 ) [1
@@ -961,10 +1011,12 @@ File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
 ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\内存管理.te
 x"
 Chapter 1.
-Requested font "[lmroman17-regular]:mapping=tex-text" at 24.88pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman17-regular.otf
-Requested font "[lmroman12-bold]:mapping=tex-text" at 24.88pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman12-bold.otf
+Requested font "Arial Unicode MS/ICU:" at 24.88pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+
+LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/bx/n' undefined
+(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 1.
+
 Requested font "å¾®è½¯é^^9b^^85é»^^91" at 24.88pt
  -> C:/windows/Fonts/msyh.ttc
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 24.88pt
@@ -985,10 +1037,10 @@ bolden=4;" at 24.88pt
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
 bolden=4;" at 24.88pt
  -> C:/windows/Fonts/msyh.ttc
-Requested font "[lmroman17-regular]:mapping=tex-text" at 17.28pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman17-regular.otf
-Requested font "[lmroman12-bold]:mapping=tex-text" at 17.28pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman12-bold.otf
+Requested font "Arial Unicode MS/ICU:" at 17.28pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+Requested font "Arial Unicode MS/ICU:" at 17.28pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
 Requested font "å¾®è½¯é^^9b^^85é»^^91" at 17.28pt
  -> C:/windows/Fonts/msyh.ttc
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 17.28pt
@@ -1031,15 +1083,19 @@ at 12.0pt
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
 at 12.0pt
  -> C:/windows/Fonts/msyh.ttc
-) [1
+File: pte.png Graphic file (type QTm)
+ <use  "pte.png" > [1
 
 
 ]
-("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\文件系统.te
-x"
-Chapter 2.
-Requested font "[lmroman12-bold]:mapping=tex-text" at 12.0pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman12-bold.otf
+Requested font "Arial Unicode MS/ICU:" at 12.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+)
+
+LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/m/sl' undefined
+(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 101
+.
+
 Requested font "å¾®è½¯é^^9b^^85é»^^91" at 12.0pt
  -> C:/windows/Fonts/msyh.ttc
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 12.0pt
@@ -1054,78 +1110,6 @@ Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 12.0pt
 . 
 . This font family consists of the following shapes:
 .................................................
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
-bolden=4;" at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;em
-bolden=4;" at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
-(C:\CTEX\MiKTeX\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2004/09/05 1.3 listings language file
-)
-(C:\CTEX\MiKTeX\tex\latex\listings\lstmisc.sty
-File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-)
-Requested font "[lmroman6-regular]:mapping=tex-text" at 6.0pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman6-regular.otf
-
-
-Package xeCJK Warning: Unknown CJK family `tt' is ignored.
-Use \setCJKfamilyfont to define a CJK family. on input line 35.
-
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 35.
-
-(C:\CTEX\MiKTeX\tex\latex\euenc\eu1lmtt.fd
-File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Requested font "[lmmono8-regular]" at 6.0pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmono8-regular.otf
-LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <6> not available
-(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 37.
-Requested font "[lmmonolt10-bold]" at 6.0pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmonolt10-bold.otf
-Requested font "å¾®è½¯é^^9b^^85é»^^91" at 6.0pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 6.0pt
- -> C:/windows/Fonts/msyh.ttc
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family '微软雅黑(0)' created for font '微软雅黑' with options
-. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
-��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
-黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
-. 
-. This font family consists of the following shapes:
-.................................................
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
-at 6.0pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
-at 6.0pt
- -> C:/windows/Fonts/msyh.ttc
- [2
-
-
-
-]
-Requested font "[lmromanslant12-regular]:mapping=tex-text" at 12.0pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmromanslant12-regular.otf
-Requested font "å¾®è½¯é^^9b^^85é»^^91" at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU" at 12.0pt
- -> C:/windows/Fonts/msyh.ttc
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family '微软雅黑(0)' created for font '微软雅黑' with options
-. [BoldFont={微软雅黑},BoldFeatures={RawFeature={embolden=4}},ItalicFont={�
-��软雅黑},ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={微软雅
-黑},BoldItalicFeatures={RawFeature={embolden=4,slant=0.17}}].
-. 
-. This font family consists of the following shapes:
-.................................................
-
 
 LaTeX Font Warning: Font shape `EU1/微软雅黑(0)/m/sl' undefined
 (Font)              using `EU1/微软雅黑(0)/m/n' instead on input line 101.
@@ -1133,37 +1117,27 @@ LaTeX Font Warning: Font shape `EU1/微软雅黑(0)/m/sl' undefined
 Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;" 
 at 12.0pt
  -> C:/windows/Fonts/msyh.ttc
-[3] [4] [5] [6] [7] [8]) [9]
-("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\中断处理.te
-x"
-Chapter 3.
-) [10
-
-
-
-] ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模板.tex"
-Chapter 4.
-Requested font "[lmroman10-regular]:mapping=tex-text" at 10.95pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman10-regular.otf
-Requested font "[lmmono10-regular]" at 10.95pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmono10-regular.otf
-LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 18.
-Requested font "[lmmonolt10-bold]" at 10.95pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmonolt10-bold.otf
-File: va-to-pa.png Graphic file (type QTm)
-<use  "va-to-pa.png" >) [11
-
-
-
-] [12]
-("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.bbl"
-("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.brf")
+Requested font "Arial Unicode MS/ICU:" at 12.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+[2] ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.bbl
+" ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.brf")
 \tf@brf=\write5
+Requested font "Arial Unicode MS/ICU:" at 24.88pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+
+Package xeCJK Warning: Unknown CJK family `tt' is ignored.
+Use \setCJKfamilyfont to define a CJK family. on input line 5.
+
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 5.
+(C:\CTEX\MiKTeX\tex\latex\euenc\eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Requested font "[lmmono12-regular]" at 12.0pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmmono12-regular.otf
-Requested font "[lmroman8-regular]:mapping=tex-text" at 8.0pt
- -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman8-regular.otf
+Requested font "Arial Unicode MS/ICU:" at 8.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
+Requested font "Arial Unicode MS/ICU:" at 6.0pt
+ -> C:/windows/Fonts/ARIALUNI.TTF
 Requested font "cmmi12" at 12.0pt
  -> cmmi12
 Requested font "cmmi8" at 8.0pt
@@ -1193,37 +1167,30 @@ Requested font "cmr8" at 8.0pt
 Requested font "cmr6" at 6.0pt
  -> cmr6
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
-
-[13
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
+ [3
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
- ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.aux" (
-"C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\内存管理.aux
-") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\文件系统
-.aux")
-("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\中断处理.au
-x") ("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模板.aux"
-))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 133.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
+
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\Z-World.aux"
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\内存管理.au
+x"))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 21693 strings out of 430478
- 408228 string characters out of 3191503
- 514649 words of memory out of 3000000
- 24560 multiletter control sequences out of 15000+200000
- 7723 words of font info for 75 fonts, out of 3000000 for 9000
+ 20971 strings out of 430478
+ 397636 string characters out of 3191503
+ 429224 words of memory out of 3000000
+ 23881 multiletter control sequences out of 15000+200000
+ 7627 words of font info for 63 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,12n,76p,646b,1870s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,11n,53p,646b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Z-World.pdf (14 pages).
+Output written on Z-World.pdf (4 pages).
