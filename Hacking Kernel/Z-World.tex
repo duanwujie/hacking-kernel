@@ -8,10 +8,7 @@
 \usepackage{fancyhdr}
 \usepackage{listings}
 \usepackage{xcolor}
-\titleformat{\chapter}[display]{\centering\Huge\bfseries}{}{1em}{}
-%\setCJKmainfont{SimSun}
-%\setCJKmainfont{仿宋}
-\setCJKmainfont{微软雅黑}
+
 \usepackage[ plainpages = false, pdfpagelabels, 
              bookmarks,
              bookmarksopen = true,
@@ -27,6 +24,15 @@
              hyperindex = true,
              hyperfigures
              ]{hyperref}
+             
+
+
+
+\titleformat{\chapter}[display]{\centering\Huge\bfseries}{}{1em}{}
+%\setCJKmainfont{SimSun}
+%\setCJKmainfont{仿宋}
+\setCJKmainfont{微软雅黑}
+
 
 
 \usepackage{nomencl}
@@ -61,7 +67,7 @@
 
 %据说可以调整行距
 \renewcommand{\baselinestretch}{1.62}
-\title{\textit{Z-World}}
+\title{\textit{工作笔记}}
 
 \pagestyle{fancy}                    % 设置页眉
 
@@ -94,8 +100,8 @@
 \include{内存管理}       %交易策略
 \include{文件系统}
 \include{中断处理}
-\include{系统启动}
-\include{模块实现}
+%\include{系统启动}
+%\include{模块实现}
 %\include{内核数据结构}
 \include{模板}
 %\include{经济数据分析}    %经济数据分析
@@ -108,6 +114,19 @@
 %\include{交易日志}	       %交易日志
 %\include{外汇黑客}
 %\include{市场哲学}
+
+%\bibliographystyle{apalike-refs}
+%\bibliography{bib.bib}
+
+
+
+
+
+
+
+\bibliographystyle{ieeetr} 
+\bibliography{myreference} 
+
 
 
 
