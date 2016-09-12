@@ -1,16 +1,6 @@
-\contentsline {chapter}{\numberline {1}内存寻址}{1}{chapter.1}
-\contentsline {paragraph}{}{1}{paragraph*.2}
-\contentsline {paragraph}{}{1}{paragraph*.3}
-\contentsline {paragraph}{}{1}{paragraph*.4}
-\contentsline {paragraph}{}{1}{paragraph*.5}
-\contentsline {paragraph}{}{1}{paragraph*.6}
-\contentsline {paragraph}{}{1}{paragraph*.7}
-\contentsline {paragraph}{}{1}{paragraph*.8}
-\contentsline {paragraph}{}{1}{paragraph*.9}
-\contentsline {paragraph}{}{1}{paragraph*.10}
-\contentsline {paragraph}{}{1}{paragraph*.11}
-\contentsline {section}{\numberline {1.1}没有高速缓存的转换过程}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}有高速缓存的转换过程}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}Linux中的分页}{3}{section.1.3}
-\contentsline {paragraph}{}{3}{paragraph*.12}
-\contentsline {section}{\numberline {1.4}PTE结构}{5}{section.1.4}
+\contentsline {chapter}{\numberline {1}VFS}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}注册一个文件系统}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}super\_block}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}inode}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}inode\_operations}{8}{section.1.4}
+\contentsline {section}{\numberline {1.5}dentry}{9}{section.1.5}
