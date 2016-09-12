@@ -1,0 +1,168 @@
+
+
+硬件决定了地址空间的最大理论上限，即硬件的寻址空间大小
+	
+	.创建一个独立的虚拟地址空间
+	.读取可执行文件头，并且建立虚拟空间与可执行文件的映射关系。
+	.将CPU的指令寄存器设置成可执行文件的入口地址启动运行。
+	
+	
+	在linux下，创建虚拟地址空间实际上是分配一个页目录就可以了，甚至不设置页映射关系，这些映射关系等到后面程序发生页错误的时候再进行设置。
+	
+	
+	读取可执行文件头，并且建立虚拟空间与可执行文件的映射关系。
+	
+	Linux中将进程虚拟空间中的一个段叫做虚拟内存区域(VMA,Virtual Memory Area)
+	
+	
+	当CPU开始打算执行这个地址的指令时，发现页面xxxx是个空页面，于是它认为这是一个page fault。CPU将控制权交个操作系统，进入操作系统的page_fault操作例程。
+	这时候我们前面提到的装载过程的第二步建立的数据结构起到了很关键的作用，操作系统查询这个数据结构。然后找到空页所在的VMA，计算出相应页面在可执行文件中的偏移
+	。然后在物理内存上分配一个物理页面，将进程中该虚拟页与分配的物理页之间建立映射关系，然后把控制权再返还给进程，进程从刚才页错误的位置重新开始执行。 	
+	
+	
+	简单方案：对于相同权限的段，把它们合并到一起当作一个段进行映射
+	
+	
+	ELF引入了一个概念叫做Segment，一个Segment包含了一个或多个属性类似的Section，那么在装载的时候就可以将它们看作一个整体一起映射，也就是 
+	说映射以后在进程虚拟空间中只有一个相对应的VMA，而不是两个，这样做的好处是可以很明显地减少页面内部碎片
+	
+	sys_execve
+	do_execve
+	
+	do_fork
+	
+	copy_process:创建进程描述符以及子进程所需要的其他数据结构
+	
+mm_struct: 描述了跟进程地址空间相关的所有信息.
+
+
+
+struct mm_struct {
+	struct vm_area_struct *mmap;							/* VMA链表,使用不同的数据结构来描述相同的对象*/
+	struct rb_root mm_rb;									/* VMA形成的红黑树*/
+	u32 vmacache_seqnum;                   					/* per-thread vmacache */
+#ifdef CONFIG_MMU
+	unsigned long (*get_unmapped_area) (struct file *filp,
+				unsigned long addr, unsigned long len,
+				unsigned long pgoff, unsigned long flags);
+#endif
+	unsigned long mmap_base;								/* base of mmap area */
+	unsigned long mmap_legacy_base;         				/* base of mmap area in bottom-up allocations */
+	unsigned long task_size;								/* size of task vm space */
+	unsigned long highest_vm_end;							/* highest vma end address */
+	pgd_t * pgd;											/* 页全局目录 */
+	atomic_t mm_users;										/* 使用地址空间的用户数 */
+	atomic_t mm_count;										/* How many references to "struct mm_struct" (users count as 1) */
+	atomic_long_t nr_ptes;									/* PTE page table pages */
+#if CONFIG_PGTABLE_LEVELS > 2
+	atomic_long_t nr_pmds;									/* PMD page table pages */
+#endif
+	int map_count;											/* VMA的个数 */
+
+	spinlock_t page_table_lock;								/* Protects page tables and some counters */
+	struct rw_semaphore mmap_sem;
+
+	struct list_head mmlist;								/* List of maybe swapped mm's.	These are globally strung* together off init_mm.mmlist, and are protected by mmlist_lock*/
+
+
+	unsigned long hiwater_rss;								/* High-watermark of RSS usage */
+	unsigned long hiwater_vm;								/* High-water virtual memory usage */
+
+	unsigned long total_vm;									/* Total pages mapped */
+	unsigned long locked_vm;								/* Pages that have PG_mlocked set */
+	unsigned long pinned_vm;								/* Refcount permanently increased */
+	unsigned long shared_vm;								/* Shared pages (files) */
+	unsigned long exec_vm;									/* VM_EXEC & ~VM_WRITE */
+	unsigned long stack_vm;									/* VM_GROWSUP/DOWN */
+	unsigned long def_flags;
+	unsigned long start_code;								/* 代码段的起始地址 */
+	unsigned long end_code;									/* 代码段的结束地址 */
+	unsigned long start_data;								/* 数据段的起始地址 */
+	unsigned long end_data;									/* 数据段的结束地址 */
+	unsigned long start_brk, brk；							/* 堆的起始和结束地址 */
+	unsigned long start_stack;
+	unsigned long arg_start, arg_end;						/* 命令行参数的起始和结束地址 */
+	unsigned long env_start, env_end;						/* 环境变量的起始和结束地址 */
+
+	unsigned long saved_auxv[AT_VECTOR_SIZE]; /* for /proc/PID/auxv */
+
+	/*
+	 * Special counters, in some configurations protected by the
+	 * page_table_lock, in other configurations by being atomic.
+	 */
+	struct   rss_stat;
+
+	struct linux_binfmt *binfmt;
+
+	cpumask_var_t cpu_vm_mask_var;
+
+	/* Architecture-specific MM context */
+	mm_context_t context;
+
+	unsigned long flags; /* Must use atomic bitops to access the bits */
+
+	struct core_state *core_state; /* coredumping support */
+#ifdef CONFIG_AIO
+	spinlock_t			ioctx_lock;
+	struct kioctx_table __rcu	*ioctx_table;
+#endif
+#ifdef CONFIG_MEMCG
+	/*
+	 * "owner" points to a task that is regarded as the canonical
+	 * user/owner of this mm. All of the following must be true in
+	 * order for it to be changed:
+	 *
+	 * current == mm->owner
+	 * current->mm != mm
+	 * new_owner->mm == mm
+	 * new_owner->alloc_lock is held
+	 */
+	struct task_struct __rcu *owner;
+#endif
+
+	/* store ref to file /proc/<pid>/exe symlink points to */
+	struct file __rcu *exe_file;
+#ifdef CONFIG_MMU_NOTIFIER
+	struct mmu_notifier_mm *mmu_notifier_mm;
+#endif
+#if defined(CONFIG_TRANSPARENT_HUGEPAGE) && !USE_SPLIT_PMD_PTLOCKS
+	pgtable_t pmd_huge_pte; /* protected by page_table_lock */
+#endif
+#ifdef CONFIG_CPUMASK_OFFSTACK
+	struct cpumask cpumask_allocation;
+#endif
+#ifdef CONFIG_NUMA_BALANCING
+	/*
+	 * numa_next_scan is the next time that the PTEs will be marked
+	 * pte_numa. NUMA hinting faults will gather statistics and migrate
+	 * pages to new nodes if necessary.
+	 */
+	unsigned long numa_next_scan;
+
+	/* Restart point for scanning and setting pte_numa */
+	unsigned long numa_scan_offset;
+
+	/* numa_scan_seq prevents two threads setting pte_numa */
+	int numa_scan_seq;
+#endif
+#if defined(CONFIG_NUMA_BALANCING) || defined(CONFIG_COMPACTION)
+	/*
+	 * An operation with batched TLB flushing is going on. Anything that
+	 * can move process memory needs to flush the TLB when moving a
+	 * PROT_NONE or PROT_NUMA mapped page.
+	 */
+	bool tlb_flush_pending;
+#endif
+	struct uprobes_state uprobes_state;
+#ifdef CONFIG_X86_INTEL_MPX
+	/* address of the bounds directory */
+	void __user *bd_addr;
+#endif
+
+	/*
+	 * pagetable rb tree
+	 * @changed by tao.zeng
+	 * @before 
+	 */
+	struct rb_root pt_rb;
+};

@@ -1,0 +1,22 @@
+
+
+//mm:新的mm,oldmm:旧的mm,成功返回0
+static int dup_mmap(struct mm_struct *mm, struct mm_struct *oldmm)
+
+		//对相关的锁进行加锁
+		
+		
+		//for each mmap,拷贝页表。
+		
+		
+		
+				retval = copy_page_range(mm, oldmm, mpnt);
+
+		
+		//对相关的锁进行解锁
+		
+		
+
+		
+1.在VAS中添加一个一个标志位.
+
