@@ -30,6 +30,10 @@
 
 
 
+#define TREND_UP 0
+#define TREND_DOWN 1
+#define TREND_RANGE 2
+#define TREND_OFF 3
 
 
 
@@ -37,7 +41,6 @@
 //| 外部参数集                                       |
 //+-----------------------------------------------------------------+
 
-extern string   Version.3.9.5       = "EA Settings:";
 extern string   TradeComment        = "Blessing 3.9.5";
 extern int      EANumber            = 1;        // Enter a unique number to identify this EA
 extern bool     EmergencyCloseAll   = false;    // Setting this to true will close all open orders immediately
@@ -46,8 +49,8 @@ extern string   LabelAcc            = "Account Trading Settings:";
 extern bool     ShutDown            = false;    // Setting this to true will stop the EA trading after any open trades have been closed
 extern double   StopTradePercent    = 10;       // percent of account balance lost before trading stops
 extern bool     NanoAccount         = false;    // set to true for nano "penny a pip" account (contract size is $10,000)
-extern double   PortionPC           = 100;      // Percentage of account you want to trade on this pair
-extern double   MaxDDPercent        = 50;       // Percent of portion for max drawdown level.
+extern double   PortionPercentage           = 100;      // Percentage of account you want to trade on this pair
+extern double   MaxDrawDownPercentage        = 50;       // Percent of portion for max drawdown level. 最大回撤率
 extern double   MaxSpread           = 5;        // Maximum allowed spread while placing trades
 extern bool     UseHolidayShutdown  = true;     // Will shutdown over holiday period
 extern string   Holidays            = "18/12-01/01"; // List of holidays, each seperated by a comma, [day]/[mth]-[day]/[mth], dates inclusive
@@ -218,11 +221,13 @@ extern int      TPArray4            = 0;
 extern int      TPArray5            = 0;
 
 //+-----------------------------------------------------------------+
-//| 内部参数集                                        |
+//| Internal arguments set                                          |
 //+-----------------------------------------------------------------+
 int         ca;
 int         Magic,hMagic;
-int         CbT,CpT,ChT;
+int         CbT;//Total count exclude EA's order
+int         CpT;//Total buylimte
+int         ChT;
 double      Pip,hPip;
 int         POSLCount;
 double      SLbL;
@@ -231,7 +236,7 @@ double      MaxDD;
 double      SLb;
 int         AccountType;
 double      StopTradeBalance;
-double      InitialAB;
+double      InitialAB;/* the initial acount balance at the ea beginning */
 bool        Testing,Visual;
 bool        AllowTrading;
 bool        EmergencyWarning;
@@ -248,12 +253,14 @@ bool        PendLot;
 string      CS,UAE;
 int         HolShutDown;
 datetime    HolArray[,4];
-datetime    HolFirst,HolLast,NextStats,OTbF;
+datetime    HolFirst,HolLast,NextStats;
+datetime    OTbF;
 double      RSI[];
 int         Digit[,2],TF[10]={0,1,5,15,30,60,240,1440,10080,43200};
 
 double      Email[3];
-double      EETime,PbC,PhC,hDDStart,PbMax,PbMin,PhMax,PhMin,LastClosedPL,ClosedPips,SLh,hLvlStart,StatLowEquity,StatHighEquity;
+double      EETime,PbC,PhC;
+double      hDDStart,PbMax,PbMin,PhMax,PhMin,LastClosedPL,ClosedPips,SLh,hLvlStart,StatLowEquity,StatHighEquity;
 int         hActive,EECount,TbF,CbC,CaL,FileHandle;
 bool        TradesOpen,FileClosed,HedgeTypeDD,hThisChart,hPosCorr,dLabels,FirstRun;
 string      FileName,ID,StatFile;
@@ -329,7 +336,7 @@ int init()
 	EEHoursPC/=100;
 	EELevelPC/=100;
 	hReEntryPC/=100;
-	PortionPC/=100;
+	PortionPercentage/=100;
 
 	InitialAB=AccountBalance();
 	StopTradeBalance=InitialAB*(1-StopTradePercent);
@@ -588,9 +595,9 @@ int init()
 		else if(Period()==15)sTF="M15";
 		else if(Period()==5)sTF="M5";
 		else if(Period()==1)sTF="M1";
-		Email[0]=MathMax(MathMin(EmailDD1,MaxDDPercent-1),0)/100;
-		Email[1]=MathMax(MathMin(EmailDD2,MaxDDPercent-1),0)/100;
-		Email[2]=MathMax(MathMin(EmailDD3,MaxDDPercent-1),0)/100;
+		Email[0]=MathMax(MathMin(EmailDD1,MaxDrawDownPercentage-1),0)/100;
+		Email[1]=MathMax(MathMin(EmailDD2,MaxDrawDownPercentage-1),0)/100;
+		Email[2]=MathMax(MathMin(EmailDD3,MaxDrawDownPercentage-1),0)/100;
 		ArraySort(Email,WHOLE_ARRAY,0,MODE_ASCEND);
 		for(int z=0;z<=2;z++)
 		{	for(y=0;y<=2;y++)
@@ -618,7 +625,7 @@ int init()
 	if(SaveStats)
 	{	StatFile=Symbol()+"-"+Period()+"-"+EANumber+".csv";
 		NextStats=TimeCurrent();
-		Stats(StatsInitialise,false,AccountBalance()*PortionPC,0);
+		Stats(StatsInitialise,false,AccountBalance()*PortionPercentage,0);
 	}
 
 	return(0);
@@ -647,8 +654,9 @@ int deinit()
 //| expert start function                                           |
 //+-----------------------------------------------------------------+
 int start()
-{	int     CbB          =0;     // Count buy
-	int     CbS          =0;     // Count sell
+{	
+	int     CbB          =0;     // Count buy,exclude EA
+	int     CbS          =0;     // Count sell,exclude EA
 	int     CpBL         =0;     // Count buy limit
 	int     CpSL         =0;     // Count sell limit
 	int     CpBS         =0;     // Count buy stop
@@ -668,7 +676,7 @@ int start()
 	int     OTbL;                // last open time
 	double  g2,tp2,Entry,RSI_MA,LhB,LhS,LhT,OPbO,OTbO,OThO,TbO,ThO;
 	int     Ticket,ChB,ChS,IndEntry;
-	double  Pb,Ph,PaC,PbPips,PbTarget,DrawDownPC,BEb,BEh,BEa;
+	double  Pb,Ph,PaC,PbPips,PbTarget, DrawDownPercentage,BEb,BEh,BEa;
 	bool    BuyMe,SellMe,Success,SetPOSL;
 	string  IndicatorUsed;
 
@@ -679,7 +687,9 @@ int start()
 	PipVal2=PipValue/Pip;
 	StopLevel=MarketInfo(Symbol(),MODE_STOPLEVEL)*Point;
 	for(y=0;y<OrdersTotal();y++)
-	{	if(!OrderSelect(y,SELECT_BY_POS,MODE_TRADES))continue;
+	{	
+        if(!OrderSelect(y,SELECT_BY_POS,MODE_TRADES))
+            continue;
 		int Type=OrderType();
 		if(OrderMagicNumber()==hMagic)
 		{	Ph+=OrderProfit();
@@ -700,8 +710,10 @@ int start()
 			}
 			continue;
 		}
-		if(OrderMagicNumber()!=Magic||OrderSymbol()!=Symbol())continue;
-		if(OrderTakeProfit()>0)ModifyOrder(OrderOpenPrice(),OrderStopLoss());
+		if(OrderMagicNumber()!=Magic||OrderSymbol()!=Symbol())
+            continue;
+		if(OrderTakeProfit()>0)
+            ModifyOrder(OrderOpenPrice(),OrderStopLoss());
 		if(Type<=OP_SELL)
 		{	Pb+=OrderProfit();
 			BCb+=OrderSwap()+OrderCommission();
@@ -720,7 +732,8 @@ int start()
 				TbO=OrderTicket();
 				OPbO=OrderOpenPrice();
 			}
-			if(UsePowerOutSL&&(POSLPips>0&&OrderStopLoss()==0)||(POSLPips==0&&OrderStopLoss()>0))SetPOSL=true;
+			if(UsePowerOutSL&&(POSLPips>0&&OrderStopLoss()==0)||(POSLPips==0&&OrderStopLoss()>0))
+                    SetPOSL=true;
 			if(Type==OP_BUY)
 			{	CbB++;
 				LbB+=OrderLots();
@@ -748,22 +761,26 @@ int start()
 		}
 	}
 	CbT=CbB+CbS;
-	LbT=LbB+LbS;
+	LbT=LbB+LbS;/* total slots exclude EA */
 	Pb=ND(Pb+BCb,2);
 	ChT=ChB+ChS;
 	LhT=LhB+LhS;
 	Ph=ND(Ph+BCh,2);
-	CpT=CpBL+CpSL+CpBS+CpSS;
-	BCa=BCb+BCh;
+	CpT=CpBL+CpSL+CpBS+CpSS; /* buy limit + sell limit + buy stop + sell stop's count */
+	
+	BCa=BCb+BCh;/*总的交易商手续费*/
 
 	//+-----------------------------------------------------------------+
 	//| Calculate Min/Max Profit and Break Even Points                  |
 	//+-----------------------------------------------------------------+
-	if(LbT>0)
-	{	BEb=ND(BEb/LbT,Digits);
-		if(BCa<0)BEb-=ND(BCa/PipVal2/(LbB-LbS),Digits);
-		if(Pb>PbMax||PbMax==0)PbMax=Pb;
-		if(Pb<PbMin||PbMin==0)PbMin=Pb;
+	if(LbT>0)/*非EA的总手数>0*/
+	{	BEb=ND(BEb/LbT,Digits);/*计算品均交易商手续费*/
+		if(BCa<0)
+			BEb-=ND(BCa/PipVal2/(LbB-LbS),Digits);
+		if(Pb>PbMax||PbMax==0)
+			PbMax=Pb;
+		if(Pb<PbMin||PbMin==0)
+			PbMin=Pb;
 		if(!TradesOpen)
 		{	FileHandle=FileOpen(FileName,FILE_BIN|FILE_WRITE);
 			if(FileHandle>-1)
@@ -820,13 +837,15 @@ int start()
 	//+-----------------------------------------------------------------+
 	//| Check if trading is allowed                                     |
 	//+-----------------------------------------------------------------+
-	if(CbT==0&&ChT==0&&ShutDown)
-	{	if(CpT>0)
-		{	ExitTrades(P,displayColorLoss,"Blessing is shutting down");
+	if(CbT==0 && ChT==0 && ShutDown)
+	{	if(CpT>0) /* if have limit/stop order ,not have other order stop the EA */
+		{	
+            ExitTrades(P,displayColorLoss,"Blessing is shutting down");
 			return;
 		}
 		if(AllowTrading)
-		{	Print("Blessing has ShutDown. Set ShutDown = 'false' to continue trading");
+		{	
+            Print("Blessing has ShutDown. Set ShutDown = 'false' to continue trading");
 			if(PlaySounds)PlaySound(AlertSound);
 			AllowTrading=false;
 		}
@@ -858,19 +877,28 @@ int start()
 		ObjDel("B3LResm");
 	}
 
+
+    /* (-Profit)/Balance = DrawDown Level */
 	//+-----------------------------------------------------------------+
-	//| Calculate Drawdown and Equity Protection                        |
+	//| Calculate Drawdown and Equity Protection,                       |
 	//+-----------------------------------------------------------------+
-	double PortionBalance=ND(AccountBalance()*PortionPC,2);
-	if(Pb+Ph<0)DrawDownPC=-(Pb+Ph)/PortionBalance;
-	if(DrawDownPC>=MaxDDPercent/100)
-	{	ExitTrades(A,displayColorLoss,"Equity Stop Loss Reached");
-		if(PlaySounds)PlaySound(AlertSound);
+    //PortionBalance:想在该货币对上进行交易的金额
+	double PortionBalance=ND(AccountBalance()*PortionPercentage,2);/* Acount Balance * Percentage */
+    
+	if(Pb+Ph<0)//利润小于0
+        DrawDownPercentage=-(Pb+Ph)/PortionBalance;/*  DrawDownPercentage:DrawDown Percentage */
+	if(DrawDownPercentage>=MaxDrawDownPercentage/100)/*回撤率大于最大回测率，退出交易*/
+	{/* Beyond the max drawdown percents stop trading */	
+        ExitTrades(A,displayColorLoss,"Equity Stop Loss Reached");
+		if(PlaySounds)
+            PlaySound(AlertSound);
 		return;
 	}
-	if(-(Pb+Ph)>MaxDD)MaxDD=-(Pb+Ph);
-	MaxDDPer=MathMax(MaxDDPer,DrawDownPC*100);
-	if(SaveStats)Stats(false,TimeCurrent()<NextStats,PortionBalance,Pb+Ph);
+	if(-(Pb+Ph)>MaxDD)
+        MaxDD=-(Pb+Ph);
+	MaxDDPer=MathMax(MaxDDPer, DrawDownPercentage*100);
+	if(SaveStats)/*保存统计信息*/
+        Stats(false,TimeCurrent()<NextStats,PortionBalance,Pb+Ph);
 
 	//+-----------------------------------------------------------------+
 	//| Calculate  Stop Trade Percent                                   |
@@ -879,45 +907,59 @@ int start()
 	double StepSTB=AccountBalance()*(1-StopTradePercent);
 	double NextISTB=StepAB*(1-StopTradePercent);
 	if(StepSTB>NextISTB)
-	{	InitialAB=StepAB;
+	{	
+        InitialAB=StepAB;
 		StopTradeBalance=StepSTB;
 	}
-	double InitialAccountMultiPortion=StopTradeBalance*PortionPC;
+	double InitialAccountMultiPortion=StopTradeBalance*PortionPercentage;
 	if(PortionBalance<InitialAccountMultiPortion)
-	{	if(CbT==0)
-		{	AllowTrading=false;
-			if(PlaySounds)PlaySound(AlertSound);
+	{	
+		if(CbT==0)
+		{	
+			AllowTrading=false;
+			if(PlaySounds)
+				PlaySound(AlertSound);
 			Print("Portion Balance dropped below stop trade percent");
 			MessageBox("Reset Blessing, account balance dropped below stop trade percent on "+Symbol()+Period(),"Blessing 3: Warning",48);
 			return(0);
 		}
 		else if(!ShutDown&&!RecoupClosedLoss)
-		{	ShutDown=true;
-			if(PlaySounds)PlaySound(AlertSound);
+		{	
+			ShutDown=true;
+			if(PlaySounds)
+				PlaySound(AlertSound);
 			Print("Portion Balance dropped below stop trade percent");
 			return(0);
 		}
 	}
 
 	//+-----------------------------------------------------------------+
-	//| Calculation of Trend Direction                                  |
+	//| dwj Calculation of Trend Direction                                  |
 	//+-----------------------------------------------------------------+
 	int Trend;
 	string ATrend;
 	double ima_0=iMA(Symbol(),0,MAPeriod,0,MODE_EMA,PRICE_CLOSE,0);
-	if(ForceMarketCond==3)
-	{	if(Bid>ima_0+MADistance)Trend=0;
-		else if(Ask<ima_0-MADistance)Trend=1;
-		else Trend=2;
+	if(ForceMarketCond==TREND_OFF)//Dynamic caculate the trend direction
+	{	
+        if(Bid>ima_0+MADistance)//Beyond the ma+distance,[Trend up]
+            Trend=TREND_UP;
+		else if(Ask<ima_0-MADistance)//Bellow the ma-distance,[Trend down]
+            Trend=TREND_DOWN;
+		else 
+            Trend=TREND_RANGE;//between ma-distance and ma+distance consider to [Range]
 	}
 	else
-	{	Trend=ForceMarketCond;
-		if(Trend!=0&&Bid>ima_0+MADistance)ATrend="U";
-		if(Trend!=1&&Ask<ima_0-MADistance)ATrend="D";
-		if(Trend!=2&&(Bid<ima_0+MADistance&&Ask>ima_0-MADistance))ATrend="R";
+	{	
+        Trend=ForceMarketCond;/*手动指定趋势方向*/
+		if(Trend!=TREND_UP && Bid>ima_0+MADistance)
+            ATrend="U";
+		if(Trend!=TREND_DOWN && Ask<ima_0-MADistance)
+            ATrend="D";
+		if(Trend!=TREND_RANGE && (Bid<ima_0+MADistance&&Ask>ima_0-MADistance))
+            ATrend="R";
 	}
 	//+-----------------------------------------------------------------+
-	//| Hedge/Basket/ClosedTrades Profit Management                     |
+	//| dwj Hedge/Basket/ClosedTrades Profit Management                     |
 	//+-----------------------------------------------------------------+
 	double Pa=Pb;
 	PaC=PbC+PhC;
@@ -927,19 +969,23 @@ int start()
 		return;
 	}
 	if(LbT>0)
-	{	if(PbC>0||(PbC<0&&RecoupClosedLoss))
-		{	Pa+=PbC;
+	{	
+		if(PbC>0||(PbC<0&&RecoupClosedLoss))
+		{	
+			Pa+=PbC;
 			BEb-=ND(PbC/PipVal2/(LbB-LbS),Digits);
 		}
 		if(PhC>0||(PhC<0&&RecoupClosedLoss))
-		{	Pa+=PhC;
+		{	
+			Pa+=PhC;
 			BEb-=ND(PhC/PipVal2/(LbB-LbS),Digits);
 		}
-		if(Ph>0||(Ph<0&&RecoupClosedLoss))Pa+=Ph;
+		if(Ph>0||(Ph<0&&RecoupClosedLoss))
+			Pa+=Ph;
 	}
 
 	//+-----------------------------------------------------------------+
-	//| Close oldest open trade after CloseTradesLevel reached          |
+	//| dwj Close oldest open trade after CloseTradesLevel reached          |
 	//+-----------------------------------------------------------------+
 	if(UseCloseOldest&&CbT>=CloseTradesLevel&&CbC<MaxCloseTrades)
 	{	if((TPb>0)&&((CbB>0&&OPbO>TPb)||(CbS>0&&OPbO<TPb)))
@@ -1404,7 +1450,7 @@ int start()
 	//+-----------------------------------------------------------------+
 	if(SetPOSL)
 	{	if(UsePowerOutSL&&POSLPips>0)
-		{	double POSL=MathMin(PortionBalance*(MaxDDPercent+1)/100/PipVal2/LbT,POSLPips);
+		{	double POSL=MathMin(PortionBalance*(MaxDrawDownPercentage+1)/100/PipVal2/LbT,POSLPips);
 			SLbB=ND(BEb-POSL,Digits);
 			SLbS=ND(BEb+POSL,Digits);
 		}
@@ -1784,11 +1830,11 @@ int start()
 	{	if(ChT>0&&hActive==0)hActive=1;
 		int hLevel=CbT+CbC;
 		if(HedgeTypeDD)
-		{	if(hDDStart==0&&ChT>0)hDDStart=MathMax(HedgeStart,DrawDownPC+hReEntryPC);
-			if(hDDStart>HedgeStart&&hDDStart>DrawDownPC+hReEntryPC)hDDStart=DrawDownPC+hReEntryPC;
+		{	if(hDDStart==0&&ChT>0)hDDStart=MathMax(HedgeStart, DrawDownPercentage+hReEntryPC);
+			if(hDDStart>HedgeStart&&hDDStart> DrawDownPercentage+hReEntryPC)hDDStart= DrawDownPercentage+hReEntryPC;
 			if(hActive==2)
 			{	hActive=0;
-				hDDStart=MathMax(HedgeStart,DrawDownPC+hReEntryPC);
+				hDDStart=MathMax(HedgeStart, DrawDownPercentage+hReEntryPC);
 			}
 		}
 		if(hActive==0)
@@ -1798,7 +1844,7 @@ int start()
 			}
 			else ObjDel("B3LhCor");
 			if(hLvlStart>hLevel+1||!HedgeTypeDD&&hLvlStart==0)hLvlStart=MathMax(HedgeStart,hLevel+1);
-			if((HedgeTypeDD&&DrawDownPC>hDDStart)||(!HedgeTypeDD&&hLevel>=hLvlStart))
+			if((HedgeTypeDD&& DrawDownPercentage>hDDStart)||(!HedgeTypeDD&&hLevel>=hLvlStart))
 			{	OrderLot=LotSize(LbT*hLotMult);
 				if((CbB>0&&!hPosCorr)||(CbS>0&&hPosCorr))
 				{	Ticket=SendOrder(HedgeSymbol,OP_BUY,OrderLot,0,slip,hMagic,MidnightBlue);
@@ -1823,7 +1869,7 @@ int start()
 			}
 		}
 		else if(hActive==1)
-		{	if(HedgeTypeDD&&hDDStart>HedgeStart&&hDDStart<DrawDownPC+hReEntryPC)hDDStart=DrawDownPC+hReEntryPC;
+		{	if(HedgeTypeDD&&hDDStart>HedgeStart&&hDDStart< DrawDownPercentage+hReEntryPC)hDDStart= DrawDownPercentage+hReEntryPC;
 			if(hLvlStart==0)
 			{	if(HedgeTypeDD)hLvlStart=hLevel+1;
 				else hLvlStart=MathMax(HedgeStart,hLevel+1);
@@ -1893,18 +1939,18 @@ int start()
 	//| Check DD% and send Email                                        |
 	//+-----------------------------------------------------------------+
 	if((UseEmail||PlaySounds)&&!Testing)
-	{	if(EmailCount<2&&Email[EmailCount]>0&&DrawDownPC>Email[EmailCount])
+	{	if(EmailCount<2&&Email[EmailCount]>0&& DrawDownPercentage>Email[EmailCount])
 		{	if(UseEmail)SendMail("Blessing EA","Blessing has exceeded a drawdown of "+Email[EmailCount]*100+"% on "+Symbol()+" "+sTF);
 			if(PlaySounds)PlaySound(AlertSound);
 			Error=GetLastError();
-			if(Error>0)Print("Email DD: "+DTS(DrawDownPC*100,2)+" Error: "+Error+" "+ErrorDescription(Error));
+			if(Error>0)Print("Email DD: "+DTS( DrawDownPercentage*100,2)+" Error: "+Error+" "+ErrorDescription(Error));
 			else
-			{	if(UseEmail&&Debug)Print("DrawDown Email sent on "+Symbol()+" "+sTF+ " DD: "+DTS(DrawDownPC*100,2));
+			{	if(UseEmail&&Debug)Print("DrawDown Email sent on "+Symbol()+" "+sTF+ " DD: "+DTS( DrawDownPercentage*100,2));
 				EmailSent=TimeCurrent();
 				EmailCount++;
 			}
 		}
-		else if(EmailCount>0&&EmailCount<3&&DrawDownPC<Email[EmailCount]&&TimeCurrent()>EmailSent+EmailHours*3600)EmailCount--;
+		else if(EmailCount>0&&EmailCount<3&& DrawDownPercentage<Email[EmailCount]&&TimeCurrent()>EmailSent+EmailHours*3600)EmailCount--;
 	}
 
 	//+-----------------------------------------------------------------+
@@ -1921,12 +1967,12 @@ int start()
 				ObjSetTxt("B3VHolT",TimeToStr(HolLast,TIME_DATE));
 			}
 			DrawLabel("B3VPBal",PortionBalance,167);
-			if(DrawDownPC>0.4)Colour=displayColorLoss;
-			else if(DrawDownPC>0.3)Colour=Orange;
-			else if(DrawDownPC>0.2)Colour=Yellow;
-			else if(DrawDownPC>0.1)Colour=displayColorProfit;
+			if( DrawDownPercentage>0.4)Colour=displayColorLoss;
+			else if( DrawDownPercentage>0.3)Colour=Orange;
+			else if( DrawDownPercentage>0.2)Colour=Yellow;
+			else if( DrawDownPercentage>0.1)Colour=displayColorProfit;
 			else Colour=displayColor;
-			DrawLabel("B3VDrDn",DrawDownPC*100,315,2,Colour);
+			DrawLabel("B3VDrDn", DrawDownPercentage*100,315,2,Colour);
 			if(UseHedge&&HedgeTypeDD)ObjSetTxt("B3VhDDm",DTS(hDDStart*100,2));
 			else if(UseHedge&&!HedgeTypeDD)
 			{	DrawLabel("B3VhLvl",CbT+CbC,318,0);
@@ -2487,17 +2533,23 @@ int ExitTrades(int Type,color Color,string Reason,int OTicket=0)
 //| Find Hedge Profit                                               |
 //+-----------------------------------------------------------------+
 double FindClosedPL(int Type)
-{	double ClosedProfit;
-	if(Type==B&&UseCloseOldest)CbC=0;
+{	
+    double ClosedProfit;
+	if(Type==B&&UseCloseOldest)
+        CbC=0;
 	if(OTbF>0)
 	{	for(y=OrdersHistoryTotal()-1;y>=0;y--)
-		{	if(!OrderSelect(y,SELECT_BY_POS,MODE_HISTORY))continue;
-			if(OrderOpenTime()<OTbF)continue;
-			if(Type==B&&OrderMagicNumber()==Magic&&OrderType()<=OP_SELL)
-			{	ClosedProfit+=OrderProfit()+OrderSwap()+OrderCommission();
+		{	if(!OrderSelect(y,SELECT_BY_POS,MODE_HISTORY))
+                continue;
+			if(OrderOpenTime()<OTbF)
+                continue;
+			if(Type==B && OrderMagicNumber()==Magic && OrderType()<=OP_SELL)
+			{	
+                ClosedProfit+=OrderProfit()+OrderSwap()+OrderCommission();
 				CbC++;
 			}
-			if(Type==H&&OrderMagicNumber()==hMagic)ClosedProfit+=OrderProfit()+OrderSwap()+OrderCommission();
+			if(Type==H&&OrderMagicNumber()==hMagic)
+                ClosedProfit+=OrderProfit()+OrderSwap()+OrderCommission();
 		}
 	}
 	return(ClosedProfit);
@@ -2553,7 +2605,7 @@ void Stats(bool NewFile,bool IsTick,double Balance,double DrawDown)
 }
 
 //+-----------------------------------------------------------------+
-//| Magic Number Generator                                          |
+//| 生成魔数                                                        |
 //+-----------------------------------------------------------------+
 int GenerateMagicNumber()
 {	if(EANumber>99)return(EANumber);
@@ -2615,6 +2667,16 @@ void CreateLabel(string Name,string Text,int FontSize,int Corner,int XOffset,dou
 	ObjectSet(Name,OBJPROP_CORNER,Corner);
 	ObjectSet(Name,OBJPROP_XDISTANCE,XDistance);
 	ObjectSet(Name,OBJPROP_YDISTANCE,YDistance);
+}
+
+
+///+----------------------------------------------------------------+
+//| Get the trend by MA                                             |
+//+-----------------------------------------------------------------+
+
+int GetTrendByMA()
+{
+            
 }
 
 //+-----------------------------------------------------------------+
@@ -2683,8 +2745,8 @@ void LabelCreate()
 		CreateLabel("B3VTime","",0,0,125,0);
 		CreateLabel("B3Line1","=========================",0,0,0,1);
 		CreateLabel("B3LEPPC","Equity Protection % Set:",0,0,0,2);
-		dDigits=Digit[ArrayBsearch(Digit,MaxDDPercent,WHOLE_ARRAY,0,MODE_ASCEND),1];
-		CreateLabel("B3VEPPC",DTS(MaxDDPercent,2),0,0,167-7*dDigits,2);
+		dDigits=Digit[ArrayBsearch(Digit,MaxDrawDownPercentage,WHOLE_ARRAY,0,MODE_ASCEND),1];
+		CreateLabel("B3VEPPC",DTS(MaxDrawDownPercentage,2),0,0,167-7*dDigits,2);
 		CreateLabel("B3PEPPC","%",0,0,193,2);
 		CreateLabel("B3LSTPC","Stop Trade % Set:",0,0,0,3);
 		dDigits=Digit[ArrayBsearch(Digit,StopTradePercent*100,WHOLE_ARRAY,0,MODE_ASCEND),1];
@@ -2693,13 +2755,13 @@ void LabelCreate()
 		CreateLabel("B3LSTAm","Stop Trade Amount:",0,0,0,4);
 		CreateLabel("B3VSTAm","",0,0,167,4,displayColorLoss);
 		CreateLabel("B3LAPPC","Account Portion:",0,0,0,5);
-		dDigits=Digit[ArrayBsearch(Digit,PortionPC*100,WHOLE_ARRAY,0,MODE_ASCEND),1];
-		CreateLabel("B3VAPPC",DTS(PortionPC*100,2),0,0,167-7*dDigits,5);
+		dDigits=Digit[ArrayBsearch(Digit,PortionPercentage*100,WHOLE_ARRAY,0,MODE_ASCEND),1];
+		CreateLabel("B3VAPPC",DTS(PortionPercentage*100,2),0,0,167-7*dDigits,5);
 		CreateLabel("B3PAPPC","%",0,0,193,5);
 		CreateLabel("B3LPBal","Portion Balance:",0,0,0,6);
 		CreateLabel("B3VPBal","",0,0,167,6);
 		CreateLabel("B3LAPCR","Account % Risked:",0,0,228,6);
-		CreateLabel("B3VAPCR",DTS(MaxDDPercent*PortionPC,2),0,0,347,6);
+		CreateLabel("B3VAPCR",DTS(MaxDrawDownPercentage*PortionPercentage,2),0,0,347,6);
 		CreateLabel("B3PAPCR","%",0,0,380,6);
 		if(UseMM)
 		{	ObjText="Money Management is On";

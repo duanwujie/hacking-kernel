@@ -5,59 +5,36 @@
 \section{sys\_mount流程}
 
 
-\begin{lstlisting}[language={[ANSI]C},
-        basicstyle=\tiny\ttfamily,
-        stringstyle=\color{purple},
-        keywordstyle=\color{blue}\bfseries,
-        commentstyle=\color{olive},
-        directivestyle=\color{blue},
-        frame=shadowbox,
-        %framerule=0pt,
-        %backgroundcolor=\color{pink},
-        rulesepcolor=\color{red!20!green!20!blue!20}
-        %rulesepcolor=\color{brown}
-        %xleftmargin=2em,xrightmargin=2em,aboveskip=0em
-        ]
+\begin{code}
+//linux-4.3.3/fs/namespace.c
 
+/**
+ * sys_mount - 挂载文件系统
+ * @dev_name :设备名称`
+ * @dir_name :挂载点路径
+ * @type :文件系统类型
+ * @flags :标志位供 do_mount 调用。
+ * @data :选项信息
+ */
 SYSCALL_DEFINE5(mount, char __user *, dev_name, char __user *, dir_name,
-		char __user *, type, unsigned long, flags, void __user *, data)
-{
-	int ret;
-	char *kernel_type;/*挂载文件系统类型，如ext3*/
-	char *kernel_dev;/* 设备名称*/
-	unsigned long data_page;/*data_pages: 选项信息*/
+		char __user *, type, unsigned long, flags, void __user *, data);
+\end{code}
 
-	kernel_type = copy_mount_string(type);
-	ret = PTR_ERR(kernel_type);
-	if (IS_ERR(kernel_type))
-		goto out_type;
+\begin{itemize}
+\item 将用户态参数拷贝至内核态
+\item 调用do\_mount完成主要挂载工作
+\end{itemize}
 
-	kernel_dev = copy_mount_string(dev_name);
-	ret = PTR_ERR(kernel_dev);
-	if (IS_ERR(kernel_dev))
-		goto out_dev;
+\section{do\_mount流程}
 
-	ret = copy_mount_options(data, &data_page);
-	if (ret < 0)
-		goto out_data;
-	
-	/*  调用do_mount 完成主要挂载工作 */  
-	ret = do_mount(kernel_dev, dir_name, kernel_type, flags,
-		(void *) data_page);
-
-	free_page(data_page);
-out_data:
-	kfree(kernel_dev);
-out_dev:
-	kfree(kernel_type);
-out_type:
-	return ret;
-}
-\end{lstlisting}
 
 其中get\_fs\_type:用于判断使用那个file\_system\_type
 
 \section{注册一个文件系统}
+
+
+
+
 \begin{lstlisting}[language={[ANSI]C},
         basicstyle=\tiny\ttfamily,
         stringstyle=\color{purple},
@@ -72,17 +49,24 @@ out_type:
         %xleftmargin=2em,xrightmargin=2em,aboveskip=0em
         ]
 #include <linux/fs.h>
-
 extern int register_filesystem(struct file_system_type *);
 extern int unregister_filesystem(struct file_system_type *);
 \end{lstlisting}
 
 
-/proc/filesystems下显示了所有已经注册的文件系统。
+file\_systems:文件系统链表，后续对VFS的操作将围绕该链表展开。
+
+\begin{itemize}
+\item register\_filesystem:通过文件系统的名字在file\_systems链表中查找对应的文件系统，没有找到，则将文件新的文件系统加入链表。
+\item unregister\_filesystem:将文件系统从file\_systems链表中删除
+\item /proc/filesystems下显示了所有已经注册的文件系统。
+\end{itemize}
 
 
 
 
+
+\section{file\_system\_type}
 	file\_system\_type用于描述一个文件系统：
 
 \begin{lstlisting}[language={[ANSI]C},
@@ -108,16 +92,8 @@ struct file_system_type {
 	struct module *owner;/* 文件系统模块，初始化为THIS_MODULE */
 	struct file_system_type * next;/*VFS内部使用，初始化为空*/
 	struct hlist_head fs_supers;/* supperblock list */
-
-	/* Runtime lock */
-	struct lock_class_key s_lock_key;
-	struct lock_class_key s_umount_key;
-	struct lock_class_key s_vfs_rename_key;
-	struct lock_class_key s_writers_key[SB_FREEZE_LEVELS];
-
-	struct lock_class_key i_lock_key;
-	struct lock_class_key i_mutex_key;
-	struct lock_class_key i_mutex_dir_key;
+	/* 相关锁 */
+	/* ... */
 };
         
         
@@ -178,19 +154,7 @@ VFS将目录当作文件来处理，所以不存在目录对象，目录项代�
 
 A superblock object represents a mounted filesystem.
 
-\begin{lstlisting}[language={[ANSI]C},
-        basicstyle=\tiny\ttfamily,
-        stringstyle=\color{purple},
-        keywordstyle=\color{blue}\bfseries,
-        commentstyle=\color{olive},
-        directivestyle=\color{blue},
-        frame=shadowbox,
-        %framerule=0pt,
-        %backgroundcolor=\color{pink},
-        rulesepcolor=\color{red!20!green!20!blue!20}
-        %rulesepcolor=\color{brown}
-        %xleftmargin=2em,xrightmargin=2em,aboveskip=0em
-        ]
+\begin{code}
         
 struct super_block {
 	struct list_head	s_list;		/* 指向super_block的链表 */
@@ -294,7 +258,7 @@ struct super_block {
 	struct list_head	s_inodes;	/* all inodes */
 };
         
-\end{lstlisting}
+\end{code}
 
 
 
