@@ -1,0 +1,3174 @@
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  9 SEP 2016 11:34
+entering extended mode
+**模块实现.tex
+("C:\Users\duanwujie\Desktop\work\hacking-kernel\Hacking Kernel\模块实现.te
+x"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+! Undefined control sequence.
+l.1 \chapter
+            {模块实现}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{模
+                块实现}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 模 in font nullfont!
+Missing character: There is no 块 in font nullfont!
+Missing character: There is no 实 in font nullfont!
+Missing character: There is no 现 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[] 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 由
+       于insmod调用系统调用init\\_module;该系统调用回调init函...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 由 in font nullfont!
+Missing character: There is no 于 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no 调 in font nullfont!
+Missing character: There is no 用 in font nullfont!
+Missing character: There is no 系 in font nullfont!
+Missing character: There is no 统 in font nullfont!
+Missing character: There is no 调 in font nullfont!
+Missing character: There is no 用 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4 由于insmod调用系统调用init\\_
+                                         module;该系统调用回调init函...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 该 in font cmr10!
+Missing character: There is no 系 in font cmr10!
+Missing character: There is no 统 in font cmr10!
+Missing character: There is no 调 in font cmr10!
+Missing character: There is no 用 in font cmr10!
+Missing character: There is no 回 in font cmr10!
+Missing character: There is no 调 in font cmr10!
+Missing character: There is no 函 in font cmr10!
+Missing character: There is no 数 in font cmr10!
+Missing character: There is no ， in font cmr10!
+Missing character: There is no 所 in font cmr10!
+Missing character: There is no 有 in font cmr10!
+Missing character: There is no 在 in font cmr10!
+Missing character: There is no 模 in font cmr10!
+Missing character: There is no 块 in font cmr10!
+Missing character: There is no 初 in font cmr10!
+Missing character: There is no 始 in font cmr10!
+Missing character: There is no 化 in font cmr10!
+Missing character: There is no 函 in font cmr10!
+Missing character: There is no 数 in font cmr10!
+Missing character: There is no 中 in font cmr10!
+Missing character: There is no ， in font cmr10!
+Missing character: There is no 属 in font cmr10!
+Missing character: There is no 于 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no 进 in font cmr10!
+Missing character: There is no 程 in font cmr10!
+Missing character: There is no 上 in font cmr10!
+Missing character: There is no 下 in font cmr10!
+Missing character: There is no 文 in font cmr10!
+Missing character: There is no 中 in font cmr10!
+Missing character: There is no 。 in font cmr10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 4--5
+[] 
+ []
+
+
+Overfull \hbox (85.12497pt too wide) in paragraph at lines 4--5
+[]\OML/cmm/m/it/10 odule\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 initinsmod$ 
+ []
+
+
+! LaTeX Error: Environment lstlisting undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \begin{lstlisting}
+                      [language={[ANSI]C},
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \begin{lstlisting}[
+                       language={[ANSI]C},
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+! Undefined control sequence.
+l.8         basicstyle=\tiny
+                            \ttfamily,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Requested font "cmtt10" at 10.0pt
+ -> cmtt10
+! Undefined control sequence.
+l.9         stringstyle=\color
+                              {purple},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.10         keywordstyle=\color
+                                {blue}\bfseries,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 10.
+! Undefined control sequence.
+l.11         commentstyle=\color
+                                {olive},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.12         directivestyle=\color
+                                  {blue},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.16         rulesepcolor=\color
+                                {red!20!green!20!blue!20}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.21 ^^Ienum module_
+                    state state;/* 模块的内部状态 */
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.22 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 模 in font cmr10!
+Missing character: There is no 块 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no 内 in font cmr10!
+Missing character: There is no 部 in font cmr10!
+Missing character: There is no 状 in font cmr10!
+Missing character: There is no 态 in font cmr10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 7--22
+[]
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 ,
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 stringstyle=purple,
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 keywordstyle=blue,
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 commentstyle=olive,
+ []
+
+
+Overfull \hbox (104.99908pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 directivestyle=blue,
+ []
+
+
+Overfull \hbox (83.99927pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 frame=shadowbox,
+ []
+
+
+Overfull \hbox (188.99835pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 rulesepcolor=red!20!green!20!blue!20
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 ]
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 struct
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 module
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 enum
+ []
+
+
+Overfull \hbox (89.23476pt too wide) in paragraph at lines 7--22
+\OT1/cmtt/m/n/10 module$[]\OML/cmm/m/it/10 tatestate\OT1/cmr/m/n/10 ; \OML/cmm/
+m/it/10 = \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 7--22
+\OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 7--22
+\OML/cmm/m/it/10 =$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ^^I/
+         * Member of list of modules */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.24 ^^Istruct list_
+                    head list;/*模块链表 */
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 模 in font cmr10!
+Missing character: There is no 块 in font cmr10!
+Missing character: There is no 链 in font cmr10!
+Missing character: There is no 表 in font cmr10!
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 23--25
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 23--25
+\OT1/cmtt/m/n/10 Member
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 23--25
+\OT1/cmtt/m/n/10 of
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 23--25
+\OT1/cmtt/m/n/10 list
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 23--25
+\OT1/cmtt/m/n/10 of
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 23--25
+\OT1/cmtt/m/n/10 modules
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 23--25
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 23--25
+\OT1/cmtt/m/n/10 struct
+ []
+
+
+Overfull \hbox (70.69734pt too wide) in paragraph at lines 23--25
+\OT1/cmtt/m/n/10 list$[]\OML/cmm/m/it/10 eadlist\OT1/cmr/m/n/10 ; \OML/cmm/m/it
+/10 = \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 23--25
+\OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 23--25
+\OML/cmm/m/it/10 =$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ^^I/
+         * Unique handle for this module */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 ^^Ichar name[MODULE_
+                         NAME_LEN];/* 模块名 */
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.28 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 模 in font cmr10!
+Missing character: There is no 块 in font cmr10!
+Missing character: There is no 名 in font cmr10!
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 26--28
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 26--28
+\OT1/cmtt/m/n/10 Unique
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 26--28
+\OT1/cmtt/m/n/10 handle
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 26--28
+\OT1/cmtt/m/n/10 for
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 26--28
+\OT1/cmtt/m/n/10 this
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 26--28
+\OT1/cmtt/m/n/10 module
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 26--28
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 26--28
+\OT1/cmtt/m/n/10 char
+ []
+
+
+Overfull \hbox (131.2995pt too wide) in paragraph at lines 26--28
+\OT1/cmtt/m/n/10 name[MODULE$[]\OML/cmm/m/it/10 AME[]EN\OT1/cmr/m/n/10 ]; \OML/
+cmm/m/it/10 = \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 26--28
+\OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 26--28
+\OML/cmm/m/it/10 =$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 ^^I/
+         * Sysfs stuff. */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 ^^Istruct module_
+                      kobject mkobj;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.35 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 29--35
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 29--35
+\OT1/cmtt/m/n/10 Sysfs
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 29--35
+\OT1/cmtt/m/n/10 stuff.
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 29--35
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 29--35
+\OT1/cmtt/m/n/10 struct
+ []
+
+
+Overfull \hbox (198.14186pt too wide) in paragraph at lines 29--35
+\OT1/cmtt/m/n/10 module$[]\OML/cmm/m/it/10 objectmkobj\OT1/cmr/m/n/10 ; \OML/cm
+m/m/it/10 structmodule[]ttribute \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (113.72052pt too wide) in paragraph at lines 29--35
+\OML/cmm/m/it/10 modinfo[]ttrs\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 constchar \OMS
+/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (86.71843pt too wide) in paragraph at lines 29--35
+\OML/cmm/m/it/10 version\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 constchar \OMS/cmsy/
+m/n/10 ^^C
+ []
+
+
+Overfull \hbox (115.5791pt too wide) in paragraph at lines 29--35
+\OML/cmm/m/it/10 srcversion\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 structkobject \OM
+S/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (48.80254pt too wide) in paragraph at lines 29--35
+\OML/cmm/m/it/10 holders[]ir\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ^^I/
+         * Exported symbols */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.37 ^^Iconst struct kernel_
+                            symbol *syms;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.40 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 36--40
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 36--40
+\OT1/cmtt/m/n/10 Exported
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 36--40
+\OT1/cmtt/m/n/10 symbols
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 36--40
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 36--40
+\OT1/cmtt/m/n/10 const
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 36--40
+\OT1/cmtt/m/n/10 struct
+ []
+
+
+Overfull \hbox (67.13525pt too wide) in paragraph at lines 36--40
+\OT1/cmtt/m/n/10 kernel$[]\OML/cmm/m/it/10 ymbol \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (116.34703pt too wide) in paragraph at lines 36--40
+\OML/cmm/m/it/10 syms\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 constunsignedlong \OMS/
+cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (122.7749pt too wide) in paragraph at lines 36--40
+\OML/cmm/m/it/10 crcs\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 unsignedintnum[]yms\OT1
+/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 ^^I/
+         * Kernel parameters. */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.42 #
+      ifdef CONFIG_SYSFS
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.42 #ifdef CONFIG_
+                   SYSFS
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.44 #
+      endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.47 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 41--47
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 41--47
+\OT1/cmtt/m/n/10 Kernel
+ []
+
+
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 41--47
+\OT1/cmtt/m/n/10 parameters.
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 41--47
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 41--47
+\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (287.58194pt too wide) in paragraph at lines 41--47
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 YSFSstructmutexparam[]ock\OT1/cmr/m/
+n/10 ; \OML/cmm/m/it/10 endifstructkernel[]aram \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (102.14287pt too wide) in paragraph at lines 41--47
+\OML/cmm/m/it/10 kp\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 unsignedintnum[]p\OT1/cmr
+/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ^^I/
+         * GPL-only exported symbols. */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.49 ^^Iunsigned int num_
+                         gpl_syms;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 48--52
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 48--52
+\OT1/cmtt/m/n/10 GPL-only
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 48--52
+\OT1/cmtt/m/n/10 exported
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 48--52
+\OT1/cmtt/m/n/10 symbols.
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 48--52
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 48--52
+\OT1/cmtt/m/n/10 unsigned
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 48--52
+\OT1/cmtt/m/n/10 int
+ []
+
+
+Overfull \hbox (170.33673pt too wide) in paragraph at lines 48--52
+\OT1/cmtt/m/n/10 num$[]\OML/cmm/m/it/10 pl[]yms\OT1/cmr/m/n/10 ; \OML/cmm/m/it/
+10 conststructkernel[]ymbol \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (129.07736pt too wide) in paragraph at lines 48--52
+\OML/cmm/m/it/10 gpl[]yms\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 constunsignedlong \
+OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (33.79947pt too wide) in paragraph at lines 48--52
+\OML/cmm/m/it/10 gpl[]rcs\OT1/cmr/m/n/10 ;$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.53 #
+      ifdef CONFIG_UNUSED_SYMBOLS
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 #i
+       fdef CONFIG_UNUSED_SYMBOLS
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.53 #ifdef CONFIG_
+                   UNUSED_SYMBOLS
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.58 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.24977pt too wide) in paragraph at lines 53--58
+[]\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (141.74994pt too wide) in paragraph at lines 53--58
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 NUSED[]YMBOLS= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (114.02576pt too wide) in paragraph at lines 53--58
+\OML/cmm/m/it/10 unusedexportedsymbols: \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (119.47142pt too wide) in paragraph at lines 53--58
+\OML/cmm/m/it/10 =conststructkernel[]ymbol \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (147.93399pt too wide) in paragraph at lines 53--58
+\OML/cmm/m/it/10 unused[]yms\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 constunsignedlon
+g \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (186.02484pt too wide) in paragraph at lines 53--58
+\OML/cmm/m/it/10 unused[]rcs\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 unsignedintnum[]
+nused[]yms\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 ^^I/
+         * GPL-only, unused exported symbols. */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.60 ^^Iunsigned int num_
+                         unused_gpl_syms;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.63 #
+      endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.64 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 59--64
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 59--64
+\OT1/cmtt/m/n/10 GPL-only,
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 59--64
+\OT1/cmtt/m/n/10 unused
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 59--64
+\OT1/cmtt/m/n/10 exported
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 59--64
+\OT1/cmtt/m/n/10 symbols.
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 59--64
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 59--64
+\OT1/cmtt/m/n/10 unsigned
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 59--64
+\OT1/cmtt/m/n/10 int
+ []
+
+
+Overfull \hbox (201.84035pt too wide) in paragraph at lines 59--64
+\OT1/cmtt/m/n/10 num$[]\OML/cmm/m/it/10 nused[]pl[]yms\OT1/cmr/m/n/10 ; \OML/cm
+m/m/it/10 conststructkernel[]ymbol \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (160.60149pt too wide) in paragraph at lines 59--64
+\OML/cmm/m/it/10 unused[]pl[]yms\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 constunsigne
+dlong \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (92.27109pt too wide) in paragraph at lines 59--64
+\OML/cmm/m/it/10 unused[]pl[]rcs\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 endif$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.65 #
+      ifdef CONFIG_MODULE_SIG
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 #i
+       fdef CONFIG_MODULE_SIG
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.65 #ifdef CONFIG_
+                   MODULE_SIG
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.68 #
+      endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.69 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.24977pt too wide) in paragraph at lines 65--69
+[]\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (107.7803pt too wide) in paragraph at lines 65--69
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 ODULE[]IG= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (107.9062pt too wide) in paragraph at lines 65--69
+\OML/cmm/m/it/10 Signaturewasverified: \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (74.76236pt too wide) in paragraph at lines 65--69
+\OML/cmm/m/it/10 =boolsig[]k\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 endif$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ^^Ib
+         ool async_probe_requested;
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.70 ^^Ibool async_
+                   probe_requested;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (40.99982pt too wide) in paragraph at lines 70--71
+[]\OT1/cmtt/m/n/10 bool
+ []
+
+
+Overfull \hbox (94.68243pt too wide) in paragraph at lines 70--71
+\OT1/cmtt/m/n/10 async$[]\OML/cmm/m/it/10 robe[]equested\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 ^^I/
+         * symbols that will be GPL-only in the near future. */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 ^^Iconst struct kernel_
+                            symbol *gpl_future_syms;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.76 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 72--76
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 symbols
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 that
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 will
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 be
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 GPL-only
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 in
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 the
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 near
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 future.
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 const
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 struct
+ []
+
+
+Overfull \hbox (67.13525pt too wide) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 kernel$[]\OML/cmm/m/it/10 ymbol \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (158.76735pt too wide) in paragraph at lines 72--76
+\OML/cmm/m/it/10 gpl[]uture[]yms\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 constunsigne
+dlong \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (207.71207pt too wide) in paragraph at lines 72--76
+\OML/cmm/m/it/10 gpl[]uture[]rcs\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 unsignedintn
+um[]pl[]uture[]yms\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1]
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 ^^I/
+         * Exception table */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.78 ^^Iunsigned int num_
+                         exentries;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 77--80
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 77--80
+\OT1/cmtt/m/n/10 Exception
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 77--80
+\OT1/cmtt/m/n/10 table
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 77--80
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 77--80
+\OT1/cmtt/m/n/10 unsigned
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 77--80
+\OT1/cmtt/m/n/10 int
+ []
+
+
+Overfull \hbox (180.9891pt too wide) in paragraph at lines 77--80
+\OT1/cmtt/m/n/10 num$[]\OML/cmm/m/it/10 xentries\OT1/cmr/m/n/10 ; \OML/cmm/m/it
+/10 structexception[]able[]ntry \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (34.17482pt too wide) in paragraph at lines 77--80
+\OML/cmm/m/it/10 extable\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 ^^I/
+         * Startup function. */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 81--83
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 81--83
+\OT1/cmtt/m/n/10 Startup
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 81--83
+\OT1/cmtt/m/n/10 function.
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 81--83
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 81--83
+\OT1/cmtt/m/n/10 int
+ []
+
+
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 81--83
+\OT1/cmtt/m/n/10 (*init)(void); 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 ^^I/
+         *
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 ^^I *   module_
+                    init, module_core, init_size, core_size,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.92 ^^Ivoid *module_init^^I__
+                              __cacheline_aligned;
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.92 ^^Ivoid *module_init^^I___
+                               _cacheline_aligned;
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.92 ^^Ivoid *module_init^^I____
+                                cacheline_aligned;
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.93 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.93 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.93 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.93 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 84--93
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 *
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 If
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 this
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 is
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 non-NULL,
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 vfree()
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 after
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 init()
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 returns.
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 *
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 *
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 Cacheline
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 align
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 here,
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 such
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 that:
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 *
+ []
+
+
+Overfull \hbox (362.57588pt too wide) in paragraph at lines 84--93
+\OT1/cmtt/m/n/10 module$[]\OML/cmm/m/it/10 nit; module[]ore; init[]ize; core[]i
+ze; \OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 init[]ext[]ize; core[]ext[]izeandmtn[]
+ore \OT1/cmr/m/n/10 ::
+ []
+
+
+Overfull \hbox (59.54295pt too wide) in paragraph at lines 84--93
+[] \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (112.44083pt too wide) in paragraph at lines 84--93
+\OML/cmm/m/it/10 areonthesamecacheline: \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (28.70326pt too wide) in paragraph at lines 84--93
+\OML/cmm/m/it/10 =void \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (108.15483pt too wide) in paragraph at lines 84--93
+\OML/cmm/m/it/10 module[]nit[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ^^I/
+         * Here is the actual code + data, vfree'd on unload. */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.95 ^^Ivoid *module_
+                     core;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.96 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 94--96
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 Here
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 is
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 the
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 actual
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 code
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 +
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 data,
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 vfree'd
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 on
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 unload.
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 void
+ []
+
+
+Overfull \hbox (57.89407pt too wide) in paragraph at lines 94--96
+\OT1/cmtt/m/n/10 *module$[]\OML/cmm/m/it/10 ore\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ^^I/
+         * Here are the sizes of the init and core sections */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.98 ^^Iunsigned int init_
+                          size, core_size;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.99 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 97--99
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 Here
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 are
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 the
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 sizes
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 of
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 the
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 init
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 and
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 core
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 sections
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 unsigned
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 int
+ []
+
+
+Overfull \hbox (81.77448pt too wide) in paragraph at lines 97--99
+\OT1/cmtt/m/n/10 init$[]\OML/cmm/m/it/10 ize; core[]ize\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 ^^I/
+          * The size of the executable code in each section.  */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.101 ^^Iunsigned int init_
+                           text_size, core_text_size;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.102 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 100--102
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 The
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 size
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 of
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 the
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 executable
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 code
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 in
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 each
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 section.
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 unsigned
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 int
+ []
+
+
+Overfull \hbox (116.78146pt too wide) in paragraph at lines 100--102
+\OT1/cmtt/m/n/10 init$[]\OML/cmm/m/it/10 ext[]ize; core[]ext[]ize\OT1/cmr/m/n/1
+0 ;$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.103 #
+       ifdef CONFIG_MODULES_TREE_LOOKUP
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 #i
+        fdef CONFIG_MODULES_TREE_LOOKUP
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.103 #ifdef CONFIG_
+                    MODULES_TREE_LOOKUP
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.111 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.112 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.24977pt too wide) in paragraph at lines 103--112
+[]\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (171.13965pt too wide) in paragraph at lines 103--112
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 ODULES[]REE[]OOKUP= \OMS/cmsy/m/n/10
+ ^^C
+ []
+
+
+Overfull \hbox (87.91072pt too wide) in paragraph at lines 103--112
+\OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 Wewantmtn[]ore \OT1/cmr/m/n/10 ::
+ []
+
+
+Overfull \hbox (189.48097pt too wide) in paragraph at lines 103--112
+[]\OML/cmm/m/it/10 tobeinthesamecachelineasthe \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (244.20226pt too wide) in paragraph at lines 103--112
+\OML/cmm/m/it/10 aboveentriessuchthataregularlookupwillonlytouchone \OMS/cmsy/m
+/n/10 ^^C
+ []
+
+
+Overfull \hbox (49.42097pt too wide) in paragraph at lines 103--112
+\OML/cmm/m/it/10 cacheline: \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (277.42719pt too wide) in paragraph at lines 103--112
+\OML/cmm/m/it/10 =structmod[]ree[]odemtn[]ore\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10
+ structmod[]ree[]odemtn[]nit\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 endif$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 ^^I/
+          * Size of RO sections of the module (text+rodata) */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.114 ^^Iunsigned int init_
+                           ro_size, core_ro_size;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.115 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 113--115
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 Size
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 of
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 RO
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 sections
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 of
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 the
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 module
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 (text+rodata)
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 unsigned
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 int
+ []
+
+
+Overfull \hbox (100.32544pt too wide) in paragraph at lines 113--115
+\OT1/cmtt/m/n/10 init$[]\OML/cmm/m/it/10 o[]ize; core[]o[]ize\OT1/cmr/m/n/10 ;$
+ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 ^^I/
+          * Arch-specific module values */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.117 ^^Istruct mod_
+                    arch_specific arch;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.118 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 116--118
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 116--118
+\OT1/cmtt/m/n/10 Arch-specific
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 116--118
+\OT1/cmtt/m/n/10 module
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 116--118
+\OT1/cmtt/m/n/10 values
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 116--118
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 116--118
+\OT1/cmtt/m/n/10 struct
+ []
+
+
+Overfull \hbox (93.88768pt too wide) in paragraph at lines 116--118
+\OT1/cmtt/m/n/10 mod$[]\OML/cmm/m/it/10 rch[]pecificarch\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 ^^Iu
+          nsigned int taints;^^I/* same bits as kernel:tainted */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (61.99963pt too wide) in paragraph at lines 119--120
+[]\OT1/cmtt/m/n/10 unsigned
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 119--120
+\OT1/cmtt/m/n/10 int
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 119--120
+\OT1/cmtt/m/n/10 taints;
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 119--120
+\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 119--120
+\OT1/cmtt/m/n/10 same
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 119--120
+\OT1/cmtt/m/n/10 bits
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 119--120
+\OT1/cmtt/m/n/10 as
+ []
+
+
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 119--120
+\OT1/cmtt/m/n/10 kernel:tainted
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 119--120
+\OT1/cmtt/m/n/10 */ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.121 #
+       ifdef CONFIG_GENERIC_BUG
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 #i
+        fdef CONFIG_GENERIC_BUG
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.121 #ifdef CONFIG_
+                    GENERIC_BUG
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.126 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.127 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.24977pt too wide) in paragraph at lines 121--127
+[]\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (115.92876pt too wide) in paragraph at lines 121--127
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 ENERIC[]UG= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (80.2193pt too wide) in paragraph at lines 121--127
+\OML/cmm/m/it/10 SupportforBUG \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (256.90376pt too wide) in paragraph at lines 121--127
+\OML/cmm/m/it/10 =unsignednum[]ugs\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 structlist
+[]eadbug[]ist\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 structbug[]ntry \OMS/cmsy/m/n/1
+0 ^^C
+ []
+
+
+Overfull \hbox (65.44643pt too wide) in paragraph at lines 121--127
+\OML/cmm/m/it/10 bug[]able\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 endif$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.128 #
+       ifdef CONFIG_KALLSYMS
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 #i
+        fdef CONFIG_KALLSYMS
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.128 #ifdef CONFIG_
+                    KALLSYMS
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.137 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.24977pt too wide) in paragraph at lines 128--137
+[]\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (102.00119pt too wide) in paragraph at lines 128--137
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 ALLSYMS= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (219.2732pt too wide) in paragraph at lines 128--137
+\OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 Wekeepthesymbolandstringtablesforkallsyms:
+ \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (194.38885pt too wide) in paragraph at lines 128--137
+\OML/cmm/m/it/10 Thecore[]fieldsbelowaretemporary; loader \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (47.47122pt too wide) in paragraph at lines 128--137
+\OML/cmm/m/it/10 only\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 they \OMS/cmsy/m/n/10 ^^
+C
+ []
+
+
+Overfull \hbox (186.27226pt too wide) in paragraph at lines 128--137
+\OML/cmm/m/it/10 couldreallybediscardedaftermoduleinit\OT1/cmr/m/n/10 )\OML/cmm
+/m/it/10 : \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (45.86958pt too wide) in paragraph at lines 128--137
+\OML/cmm/m/it/10 =Elf[]ym \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (297.479pt too wide) in paragraph at lines 128--137
+\OML/cmm/m/it/10 symtab; \OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 core[]ymtab\OT1/c
+mr/m/n/10 ; \OML/cmm/m/it/10 unsignedintnum[]ymtab; core[]um[]yms\OT1/cmr/m/n/1
+0 ; \OML/cmm/m/it/10 char \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (82.98274pt too wide) in paragraph at lines 128--137
+\OML/cmm/m/it/10 strtab; \OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 core[]trtab\OT1/c
+mr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 ^^I/
+          * Section attributes */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.139 ^^Istruct module_
+                       sect_attrs *sect_attrs;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.140 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 138--140
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 138--140
+\OT1/cmtt/m/n/10 Section
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 138--140
+\OT1/cmtt/m/n/10 attributes
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 138--140
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 138--140
+\OT1/cmtt/m/n/10 struct
+ []
+
+
+Overfull \hbox (74.90575pt too wide) in paragraph at lines 138--140
+\OT1/cmtt/m/n/10 module$[]\OML/cmm/m/it/10 ect[]ttrs \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (41.59697pt too wide) in paragraph at lines 138--140
+\OML/cmm/m/it/10 sect[]ttrs\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 ^^I/
+          * Notes attributes */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.142 ^^Istruct module_
+                       notes_attrs *notes_attrs;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.143 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 141--144
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 141--144
+\OT1/cmtt/m/n/10 Notes
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 141--144
+\OT1/cmtt/m/n/10 attributes
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 141--144
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 141--144
+\OT1/cmtt/m/n/10 struct
+ []
+
+
+Overfull \hbox (81.28192pt too wide) in paragraph at lines 141--144
+\OT1/cmtt/m/n/10 module$[]\OML/cmm/m/it/10 otes[]ttrs \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (75.06648pt too wide) in paragraph at lines 141--144
+\OML/cmm/m/it/10 notes[]ttrs\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 endif$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 ^^I/
+          * The command line arguments (may be mangled).  People like
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 145--148
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (15.74986pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 The
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 command
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 line
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 arguments
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 (may
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 be
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 mangled).
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 People
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 like
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 keeping
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 pointers
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 to
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 this
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 stuff
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 char
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 145--148
+\OT1/cmtt/m/n/10 *args; 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.149 #
+       ifdef CONFIG_SMP
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 #i
+        fdef CONFIG_SMP
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.149 #ifdef CONFIG_
+                    SMP
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.151 ^^Ivoid __
+                percpu *percpu;
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `macro parameter character #' in math mode.
+l.153 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.154 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (46.24977pt too wide) in paragraph at lines 149--154
+[]\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (65.33797pt too wide) in paragraph at lines 149--154
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 MP= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (25.03247pt too wide) in paragraph at lines 149--154
+\OML/cmm/m/it/10 Per \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (42.24895pt too wide) in paragraph at lines 149--154
+\OML/cmm/m/it/10 cpudata: \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (184.82776pt too wide) in paragraph at lines 149--154
+\OML/cmm/m/it/10 =void[]$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.155 #
+       ifdef CONFIG_TRACEPOINTS
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 #i
+        fdef CONFIG_TRACEPOINTS
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.155 #ifdef CONFIG_
+                    TRACEPOINTS
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.158 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.159 #
+       ifdef HAVE_JUMP_LABEL
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.162 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.163 #
+       ifdef CONFIG_TRACING
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.166 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.167 #
+       ifdef CONFIG_EVENT_TRACING
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.172 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.173 #
+       ifdef CONFIG_FTRACE_MCOUNT_RECORD
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.176 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.177 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.24977pt too wide) in paragraph at lines 155--177
+[]\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (319.176pt too wide) in paragraph at lines 155--177
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 RACEPOINTSunsignedintnum[]racepoints
+\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 structtracepoint \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (28.47577pt too wide) in paragraph at lines 155--177
+\OML/cmm/m/it/10 const \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (302.03128pt too wide) in paragraph at lines 155--177
+\OML/cmm/m/it/10 tracepoints[]trs\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 endififdefH
+AVE[]UMP[]ABELstructjump[]ntry \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (541.8pt too wide) in paragraph at lines 155--177
+\OML/cmm/m/it/10 jump[]ntries\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 unsignedintnum[
+]ump[]ntries\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 endififdefCONFIG[]RACINGunsigned
+intnum[]race[]printk[]mt\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 constchar \OMS/cmsy/
+m/n/10 ^^C
+ []
+
+
+Overfull \hbox (382.80136pt too wide) in paragraph at lines 155--177
+\OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 trace[]printk[]mt[]tart\OT1/cmr/m/n/10 ; \
+OML/cmm/m/it/10 endififdefCONFIG[]VENT[]RACINGstructtrace[]vent[]all \OMS/cmsy/
+m/n/10 ^^C
+ []
+
+
+Overfull \hbox (287.6067pt too wide) in paragraph at lines 155--177
+\OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 trace[]vents\OT1/cmr/m/n/10 ; \OML/cmm/m/i
+t/10 unsignedintnum[]race[]vents\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 structtrace[
+]num[]ap \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (635.69481pt too wide) in paragraph at lines 155--177
+\OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 trace[]nums\OT1/cmr/m/n/10 ; \OML/cmm/m/it
+/10 unsignedintnum[]race[]nums\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 endififdefCONF
+IG[]TRACE[]COUNT[]ECORDunsignedintnum[]trace[]allsites\OT1/cmr/m/n/10 ; \OML/cm
+m/m/it/10 unsignedlong \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (95.17603pt too wide) in paragraph at lines 155--177
+\OML/cmm/m/it/10 ftrace[]allsites\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 endif$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.178 #
+       ifdef CONFIG_LIVEPATCH
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 #i
+        fdef CONFIG_LIVEPATCH
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.178 #ifdef CONFIG_
+                    LIVEPATCH
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.180 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.181 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.24977pt too wide) in paragraph at lines 178--181
+[]\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (180.1597pt too wide) in paragraph at lines 178--181
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 IVEPATCHboolklp[]live\OT1/cmr/m/n/10
+ ; \OML/cmm/m/it/10 endif$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.182 #
+       ifdef CONFIG_MODULE_UNLOAD
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 #i
+        fdef CONFIG_MODULE_UNLOAD
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.182 #ifdef CONFIG_
+                    MODULE_UNLOAD
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.187 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.24977pt too wide) in paragraph at lines 182--187
+[]\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (135.53545pt too wide) in paragraph at lines 182--187
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 ODULE[]NLOAD= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (127.33716pt too wide) in paragraph at lines 182--187
+\OML/cmm/m/it/10 Whatmodulesdependonme\OT1/cmr/m/n/10 ? \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (125.29448pt too wide) in paragraph at lines 182--187
+\OML/cmm/m/it/10 =structlist[]eadsource[]ist\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 
+= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (129.13339pt too wide) in paragraph at lines 182--187
+\OML/cmm/m/it/10 WhatmodulesdoIdependon\OT1/cmr/m/n/10 ? \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (111.67754pt too wide) in paragraph at lines 182--187
+\OML/cmm/m/it/10 =structlist[]eadtarget[]ist\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.188 ^^I/
+          * Destruction function. */
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (30.49991pt too wide) in paragraph at lines 188--190
+[]\OT1/cmtt/m/n/10 /*
+ []
+
+
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 188--190
+\OT1/cmtt/m/n/10 Destruction
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 188--190
+\OT1/cmtt/m/n/10 function.
+ []
+
+
+Overfull \hbox (10.49991pt too wide) in paragraph at lines 188--190
+\OT1/cmtt/m/n/10 */
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 188--190
+\OT1/cmtt/m/n/10 void
+ []
+
+
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 188--190
+\OT1/cmtt/m/n/10 (*exit)(void); 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 ^^Ia
+          tomic_t refcnt;
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.191 ^^Iatomic_
+                t refcnt;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.192 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (114.10477pt too wide) in paragraph at lines 191--193
+[]\OT1/cmtt/m/n/10 atomic$[]\OML/cmm/m/it/10 refcnt\OT1/cmr/m/n/10 ; \OML/cmm/m
+/it/10 endif$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.194 #
+       ifdef CONFIG_CONSTRUCTORS
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 #i
+        fdef CONFIG_CONSTRUCTORS
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.194 #ifdef CONFIG_
+                    CONSTRUCTORS
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.198 #
+       endif
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Extra }, or forgotten $.
+l.199 }
+        ____cacheline_aligned;
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.199 } __
+          __cacheline_aligned;
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.199 } ___
+           _cacheline_aligned;
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.199 } ____
+            cacheline_aligned;
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.200 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.200 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.200 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.200 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (46.24977pt too wide) in paragraph at lines 194--200
+[]\OT1/cmtt/m/n/10 ifdef
+ []
+
+
+Overfull \hbox (131.609pt too wide) in paragraph at lines 194--200
+\OT1/cmtt/m/n/10 CONFIG$[]\OML/cmm/m/it/10 ONSTRUCTORS= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (107.49777pt too wide) in paragraph at lines 194--200
+\OML/cmm/m/it/10 Constructorfunctions: \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (42.00479pt too wide) in paragraph at lines 194--200
+\OML/cmm/m/it/10 =ctor[]n[] \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (211.15549pt too wide) in paragraph at lines 194--200
+\OML/cmm/m/it/10 ctors\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 unsignedintnum[]tors\O
+T1/cmr/m/n/10 ; \OML/cmm/m/it/10 endif[]$ 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{lstlisting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 \end{lstlisting}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.201 \end{lstlisting}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+! Emergency stop.
+<*> 模块实现.tex
+                    
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 14 strings out of 430478
+ 194 string characters out of 3191503
+ 53412 words of memory out of 3000000
+ 3242 multiletter control sequences out of 15000+200000
+ 3808 words of font info for 15 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 18i,4n,12p,97b,127s stack positions out of 5000i,500n,10000p,200000b,50000s
+Output written on 模块实现.pdf (1 page).
