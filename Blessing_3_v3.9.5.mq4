@@ -270,7 +270,6 @@ string      FileName,ID,StatFile;
 double      TPb,StopLevel,TargetPips,LbF,bTS;
 
 
-
 int MoneyManagement()
 {
 	
@@ -420,13 +419,22 @@ int init()
 	if(IsOptimization())Debug=false;
 	if(UseAnyEntry)UAE="||";
 	else UAE="&&";
-	if(ForceMarketCond<0||ForceMarketCond>3)ForceMarketCond=3;
-	if(MAEntry<0||MAEntry>2)MAEntry=0;
-	if(CCIEntry<0||CCIEntry>2)CCIEntry=0;
-	if(BollingerEntry<0||BollingerEntry>2)BollingerEntry=0;
-	if(StochEntry<0||StochEntry>2)StochEntry=0;
-	if(MACDEntry<0||MACDEntry>2)MACDEntry=0;
-	if(MaxCloseTrades==0)MaxCloseTrades=MaxTrades;
+	
+	//参数检查，设置错了参数将使用默认参数
+	if(ForceMarketCond<0||ForceMarketCond>3)
+		ForceMarketCond=3;
+	if(MAEntry<0||MAEntry>2)
+		MAEntry=0;
+	if(CCIEntry<0||CCIEntry>2)
+		CCIEntry=0;
+	if(BollingerEntry<0||BollingerEntry>2)
+		BollingerEntry=0;
+	if(StochEntry<0||StochEntry>2)
+		StochEntry=0;
+	if(MACDEntry<0||MACDEntry>2)
+		MACDEntry=0;
+	if(MaxCloseTrades==0)
+		MaxCloseTrades=MaxTrades;
 
 	ArrayResize(Digit,6);
 	for(y=0;y<ArrayRange(Digit,0);y++)
@@ -609,7 +617,8 @@ int init()
 	//| Set email parameters                                            |
 	//+-----------------------------------------------------------------+
 	if(UseEmail)
-	{	if(Period()==43200)sTF="MN1";
+	{	
+		if(Period()==43200)sTF="MN1";
 		else if(Period()==10800)sTF="W1";
 		else if(Period()==1440)sTF="D1";
 		else if(Period()==240)sTF="H4";
@@ -672,6 +681,16 @@ int deinit()
 	}
 	return(0);
 }
+
+
+
+void MAEntryCheck()
+{
+	
+}
+
+
+
 
 //+-----------------------------------------------------------------+
 //| expert start function                                           |
@@ -1498,38 +1517,55 @@ int start()
 			}
 		}
 	}
-
+#if "MA Order Entry"
 	//+-----------------------------------------------------------------+  << This must be the first Entry check.
 	//| Moving Average Indicator for Order Entry                        |  << Add your own Indicator Entry checks
 	//+-----------------------------------------------------------------+  << after the Moving Average Entry.
 	if(MAEntry>0&&CbT==0&&CpT<2)
 	{	if(Bid>ima_0+MADistance&&(!B3Traditional||(B3Traditional&&Trend!=2)))
-		{	if(MAEntry==1)
-			{	if(ForceMarketCond!=1&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&BuyMe)))BuyMe=true;
-				else BuyMe=false;
-				if(!UseAnyEntry&&IndEntry>0&&SellMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))SellMe=false;
+		{	
+			if(MAEntry==1){	
+				if(ForceMarketCond!=TREND_DOWN &&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&BuyMe)))
+					BuyMe=true;
+				else 
+					BuyMe=false;
+				if(!UseAnyEntry&&IndEntry>0&&SellMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))
+					SellMe=false;
 			}
-			else if(MAEntry==2)
-			{	if(ForceMarketCond!=0&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&SellMe)))SellMe=true;
-				else SellMe=false;
-				if(!UseAnyEntry&&IndEntry>0&&BuyMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))BuyMe=false;
+			else if(MAEntry==2){	
+				if(ForceMarketCond!=0&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&SellMe)))
+					SellMe=true;
+				else 
+					SellMe=false;
+				if(!UseAnyEntry&&IndEntry>0&&BuyMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))
+					BuyMe=false;
 			}
 		}
 		else if(Ask<ima_0-MADistance&&(!B3Traditional||(B3Traditional&&Trend!=2)))
-		{	if(MAEntry==1)
-			{	if(ForceMarketCond!=0&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&SellMe)))SellMe=true;
-				else SellMe=false;
-				if(!UseAnyEntry&&IndEntry>0&&BuyMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))BuyMe=false;
+		{	
+			if(MAEntry==1)
+			{	if(ForceMarketCond!=0&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&SellMe)))
+					SellMe=true;
+				else 
+					SellMe=false;
+				if(!UseAnyEntry&&IndEntry>0&&BuyMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))
+					BuyMe=false;
 			}
 			else if(MAEntry==2)
-			{	if(ForceMarketCond!=1&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&BuyMe)))BuyMe=true;
-				else BuyMe=false;
-				if(!UseAnyEntry&&IndEntry>0&&SellMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))SellMe=false;
+			{	if(ForceMarketCond!=1&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&BuyMe)))
+					BuyMe=true;
+				else 
+					BuyMe=false;
+				if(!UseAnyEntry&&IndEntry>0&&SellMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))
+					SellMe=false;
 			}
 		}
 		else if(B3Traditional&&Trend==2)
-		{	if(ForceMarketCond!=1&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&BuyMe)))BuyMe=true;
-			if(ForceMarketCond!=0&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&SellMe)))SellMe=true;
+		{	
+			if(ForceMarketCond!=1&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&BuyMe)))
+				BuyMe=true;
+			if(ForceMarketCond!=0&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&SellMe)))
+				SellMe=true;
 		}
 		else
 		{	BuyMe=false;
@@ -1539,7 +1575,9 @@ int start()
 		IndEntry++;
 		IndicatorUsed=IndicatorUsed+" MA ";
 	}
+#endif
 
+#if "CCI Order Entry"
 	//+----------------------------------------------------------------+
 	//| CCI of 5M,15M,30M,1H for Market Condition and Order Entry      |
 	//+----------------------------------------------------------------+
@@ -1588,7 +1626,9 @@ int start()
 		IndEntry++;
 		IndicatorUsed=IndicatorUsed+" CCI ";
 	}
+#endif
 
+#if "Bollinger Band Order Entry"
 	//+----------------------------------------------------------------+
 	//| Bollinger Band Indicator for Order Entry                       |
 	//+----------------------------------------------------------------+
@@ -1601,17 +1641,24 @@ int start()
 		double bdx=bdn-BollDistance;
 		if(Ask<bdx)
 		{	if(BollingerEntry==1)
-			{	if(ForceMarketCond!=1&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&BuyMe)))
+			{	
+				if(ForceMarketCond!=TREND_DOWN&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&BuyMe)))
 					BuyMe=true;
 				else 
 					BuyMe=false;
+				 
 				if(!UseAnyEntry&&IndEntry>0&&SellMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))
 					SellMe=false;
 			}
 			else if(BollingerEntry==2)
-			{	if(ForceMarketCond!=0&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&SellMe)))SellMe=true;
-				else SellMe=false;
-				if(!UseAnyEntry&&IndEntry>0&&BuyMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))BuyMe=false;
+			{	
+				if(ForceMarketCond!=TREND_UP&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&SellMe)))
+					SellMe=true;
+				else 
+					SellMe=false;
+				
+				if(!UseAnyEntry&&IndEntry>0&&BuyMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))
+					BuyMe=false;
 			}
 		}
 		else if(Bid>bux)
@@ -1634,7 +1681,9 @@ int start()
 		IndEntry++;
 		IndicatorUsed=IndicatorUsed+" BBands ";
 	}
+#endif
 
+#if "Stochastic Order Entry"
 	//+----------------------------------------------------------------+
 	//| Stochastic Indicator for Order Entry                           |
 	//+----------------------------------------------------------------+
@@ -1675,7 +1724,10 @@ int start()
 		IndEntry++;
 		IndicatorUsed=IndicatorUsed+" Stoch ";
 	}
+#endif
 
+
+#if "MACD Order Entry"
 	//+----------------------------------------------------------------+
 	//| MACD Indicator for Order Entry                                 |
 	//+----------------------------------------------------------------+
@@ -1714,6 +1766,7 @@ int start()
 		IndEntry++;
 		IndicatorUsed=IndicatorUsed+" MACD ";
 	}
+#endif
 
 	//+-----------------------------------------------------------------+  << This must be the last Entry check before
 	//| UseAnyEntry Check && Force Market Condition Buy/Sell Entry      |  << the Trade Selection Logic. Add checks for
@@ -1723,11 +1776,15 @@ int start()
 		SellMe=false;
 	}
 	if(ForceMarketCond<2&&IndEntry==0&&CbT==0&&!FirstRun)
-	{	if(ForceMarketCond==0)BuyMe=true;
-		if(ForceMarketCond==1)SellMe=true;
+	{	
+		if(ForceMarketCond==TREND_UP)
+			BuyMe=true;
+		if(ForceMarketCond==TREND_DOWN)
+			SellMe=true;
 		IndicatorUsed=" FMC ";
 	}
 
+#if "Trade Selection Logic"
 	//+-----------------------------------------------------------------+
 	//| Trade Selection Logic                                           |
 	//+-----------------------------------------------------------------+
@@ -1852,7 +1909,10 @@ int start()
 		}
 		if(Ticket>0)return;
 	}
+#endif
 
+
+#if "Hedge Trades Set-Up and Monitoring "
 	//+-----------------------------------------------------------------+
 	//| Hedge Trades Set-Up and Monitoring                              |
 	//+-----------------------------------------------------------------+
@@ -1964,7 +2024,9 @@ int start()
 			}
 		}
 	}
+#endif
 
+#if "Check DD% and send Email  "
 	//+-----------------------------------------------------------------+
 	//| Check DD% and send Email                                        |
 	//+-----------------------------------------------------------------+
@@ -1982,7 +2044,9 @@ int start()
 		}
 		else if(EmailCount>0&&EmailCount<3&& DrawDownPercentage<Email[EmailCount]&&TimeCurrent()>EmailSent+EmailHours*3600)EmailCount--;
 	}
+#endif
 
+#if "Display Overlay Code"
 	//+-----------------------------------------------------------------+
 	//| Display Overlay Code                                            |
 	//+-----------------------------------------------------------------+
@@ -2354,6 +2418,7 @@ int start()
 		}
 		else if(HolShutDown!=1)ObjDel("B3LClos");
 	}
+#endif
 	FirstRun=false;
 	Comment(CS,dMess);
 	return(0);
