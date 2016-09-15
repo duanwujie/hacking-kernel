@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  14 SEP 2016 21:44
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  15 SEP 2016 16:20
 entering extended mode
 **Z-World.tex
 (C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.tex
@@ -608,6 +608,64 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip60
+
+For additional information on amsmath, use the `?' option.
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks23
+\ex@=\dimen155
+))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen156
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count183
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count184
+\leftroot@=\count185
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count186
+\DOTSCASE@=\count187
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box39
+\strutbox@=\box40
+\big@size=\dimen157
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count188
+\c@MaxMatrixCols=\count189
+\dotsspace@=\muskip10
+\c@parentequation=\count190
+\dspbrk@lvl=\count191
+\tag@help=\toks24
+\row@=\count192
+\column@=\count193
+\maxfields@=\count194
+\andhelp@=\toks25
+\eqnshift@=\dimen158
+\alignsep@=\dimen159
+\tagshift@=\dimen160
+\tagwidth@=\dimen161
+\totwidth@=\dimen162
+\lineht@=\dimen163
+\@envbody=\toks26
+\multlinegap=\skip61
+\multlinetaggap=\skip62
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
 (C:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
 Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
 
@@ -655,14 +713,14 @@ Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
 (C:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
-\@linkdim=\dimen155
-\Hy@linkcounter=\count183
-\Hy@pagecounter=\count184
+\@linkdim=\dimen164
+\Hy@linkcounter=\count195
+\Hy@pagecounter=\count196
 
 (C:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count185
+\Hy@SavedSpaceFactor=\count197
 
 (C:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -698,16 +756,16 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 tly
 (rerunfilecheck)             and the loading of the package is aborted.
 ))
-\c@Hy@tempcnt=\count186
+\c@Hy@tempcnt=\count198
 
 (C:\CTEX\MiKTeX\tex\xelatex\xetexurl\url.sty
-\Urlmuskip=\muskip10
+\Urlmuskip=\muskip11
 Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4637.
-\Fld@menulength=\count187
-\Field@Width=\dimen156
-\Fld@charsize=\dimen157
+\Fld@menulength=\count199
+\Field@Width=\dimen165
+\Fld@charsize=\dimen166
 Package hyperref Info: Hyper figures ON on input line 5755.
 Package hyperref Info: Link nesting OFF on input line 5762.
 Package hyperref Info: Hyper index ON on input line 5765.
@@ -717,9 +775,10 @@ Package hyperref Info: Link coloring with OCG OFF on input line 5782.
 Package hyperref Info: PDF/A mode OFF on input line 5787.
 LaTeX Info: Redefining \ref on input line 5827.
 LaTeX Info: Redefining \pageref on input line 5831.
-\Hy@abspage=\count188
-\c@Item=\count189
-\c@Hfootnote=\count190
+\Hy@abspage=\count200
+\c@Item=\count201
+Normal \count register pool exhausted, switching to extended pool.
+\c@Hfootnote=\count277
 )
 
 Package hyperref Message: Driver (autodetected): hxetex.
@@ -733,12 +792,12 @@ File: puenc.def 2012/02/06 v6.82o Hyperref: PDF Unicode definition (HO)
 (C:\CTEX\MiKTeX\tex\generic\oberdiek\stringenc.sty
 Package: stringenc 2010/03/01 v1.8 Converts strings between encodings (HO)
 )
-\pdfm@box=\box39
-\c@Hy@AnnotLevel=\count191
-\HyField@AnnotCount=\count192
-\Fld@listcount=\count193
-\c@bookmark@seq@number=\count194
-\Hy@SectionHShift=\skip60
+\pdfm@box=\box41
+\c@Hy@AnnotLevel=\count278
+\HyField@AnnotCount=\count279
+\Fld@listcount=\count280
+\c@bookmark@seq@number=\count281
+\Hy@SectionHShift=\skip63
 )
 Requested font "Arial Unicode MS" at 10.0pt
  -> C:/windows/Fonts/ARIALUNI.TTF
@@ -749,7 +808,7 @@ Requested font "Arial Unicode MS/ICU" at 10.0pt
 . 
 . Font Arial Unicode MS does not contain any OpenType `Script' information.
 .................................................
-\g_fontspec_family_Arial Unicode MS_int=\count195
+\g_fontspec_family_Arial Unicode MS_int=\count282
 Requested font "Arial Unicode MS/B/ICU" at 10.0pt
  -> C:/windows/Fonts/ARIALUNI.TTF
 .................................................
@@ -787,40 +846,40 @@ Requested font "Arial Unicode MS/ICU:" at 10.0pt
 
 (C:\CTEX\MiKTeX\tex\latex\nomencl\nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen158
-\nom@tempdim=\dimen159
-\nomitemsep=\skip61
+\nomlabelwidth=\dimen167
+\nom@tempdim=\dimen168
+\nomitemsep=\skip64
 )
 \@nomenclaturefile=\write3
 
 Writing nomenclature file Z-World.nlo
 (C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.aux
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Blessing.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 102.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 102.
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Math.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 103.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 103.
 
 (C:\CTEX\MiKTeX\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
 Requested font "Arial Unicode MS/ICU:" at 12.0pt
  -> C:/windows/Fonts/ARIALUNI.TTF
 .................................................
@@ -830,74 +889,73 @@ Requested font "Arial Unicode MS/ICU:" at 12.0pt
 .................................................
 \symlegacymaths=\mathgroup5
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 102.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 102.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 102.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 102.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 102.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 102.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 102.
-LaTeX Font Info:    Redeclaring math accent \check on input line 102.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 102.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 102.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 102.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 102.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 102.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 103.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 103.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 103.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 103.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 103.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 103.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 103.
+LaTeX Font Info:    Redeclaring math accent \check on input line 103.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 103.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 103.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 103.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 103.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 102.
+(Font)              `operators' in the math version `normal' on input line 103.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> EU1/ArialUnicodeMS(0)/m/n on input line
- 102.
+ 103.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 102.
+(Font)              `operators' in the math version `bold' on input line 103.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU1/ArialUnicodeMS(0)/m/n on input lin
-e 102.
+e 103.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  EU1/ArialUnicodeMS(0)/m/n --> EU1/ArialUnicodeMS(0)/m/n
- on input line 102.
+ on input line 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  EU1/ArialUnicodeMS(0)/m/n --> EU1/ArialUnicodeMS(0)/m/n
- on input line 102.
+ on input line 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> EU1/ArialUnicodeMS(0)/m/it on input li
-ne 102.
+ne 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> EU1/ArialUnicodeMS(0)/bx/n on input li
-ne 102.
+ne 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 102.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 102.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 103.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  EU1/ArialUnicodeMS(0)/m/n --> EU1/ArialUnicodeMS(0)/bx/
-n on input line 102.
+n on input line 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
 (Font)                  EU1/ArialUnicodeMS(0)/m/n --> EU1/ArialUnicodeMS(0)/bx/
-n on input line 102.
+n on input line 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> EU1/ArialUnicodeMS(0)/bx/it on input 
-line 102.
+line 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 102.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 102.
-\c@lstlisting=\count196
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring ON on input line 102.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 103.
+\c@lstlisting=\count283
+\AtBeginShipoutBox=\box42
+Package hyperref Info: Link coloring ON on input line 103.
 
 (C:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -905,11 +963,11 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (C:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count197
+\c@section@level=\count284
 )
-LaTeX Info: Redefining \ref on input line 102.
-LaTeX Info: Redefining \pageref on input line 102.
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \ref on input line 103.
+LaTeX Info: Redefining \pageref on input line 103.
+LaTeX Info: Redefining \nameref on input line 103.
 
 (C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.out)
 (C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.out)
@@ -919,7 +977,7 @@ Requested font "Arial Unicode MS/ICU:" at 20.74pt
 
 
 LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/m/it' undefined
-(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 106
+(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 107
 .
 
 Requested font "Arial Unicode MS/ICU:" at 14.4pt
@@ -930,10 +988,10 @@ Requested font "cmmi12" at 14.4pt
  -> cmmi12
 Requested font "cmsy10" at 14.4pt
  -> cmsy10
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 106.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 106.
+Requested font "cmex10" at 14.4pt
+ -> cmex10
+Requested font "cmex7" at 7.0pt
+ -> cmex7
 Requested font "skull" at 14.4pt
  -> skull
 Requested font "skull" at 10.0pt
@@ -951,7 +1009,7 @@ Requested font "ä»¿å®^^8b/ICU" at 14.4pt
 . 
 . Font 仿宋 does not contain any OpenType `Script' information.
 .................................................
-\g_fontspec_family_仿宋_int=\count198
+\g_fontspec_family_仿宋_int=\count285
 Requested font "ä»¿å®^^8b/ICU" at 14.4pt
  -> C:/windows/Fonts/simfang.ttf
 Requested font "ä»¿å®^^8b/ICU" at 14.4pt
@@ -997,7 +1055,7 @@ Requested font "Arial Unicode MS/ICU:" at 24.88pt
 
 
 LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/bx/n' undefined
-(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 113
+(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 114
 .
 
 Requested font "ä»¿å®^^8b" at 24.88pt
@@ -1065,12 +1123,12 @@ Requested font "cmsy8" at 8.0pt
  -> cmsy8
 Requested font "cmsy6" at 6.0pt
  -> cmsy6
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
+Requested font "cmex10" at 12.0pt
+ -> cmex10
+Requested font "cmex8" at 8.0pt
+ -> cmex8
+Requested font "cmex7" at 6.0pt
+ -> cmex7
 Requested font "skull" at 12.0pt
  -> skull
 Requested font "skull" at 8.0pt
@@ -1086,7 +1144,7 @@ Requested font "cmr6" at 6.0pt
  [1
 
 ]
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Blessing.tex
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Math.tex
 Chapter 1.
 Requested font "Arial Unicode MS/ICU:" at 24.88pt
  -> C:/windows/Fonts/ARIALUNI.TTF
@@ -1121,10 +1179,31 @@ Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 17.28pt
 
 
 
-]
+])
 
 LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/m/sl' undefined
-(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 33.
+(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 126
+.
+
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
+ (C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.aux
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Math.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 156.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 156.
 
 
-[2
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 21475 strings out of 430478
+ 401931 string characters out of 3191503
+ 439224 words of memory out of 3000000
+ 24388 multiletter control sequences out of 15000+200000
+ 8704 words of font info for 62 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 50i,8n,50p,646b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Z-World.pdf (4 pages).
