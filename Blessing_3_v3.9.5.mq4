@@ -13,6 +13,8 @@
 //|  Rest In Peace.                                                     |
 //+---------------------------------------------------------------------+
 
+//http://www.forexbooknat.com/
+//https://www.youtube.com/watch?v=NdU-8JqpMAI
 #property copyright "Copyright © 2007-2011, J Talon LLC/FiFtHeLeMeNt"
 #property link      "http://www.jtatoday.com"
 #property link      "http://www.jtatoday.info/forum/index.php"
@@ -36,6 +38,7 @@
 #define TREND_OFF 3
 
 
+//2000
 
 //+-----------------------------------------------------------------+
 //| Íâ²¿²ÎÊý¼¯                                       |
@@ -74,7 +77,7 @@ extern double   Lot                 = 0.01;     // Starting lots if Money Manage
 extern double   Multiplier          = 1.4;      // Multiplier on each level
 
 extern string   LabelGS             = "Grid Settings:";
-extern bool     AutoCal             = false;    // Auto calculation of TakeProfit and Grid size;
+extern bool     AutoCal             = false;    // Auto calculation of TakeProfit and Grid size;(×Ô¶¯¼ÆËãÓ®ÀûºÍÍø¸ñ´óÐ¡)
 extern double   GAF                 = 1.0;      // Widens/Squishes Grid on increments/decrements of .1
 extern int      EntryDelay          = 2400;     // Time Grid in seconds, to avoid opening of lots of levels in fast market
 extern double   EntryOffset         = 5;        // In pips, used in conjunction with logic to offset first trade entry
@@ -226,7 +229,7 @@ extern int      TPArray5            = 0;
 int         ca;
 int         Magic,hMagic;
 int         CbT;//Total count exclude EA's order
-int         CpT;//Total buylimte
+int         CpT;//Total bl,sl,bs,ss'count
 int         ChT;
 double      Pip,hPip;
 int         POSLCount;
@@ -247,7 +250,9 @@ int         EmailCount;
 string      sTF;
 datetime    EmailSent;
 int         GridArray[,2];
-double      Lots[],MinLotSize,LotStep,LotDecimal;
+double      Lots[];
+double		MinLotSize;//½»Ò×ÉÌÔÊÐíµÄ×îÐ¡½»Ò×ÊÖÊý
+double		LotStep,LotDecimal;
 int         LotMult,MinMult;
 bool        PendLot;
 string      CS,UAE;
@@ -312,8 +317,10 @@ int init()
 	}
 	Pip=Point;
 	if(Digits%2==1)Pip*=10;
-	if(NanoAccount)AccountType=10;
-	else AccountType=1;
+	if(NanoAccount)
+		AccountType=10;
+	else 
+		AccountType=1;
 
 	MoveTP=ND(MoveTP*Pip,Digits);
 	EntryOffset=ND(EntryOffset*Pip,Digits);
@@ -449,13 +456,24 @@ int init()
 	//| Set Lot Array                                                   |
 	//+-----------------------------------------------------------------+
 	ArrayResize(Lots,MaxTrades);
-	if(Debug)Print("Lot Multiplier: "+LotMult);
+	if(Debug)
+		Print("Lot Multiplier: "+LotMult);
 	for(y=0;y<MaxTrades;y++)
-	{	if(y==0||Multiplier<1)Lots[y]=Lot;
-		else Lots[y]=ND(MathMax(Lots[y-1]*Multiplier,Lots[y-1]+LotStep),LotDecimal);
-		if(Debug)Print("Lot Size for level "+DTS(y+1,0)+" : "+DTS(Lots[y]*MathMax(LotMult,1),LotDecimal));
+	{	
+		if(y==0||Multiplier<1)
+			Lots[y]=Lot;
+		else 
+			Lots[y]=ND(MathMax(Lots[y-1]*Multiplier,Lots[y-1]+LotStep),LotDecimal);
+		if(Debug)
+			Print("Lot Size for level "+DTS(y+1,0)+" : "+DTS(Lots[y]*MathMax(LotMult,1),LotDecimal));
 	}
-	if(Multiplier<1)Multiplier=1;
+	//
+	//	0.01,0.02,0.03,0.04,
+	//	0.05,0.06,0.08,0.11
+	//  0.15,0.21,0.29,0.40
+
+	if(Multiplier<1)
+		Multiplier=1;
 
 	//+-----------------------------------------------------------------+
 	//| Set Grid and TP array                                           |
@@ -464,7 +482,8 @@ int init()
 	{	int GridSet,GridTemp,GridTP,GridIndex,GridLevel,GridError;
 		ArrayResize(GridArray,MaxTrades);
 		if(IsOptimization()&&UseGridOpt)
-		{	if(SetArray1>0)
+		{//Returns true if Expert Advisor runs in the Strategy Tester optimization mode, otherwise returns false.
+			if(SetArray1>0)
 			{	SetCountArray=DTS(SetArray1,0);
 				GridSetArray=DTS(GridArray1,0);
 				TP_SetArray=DTS(TPArray1,0);
@@ -494,23 +513,28 @@ int init()
 			{	GridError=1;
 				break;
 			}
-			else GridSet=StrToInteger(StringSubstr(SetCountArray,0,StringFind(SetCountArray,",")));
+			else 
+				GridSet=StrToInteger(StringSubstr(SetCountArray,0,StringFind(SetCountArray,",")));
 			if(GridSet>0)
-			{	SetCountArray=StringSubstr(SetCountArray,StringFind(SetCountArray,",")+1);
+			{	
+				SetCountArray=StringSubstr(SetCountArray,StringFind(SetCountArray,",")+1);
 				GridTemp=StrToInteger(StringSubstr(GridSetArray,0,StringFind(GridSetArray,",")));
 				GridSetArray=StringSubstr(GridSetArray,StringFind(GridSetArray,",")+1);
 				GridTP=StrToInteger(StringSubstr(TP_SetArray,0,StringFind(TP_SetArray,",")));
 				TP_SetArray=StringSubstr(TP_SetArray,StringFind(TP_SetArray,",")+1);
 			}
-			else GridSet=MaxTrades;
+			else 
+				GridSet=MaxTrades;
 			if(GridTemp==0||GridTP==0)
 			{	GridError=2;
 				break;
 			}
 			for(GridLevel=GridIndex;GridLevel<=MathMin(GridIndex+GridSet-1,MaxTrades-1);GridLevel++)
-			{	GridArray[GridLevel,0]=GridTemp;
+			{	
+				GridArray[GridLevel,0]=GridTemp;
 				GridArray[GridLevel,1]=GridTP;
-				if(Debug)Print("GridArray "+(GridLevel+1)+"  : ["+GridArray[GridLevel,0]+","+GridArray[GridLevel,1]+"]");
+				if(Debug)
+					Print("GridArray "+(GridLevel+1)+"  : ["+GridArray[GridLevel,0]+","+GridArray[GridLevel,1]+"]");
 			}
 			GridIndex=GridLevel;
 		}
@@ -697,6 +721,7 @@ void MAEntryCheck()
 //+-----------------------------------------------------------------+
 int start()
 {	
+#if "Var define"
 	int     CbB          =0;     // Count buy,exclude EA
 	int     CbS          =0;     // Count sell,exclude EA
 	int     CpBL         =0;     // Count buy limit
@@ -721,7 +746,9 @@ int start()
 	double  Pb,Ph,PaC,PbPips,PbTarget, DrawDownPercentage,BEb,BEh,BEa;
 	bool    BuyMe,SellMe,Success,SetPOSL;
 	string  IndicatorUsed;
+#endif
 
+#if "Count Open Orders"
 	//+-----------------------------------------------------------------+
 	//| Count Open Orders, Lots and Totals                              |
 	//+-----------------------------------------------------------------+
@@ -811,6 +838,7 @@ int start()
 	CpT=CpBL+CpSL+CpBS+CpSS; /* buy limit + sell limit + buy stop + sell stop's count */
 	
 	BCa=BCb+BCh;/*×ÜµÄ½»Ò×ÉÌÊÖÐø·Ñ*/
+#endif
 
 	//+-----------------------------------------------------------------+
 	//| Calculate Min/Max Profit and Break Even Points                  |
@@ -878,6 +906,7 @@ int start()
 		SLh=0;
 	}
 
+#if "Check if trading is allowed "
 	//+-----------------------------------------------------------------+
 	//| Check if trading is allowed                                     |
 	//+-----------------------------------------------------------------+
@@ -920,7 +949,7 @@ int start()
 		ObjDel("B3LExpt");
 		ObjDel("B3LResm");
 	}
-
+#endif
 
     /* (-Profit)/Balance = DrawDown Level */
 	//+-----------------------------------------------------------------+
@@ -1097,8 +1126,10 @@ int start()
 		if(CbT==0)
 		{	double Contracts,Factor,Lotsize;
 			Contracts=PortionBalance/10000;
-			if(Multiplier<=1)Factor=Level;
-			else Factor=(MathPow(Multiplier,Level)-Multiplier)/(Multiplier-1);
+			if(Multiplier<=1)
+				Factor=Level;
+			else 
+				Factor=(MathPow(Multiplier,Level)-Multiplier)/(Multiplier-1);
 			Lotsize=LAF*AccountType*Contracts/(1+Factor);
 			LotMult=MathMax(MathFloor(Lotsize/Lot),MinMult);
 			GlobalVariableSet(ID+"LotMult",LotMult);
@@ -1107,12 +1138,16 @@ int start()
 	else if(CbT==0)
 		LotMult=MinMult;
 #endif
+
+
+#if "Calculate Take Profit "
 	//+-----------------------------------------------------------------+
 	//| Calculate Take Profit                                           |
 	//+-----------------------------------------------------------------+
 	static double BCaL,BEbL;
 	double nLots=LbB-LbS;
-	if(hThisChart)nLots+=LhB-LhS;
+	if(hThisChart)
+		nLots+=LhB-LhS;
 	if(CbT>0&&(TPb==0||CbT+ChT!=CaL||BEbL!=BEb||BCa!=BCaL||FirstRun))
 	{	string sCalcTP="Set New TP: ";
 		double NewTP,BasePips;
@@ -1198,7 +1233,7 @@ int start()
 	ProfitPot=ND(TargetPips*PipVal2*MathAbs(LbB-LbS),2);
 	if(CbB>0)PbPips=ND((Bid-BEb)/Pip,1);
 	if(CbS>0)PbPips=ND((BEb-Ask)/Pip,1);
-
+#endif
 
 	//+-----------------------------------------------------------------+
 	//| Adjust BEb/TakeProfit if Hedge is active                        |
@@ -1733,7 +1768,6 @@ int start()
 	}
 #endif
 
-
 #if "MACD Order Entry"
 	//+----------------------------------------------------------------+
 	//| MACD Indicator for Order Entry                                 |
@@ -1801,8 +1835,11 @@ int start()
 	if(CbT==0&&CpT<2&&!FirstRun)
 	{	if(B3Traditional)
 		{	if(BuyMe)
-			{	if(CpBS==0&&CpSL==0&&((Trend!=2||MAEntry==0)||(Trend==2&&MAEntry==1)))
-				{	Entry=g2-MathMod(Ask,g2)+EntryOffset;
+			{	
+				//Buy Stop = 0 and Sell Limit =0 
+				if(CpBS==0&&CpSL==0&&((Trend!=2||MAEntry==0)||(Trend==TREND_RANGE && MAEntry==1)))
+				{	
+					Entry=g2-MathMod(Ask,g2)+EntryOffset;
 					if(Entry>StopLevel)
 					{	Ticket=SendOrder(Symbol(),OP_BUYSTOP,OrderLot,Entry,0,Magic,CLR_NONE);
 						if(Ticket>0)
@@ -1849,7 +1886,8 @@ int start()
 				if(Ticket>0&&Debug)Print("Indicator Entry - ("+IndicatorUsed+") Sell");
 			}
 		}
-		if(Ticket>0)return;
+		if(Ticket>0)
+			return;
 	}
 	else if(TimeCurrent()-EntryDelay>OTbL&&CbT+CbC<MaxTrades&&!FirstRun)
 	{	if(UseSmartGrid)
