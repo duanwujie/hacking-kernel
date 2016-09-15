@@ -18,16 +18,21 @@
 
 \section{资金管理}
 
-\begin{itemize}
-\item x = lot 
-\item y = Multiplier (amount you are willing to increase each new trade)
-\end{itemize}
+\begin{align*}
+& Level1=x \\
+& Level2=xy \\
+& Level3=xy^2 \\
+& Level4=xy^3 \\
+& Level5=xy^4 \\
+& Level6=xy^5 \\
+& Level7=xy^6 \\
+& Contract = x + xy + xy^2  + xy^3  + xy^4  + xy^5  + xy^6\\
+& Contract = x(1+y+y^2+y^3+y^4+y^5+y^6) \\
+\end{align*}
 
+设：$$Factor = y+y^2+y^3+y^4+y^5+y^6$$
 
-\begin{align}
-Level1=x &\\
-Level2=xy &\\	
-\end{align}
+则：$x=Contract/(1+Factor)$ 其中x为Base Lot
 
 
 
