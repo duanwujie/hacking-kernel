@@ -890,7 +890,7 @@ int start()
 		if(AllowTrading)
 		{	
             Print("Blessing has ShutDown. Set ShutDown = 'false' to continue trading");
-			if(PlaySounds)PlaySound(AlertSound);
+			TryPlaySounds();
 			AllowTrading=false;
 		}
 		if(UseEmail&&EmailCount<4&&!Testing)
@@ -934,8 +934,7 @@ int start()
 	if(DrawDownPercentage>=MaxDrawDownPercentage/100)/*回撤率大于最大回测率，退出交易*/
 	{/* Beyond the max drawdown percents stop trading */	
         ExitTrades(A,displayColorLoss,"Equity Stop Loss Reached");
-		if(PlaySounds)
-            PlaySound(AlertSound);
+		TryPlaySounds();
 		return;
 	}
 	if(-(Pb+Ph)>MaxDD)
@@ -961,8 +960,7 @@ int start()
 		if(CbT==0)
 		{	
 			AllowTrading=false;
-			if(PlaySounds)
-				PlaySound(AlertSound);
+			TryPlaySounds();
 			Print("Portion Balance dropped below stop trade percent");
 			MessageBox("Reset Blessing, account balance dropped below stop trade percent on "+Symbol()+Period(),"Blessing 3: Warning",48);
 			return(0);
@@ -970,8 +968,7 @@ int start()
 		else if(!ShutDown&&!RecoupClosedLoss)
 		{	
 			ShutDown=true;
-			if(PlaySounds)
-				PlaySound(AlertSound);
+			TryPlaySounds();
 			Print("Portion Balance dropped below stop trade percent");
 			return(0);
 		}
@@ -1084,7 +1081,7 @@ int start()
 	tp2=ND(tp2*GAF*Pip,Digits);
 	GridTP=ND(GridTP*GAF*Pip,Digits);
 
-
+#if "Money Management"
 	//+-----------------------------------------------------------------+
 	//| Money Management and Lot size coding                            |
 	//+-----------------------------------------------------------------+
@@ -1107,7 +1104,9 @@ int start()
 			GlobalVariableSet(ID+"LotMult",LotMult);
 		}
 	}
-	else if(CbT==0)LotMult=MinMult;
+	else if(CbT==0)
+		LotMult=MinMult;
+#endif
 	//+-----------------------------------------------------------------+
 	//| Calculate Take Profit                                           |
 	//+-----------------------------------------------------------------+
@@ -1199,6 +1198,7 @@ int start()
 	ProfitPot=ND(TargetPips*PipVal2*MathAbs(LbB-LbS),2);
 	if(CbB>0)PbPips=ND((Bid-BEb)/Pip,1);
 	if(CbS>0)PbPips=ND((BEb-Ask)/Pip,1);
+
 
 	//+-----------------------------------------------------------------+
 	//| Adjust BEb/TakeProfit if Hedge is active                        |
@@ -1303,7 +1303,7 @@ int start()
 				Moves++;
 				if(Debug)Print("MoveTP");
 				SLbL=SLb;
-				if(PlaySounds)PlaySound(AlertSound);
+				TryPlaySounds();
 				return;
 			}
 		}
@@ -1394,7 +1394,7 @@ int start()
 		}
 		return;
 	}
-
+#if "Check ca"
 	//+-----------------------------------------------------------------+
 	//| Check ca, Breakeven Trades and Emergency Close All              |
 	//+-----------------------------------------------------------------+
@@ -1415,11 +1415,14 @@ int start()
 		return;
 	}
 	if(EmergencyCloseAll)
-	{	ExitTrades(A,displayColorLoss,"Emergency Close All Trades");
+	{	
+		ExitTrades(A,displayColorLoss,"Emergency Close All Trades");
 		EmergencyCloseAll=false;
 		return;
 	}
+#endif
 
+#if "Check Holiday Shutdown "
 	//+-----------------------------------------------------------------+
 	//| Check Holiday Shutdown                                          |
 	//+-----------------------------------------------------------------+
@@ -1490,7 +1493,9 @@ int start()
 			return;
 		}
 	}
+#endif
 
+#if "Power Out Stop Loss Protection"
 	//+-----------------------------------------------------------------+
 	//| Power Out Stop Loss Protection                                  |
 	//+-----------------------------------------------------------------+
@@ -1517,6 +1522,8 @@ int start()
 			}
 		}
 	}
+#endif
+
 #if "MA Order Entry"
 	//+-----------------------------------------------------------------+  << This must be the first Entry check.
 	//| Moving Average Indicator for Order Entry                        |  << Add your own Indicator Entry checks
@@ -1768,6 +1775,7 @@ int start()
 	}
 #endif
 
+#if "UseAnyEntry Check"
 	//+-----------------------------------------------------------------+  << This must be the last Entry check before
 	//| UseAnyEntry Check && Force Market Condition Buy/Sell Entry      |  << the Trade Selection Logic. Add checks for
 	//+-----------------------------------------------------------------+  << additional indicators before this block.
@@ -1783,6 +1791,7 @@ int start()
 			SellMe=true;
 		IndicatorUsed=" FMC ";
 	}
+#endif
 
 #if "Trade Selection Logic"
 	//+-----------------------------------------------------------------+
@@ -2033,7 +2042,7 @@ int start()
 	if((UseEmail||PlaySounds)&&!Testing)
 	{	if(EmailCount<2&&Email[EmailCount]>0&& DrawDownPercentage>Email[EmailCount])
 		{	if(UseEmail)SendMail("Blessing EA","Blessing has exceeded a drawdown of "+Email[EmailCount]*100+"% on "+Symbol()+" "+sTF);
-			if(PlaySounds)PlaySound(AlertSound);
+			TryPlaySounds();
 			Error=GetLastError();
 			if(Error>0)Print("Email DD: "+DTS( DrawDownPercentage*100,2)+" Error: "+Error+" "+ErrorDescription(Error));
 			else
@@ -2438,7 +2447,9 @@ double LotSize(double Lot)
 //| Open Order Funtion                                              |
 //+-----------------------------------------------------------------+
 int SendOrder(string OSymbol,int OCmd,double OLot,double OPrice,double OSlip,int OMagic,color OColor=CLR_NONE)
-{	if(FirstRun)return(-1);
+{	
+	if(FirstRun)
+		return(-1);
 	int Ticket;
 	int retryTimes=5,i=0;
 	int OType=MathMod(OCmd,2);
@@ -2488,7 +2499,8 @@ int SendOrder(string OSymbol,int OCmd,double OLot,double OPrice,double OSlip,int
 			}
 		}
 		else
-		{	if(PlaySounds)PlaySound(AlertSound);
+		{	
+			TryPlaySounds();
 			break;
 		}
 	}
@@ -2619,7 +2631,7 @@ int ExitTrades(int Type,color Color,string Reason,int OTicket=0)
 	if(Closed>0)
 	{	if(Closed!=1)s="s";
 		Print("Closed "+Closed+" position"+s+" because ",Reason);
-		if(PlaySounds)PlaySound(AlertSound);
+		TryPlaySounds();
 	}
 	return(Closed);
 }
@@ -2958,3 +2970,9 @@ void LabelCreate()
 //+-----------------------------------------------------------------+
 //| expert end function                                             |
 //+-----------------------------------------------------------------+
+
+void TryPlaySounds()
+{
+	if(PlaySounds)
+		PlaySound(AlertSound);
+}
