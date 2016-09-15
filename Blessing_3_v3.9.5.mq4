@@ -260,11 +260,34 @@ int         Digit[,2],TF[10]={0,1,5,15,30,60,240,1440,10080,43200};
 
 double      Email[3];
 double      EETime,PbC,PhC;
-double      hDDStart,PbMax,PbMin,PhMax,PhMin,LastClosedPL,ClosedPips,SLh,hLvlStart,StatLowEquity,StatHighEquity;
+double      hDDStart;
+double 		PbMax,PbMin;/*最大利润和最小利润*/
+double		PhMax,PhMin;/*EA最大利润和最小利润*/
+double		LastClosedPL,ClosedPips,SLh,hLvlStart,StatLowEquity,StatHighEquity;
 int         hActive,EECount,TbF,CbC,CaL,FileHandle;
 bool        TradesOpen,FileClosed,HedgeTypeDD,hThisChart,hPosCorr,dLabels,FirstRun;
 string      FileName,ID,StatFile;
 double      TPb,StopLevel,TargetPips,LbF,bTS;
+
+
+
+int MoneyManagement()
+{
+	
+}
+
+
+int TradingStrategy()
+{
+	
+}
+
+
+int EmergencyCheck()
+{
+	
+}
+
 
 //+-----------------------------------------------------------------+
 //| expert initialization function                                  |
@@ -760,10 +783,10 @@ int start()
 			else CpSS++;
 		}
 	}
-	CbT=CbB+CbS;
+	CbT=CbB+CbS;/*总的订单数量，不包括EA*/
 	LbT=LbB+LbS;/* total slots exclude EA */
 	Pb=ND(Pb+BCb,2);
-	ChT=ChB+ChS;
+	ChT=ChB+ChS;/* EA总的订单数量*/
 	LhT=LhB+LhS;
 	Ph=ND(Ph+BCh,2);
 	CpT=CpBL+CpSL+CpBS+CpSS; /* buy limit + sell limit + buy stop + sell stop's count */
@@ -774,15 +797,16 @@ int start()
 	//| Calculate Min/Max Profit and Break Even Points                  |
 	//+-----------------------------------------------------------------+
 	if(LbT>0)/*非EA的总手数>0*/
-	{	BEb=ND(BEb/LbT,Digits);/*计算品均交易商手续费*/
+	{	BEb=ND(BEb/LbT,Digits);/*计算平均交易商手续费*/
 		if(BCa<0)
-			BEb-=ND(BCa/PipVal2/(LbB-LbS),Digits);
+			BEb-=ND(BCa/PipVal2/(LbB-LbS),Digits);/* 交易商倒给钱的情况*/
 		if(Pb>PbMax||PbMax==0)
 			PbMax=Pb;
 		if(Pb<PbMin||PbMin==0)
 			PbMin=Pb;
-		if(!TradesOpen)
-		{	FileHandle=FileOpen(FileName,FILE_BIN|FILE_WRITE);
+		if(!TradesOpen)/*EA没有开单，只是统计*/
+		{	
+			FileHandle=FileOpen(FileName,FILE_BIN|FILE_WRITE);
 			if(FileHandle>-1)
 			{	FileWriteInteger(FileHandle,TbF);
 				FileClose(FileHandle);
@@ -792,7 +816,8 @@ int start()
 		}
 	}
 	else if(TradesOpen)
-	{	TPb=0;
+	{	
+		TPb=0;
 		PbMax=0;
 		PbMin=0;
 		OTbF=0;
@@ -964,7 +989,8 @@ int start()
 	double Pa=Pb;
 	PaC=PbC+PhC;
 	if(hActive==1&&ChT==0)
-	{	PhC=FindClosedPL(H);
+	{	
+		PhC=FindClosedPL(H);
 		hActive=0;
 		return;
 	}
@@ -988,7 +1014,8 @@ int start()
 	//| dwj Close oldest open trade after CloseTradesLevel reached          |
 	//+-----------------------------------------------------------------+
 	if(UseCloseOldest&&CbT>=CloseTradesLevel&&CbC<MaxCloseTrades)
-	{	if((TPb>0)&&((CbB>0&&OPbO>TPb)||(CbS>0&&OPbO<TPb)))
+	{	
+		if((TPb>0)&&((CbB>0&&OPbO>TPb)||(CbS>0&&OPbO<TPb)))
 		{	y=ExitTrades(T,DarkViolet,"Close Oldest Trade",TbO);
 			if(y==1)
 			{	OrderSelect(TbO,SELECT_BY_TICKET);
@@ -1574,9 +1601,12 @@ int start()
 		double bdx=bdn-BollDistance;
 		if(Ask<bdx)
 		{	if(BollingerEntry==1)
-			{	if(ForceMarketCond!=1&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&BuyMe)))BuyMe=true;
-				else BuyMe=false;
-				if(!UseAnyEntry&&IndEntry>0&&SellMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))SellMe=false;
+			{	if(ForceMarketCond!=1&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&BuyMe)))
+					BuyMe=true;
+				else 
+					BuyMe=false;
+				if(!UseAnyEntry&&IndEntry>0&&SellMe&&(!B3Traditional||(B3Traditional&&Trend!=2)))
+					SellMe=false;
 			}
 			else if(BollingerEntry==2)
 			{	if(ForceMarketCond!=0&&(UseAnyEntry||IndEntry==0||(!UseAnyEntry&&IndEntry>0&&SellMe)))SellMe=true;
