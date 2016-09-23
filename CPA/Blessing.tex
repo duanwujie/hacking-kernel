@@ -1,0 +1,318 @@
+\chapter{Blessing}
+
+
+
+
+ 
+\section{函数说明}
+
+
+
+\section{外部参数集}
+\begin{itemize}
+
+
+\item TradeComment        = "Blessing 3.9.5";
+\item EANumber            = 1;        // Enter a unique number to identify this EA
+\item EmergencyCloseAll   = false;    // Setting this to true will close all open orders immediately
+\item 
+\item LabelAcc            = "Account Trading Settings:";
+\item ShutDown            = false;    // Setting this to true will stop the EA trading after any open trades have been closed
+\item StopTradePercent    = 10;       // percent of account balance lost before trading stops
+\item NanoAccount         = false;    // set to true for nano "penny a pip" account (contract size is \$10,000)
+\item PortionPC           = 100;      // Percentage of account you want to trade on this pair
+\item MaxDDPercent:最大回撤率(\%50)
+\item MaxSpread           = 5;        // Maximum allowed spread while placing trades
+\item UseHolidayShutdown  = true;     // Will shutdown over holiday period
+\item Holidays            = "18/12-01/01"; // List of holidays, each seperated by a comma, [day]/[mth]-[day]/[mth], dates inclusive
+\item PlaySounds          = false;    // will sound alarms
+\item AlertSound          = "Alert.wav";
+\item 
+\item LabelIES            = "Indicator / Entry Settings:";
+\item B3Traditional       = true;     // Stop/Limits for entry if true, Buys/Sells if false
+\item ForceMarketCond:市场趋势方向，0趋势向上，1趋势向下，2区间，3关闭，如果不为3，将指定趋势方向。
+\item UseAnyEntry         = false;    // true = ANY entry can be used to open orders, false = ALL entries used to open orders
+\item MAEntry             = 1;        // 0 = Off, 1 = will base entry on MA channel, 2 = will trade in reverse
+\item CCIEntry            = 0;        // 0 = Off, 1 = will base entry on CCI indicator, 2 = will trade in reverse
+\item BollingerEntry      = 0;        // 0 = Off, 1 = will base entry on BB, 2 = will trade in reverse
+\item StochEntry          = 0;        // 0 = Off, 1 = will base entry on Stoch, 2 = will trade in reverse
+\item MACDEntry           = 0;        // 0 = Off, 1 = will base entry on MACD, 2 = will trade in reverse
+
+\item LabelLS             = "Lot Size Settings:";
+\item UseMM               = true;    // Money Management
+\item LAF                 = 0.5;      // Adjusts MM base lot for large accounts
+\item Lot                 = 0.01;     // Starting lots if Money Management is off
+\item Multiplier          = 1.4;      // Multiplier on each level
+\item 
+\item LabelGS             = "Grid Settings:";
+\item AutoCal             = false;    // Auto calculation of TakeProfit and Grid size;
+\item GAF                 = 1.0;      // Widens/Squishes Grid on increments/decrements of .1
+\item EntryDelay          = 2400;     // Time Grid in seconds, to avoid opening of lots of levels in fast market
+\item EntryOffset         = 5;        // In pips, used in conjunction with logic to offset first trade entry
+\item UseSmartGrid        = true;     // True = use RSI/MA calculation for next grid order
+\item 
+\item LabelTS             = "Trading Settings:";
+\item MaxTrades           = 15;       // Maximum number of trades to place (stops placing orders when reaches MaxTrades)
+\item BreakEvenTrade      = 12;       // Close All level, when reaches this level, doesn't wait for TP to be hit
+\item BEPlusPips          = 2;        // Pips added to Break Even Point before BE closure
+\item UseCloseOldest      = false;    // True = will close the oldest open trade after CloseTradesLevel is reached
+\item CloseTradesLevel    = 5;        // will start closing oldest open trade at this level
+\item MaxCloseTrades      = 4;        // Maximum number of oldest trades to close
+\item CloseTPPips         = 10;       // After Oldest Trades have closed, Forces Take Profit to BE +/- xx Pips
+\item ForceTPPips         = 0;        // Force Take Profit to BE +/- xx Pips
+\item MinTPPips           = 0;        // Ensure Take Profit is at least BE +/- xx Pips
+\item 
+\item LabelHS             = "Hedge Settings:";
+\item HedgeSymbol         = "";       // Enter the Symbol of the same/correlated pair EXACTLY as used by your broker.
+\item CorrPeriod          = 30;       // Number of days for checking Hedge Correlation
+\item UseHedge            = false;    // Turns DD hedge on/off
+\item DDorLevel           = "DD";     // DD = start hedge at set DD; Level = Start at set level
+\item HedgeStart          = 20;       // DD Percent or Level at which Hedge starts
+\item hLotMult            = 0.8;      // Hedge Lots = Open Lots * hLotMult
+\item hMaxLossPips        = 30;       // DD Hedge maximum pip loss - also hedge trailing stop
+\item hFixedSL            = false;    // true = fixed SL at hMaxLossPips
+\item hTakeProfit         = 30;       // Hedge Take Profit
+\item hReEntryPC          = 5;        // Increase to HedgeStart to stop early re-entry of the hedge
+\item StopTrailAtBE       = true;     // True = Trailing Stop will stop at BE; False = Hedge will continue into profit
+\item ReduceTrailStop     = true;     // False = Trailing Stop is Fixed; True = Trailing Stop will reduce after BE is reached
+\item 
+\item LabelES             = "Exit Settings:";
+\item MaximizeProfit      = false;    // Turns on TP move and Profit Trailing Stop Feature
+\item ProfitSet           = 70;       // Locks in Profit at this percent of Total Profit Potential
+\item MoveTP              = 30;       // Moves TP this amount in pips
+\item TotalMoves          = 2;        // Number of times you want TP to move before stopping movement
+\item UseStopLoss         = false;    // Use Stop Loss and/or Trailing Stop Loss
+\item SLPips              = 30;       // Pips for fixed StopLoss from BE, 0=off
+\item TSLPips             = 10;       // Pips for trailing stop loss from BE + TSLPips: +ve = fixed trail; -ve = reducing trail; 0=off
+\item TSLPipsMin          = 3;        // Minimum trailing stop pips if using reducing TS
+\item UsePowerOutSL       = false;    // Transmits a SL in case of internet loss
+\item POSLPips            = 600;      // Power Out Stop Loss in pips
+\item UseFIFO             = false;    // 
+\item 
+\item LabelEE             = "Early Exit Settings:";
+\item UseEarlyExit        = false;    // Reduces ProfitTarget by a percentage over time and number of levels open
+\item EEStartHours        = 3;        // Number of Hours to wait before EE over time starts
+\item EEFirstTrade        = true;     // true = StartHours from FIRST trade: false = StartHours from LAST trade
+\item EEHoursPC           = 0.5;      // Percentage reduction per hour (0 = OFF)
+\item EEStartLevel        = 5;        // Number of Open Trades before EE over levels starts
+\item EELevelPC           = 10;       // Percentage reduction at each level (0 = OFF)
+\item EEAllowLoss         = false;    // true = Will allow the basket to close at a loss : false = Minimum profit is Break Even
+
+\item LabelAdv            = "Advanced Settings Change sparingly";
+
+\item LabelGrid           = "Grid Size Settings:";
+\item SetCountArray       = "4,4";    // Specifies number of open trades in each block (separated by a comma)
+\item GridSetArray        = "25,50,100"; // Specifies number of pips away to issue limit order (separated by a comma)
+\item TP\_SetArray         = "50,100,200"; // Take profit for each block (separated by a comma)
+
+\item LabelMA             = "MA Entry Settings:";
+\item MAPeriod            = 100;      // Period of MA (H4 = 100, H1 = 400)
+\item MADistance          = 10;       // Distance from MA to be treated as Ranging Market
+
+\item LabelCCI            = "CCI Entry Settings:";
+\item CCIPeriod           = 14;       // Period for CCI calculation
+
+\item LabelBBS            = "Bollinger Bands Entry Settings:";
+\item BollPeriod          = 10;       // Period for Bollinger
+\item BollDistance        = 10;       // Up/Down spread
+\item BollDeviation       = 2.0;      // Standard deviation multiplier for channel
+\item 
+\item LabelSto            = "Stochastic Entry Settings:";
+\item BuySellStochZone:Determines Overbought and Oversold Zones(20);      
+\item KPeriod:Stochastic KPeroid(20)
+\item DPeriod:Stochastic DPeriod(2)
+\item Slowing:Stochastic Slowing(2)        
+
+\item LabelMACD           = "MACD Entry Settings:";
+\item LabelMACDTF         = "0:Chart, 1:M1, 2:M5, 3:M15, 4:M30, 5:H1, 6:H4, 7:D1, 8:W1, 9:MN1";
+\item MACD\_TF             = 0;        // Time frame for MACD calculation
+\item FastPeriod          = 12;       // MACD EMA Fast Period
+\item SlowPeriod          = 26;       // MACD EMA Slow Period
+\item SignalPeriod        = 9;        // MACD EMA Signal Period
+\item MACDPrice           = 0;        // 0=close, 1=open, 2=high, 3=low, 4=HL/2, 5=HLC/3 6=HLCC/4
+\item 
+\item LabelSG             = "Smart Grid Settings:";
+\item LabelSGTF           = "0:Chart, 1:M1, 2:M5, 3:M15, 4:M30, 5:H1, 6:H4, 7:D1, 8:W1, 9:MN1";
+\item RSI\_TF              = 3;        // Timeframe for RSI calculation - should be less than chart TF.
+\item RSI\_Period          = 14;       // Period for RSI calculation
+\item RSI\_Price           = 0;        // 0=close, 1=open, 2=high, 3=low, 4=HL/2, 5=HLC/3 6=HLCC/4
+\item RSI\_MA\_Period       = 10;       // Period for MA of RSI calculation
+\item RSI\_MA\_Method       = 0;        // 0=Simple MA, 1=Exponential MA, 2=Smoothed MA, 3=Linear Weighted MA
+\item 
+\item LabelOS             = "Other Settings:";
+\item RecoupClosedLoss    = true;     // true = Recoup any Hedge/CloseOldest losses: false = Use original profit target.
+\item Level               = 7;        // Largest Assumed Basket size.  Lower number = higher start lots
+\item slip                = 99;       // Adjusts opening and closing orders by "slipping" this amount
+\item SaveStats           = false;    // true = will save equity statistics
+\item StatsPeriod         = 3600;     // seconds betwen stats entries - off by default
+\item StatsInitialise     = true;     // true for backtest - false for foward/live to ACCUMULATE equity traces
+\item 
+\item LabelUE             = "Email Settings:";
+\item UseEmail            = false;
+\item LabelEDD            = "At what DD% would you like Email warnings (Max: 49, Disable: 0)?";
+\item EmailDD1            = 20;
+\item EmailDD2            = 30;
+\item EmailDD3            = 40;
+\item LabelEH             = "Number of hours before DD timer resets";
+\item EmailHours          = 24;       // Minimum number of hours between emails
+\item 
+\item LabelDisplay        = "Used to Adjust Overlay";
+\item displayOverlay      = true;     // Turns the display on and off
+\item displayLogo         = true;     // Turns off copyright and icon
+\item displayCCI          = true;     // Turns off the CCI display
+\item displayLines        = true;     // Show BE, TP and TS lines
+\item displayXcord        = 100;      // Moves display left and right
+\item displayYcord        = 22;       // Moves display up and down
+\item displayCCIxCord     = 10;       // Moves CCI display left and right 
+\item displayFontSize     = 9;        // Changes size of display characters
+\item displaySpacing      = 14;       // Changes space between lines
+\item displayRatio        = 1;        // Ratio to increase label width spacing
+\item displayColor        = DeepSkyBlue; // default color of display characters
+\item displayColorProfit  = Green;    // default color of profit display characters
+\item displayColorLoss    = Red;      // default color of loss display characters
+\item displayColorFGnd    = White;    // default color of ForeGround Text display characters
+\item 
+\item Debug               = false;
+\item 
+\item LabelOpt            = "These values can only be used while optimizing";
+\item UseGridOpt          = false;    // Set to true if you want to be able to optimize the grid settings.
+\item SetArray1           = 4;        // These values will replace the normal SetCountArray,
+\item SetArray2           = 4;        // GridSetArray and TP\_SetArray during optimization.
+\item SetArray3           = 0;        // The default values are the same as the normal array defaults
+\item SetArray4           = 0;
+\item GridArray1          = 25;       // REMEMBER:
+\item GridArray2          = 50;       // There must be one more value for GridArray and TPArray
+\item GridArray3          = 100;      // than there is for SetArray
+\item GridArray4          = 0;
+\item GridArray5          = 0;
+\item TPArray1            = 50;
+\item TPArray2            = 100;
+\item TPArray3            = 200;
+\item TPArray4            = 0;
+\item TPArray5            = 0;
+
+
+\end{itemize}
+
+\section{内部参数集}
+
+\begin{itemize}
+\item ca;
+\item Magic,hMagic:魔数，用于判断是否是属于EA
+\item CbT: 单子总数，不包括EA $$CbT = 买单数量+卖单数量 $$
+\item CpT: 所有挂单总数$$CpT=buy limit + sell limit + buy order + sell order$$
+\item ChT: EA所开单子总数
+\item Pip,hPip;
+\item POSLCount;
+\item SLbL;
+\item Moves;
+\item MaxDD;
+\item SLb;
+\item AccountType;
+\item StopTradeBalance;
+\item InitialAB;/* the initial acount balance at the ea beginning */
+\item Testing,Visual;
+\item AllowTrading:判断是否允许交易，true允许，false不允许。
+\item EmergencyWarning;
+\item MaxDDPer;
+\item Error,y;
+\item Set1Level,Set2Level,Set3Level,Set4Level;
+\item EmailCount;
+\item sTF;
+\item EmailSent;
+\item GridArray[,2];
+\item Lots[],MinLotSize,LotStep,LotDecimal;
+\item LotMult,MinMult;
+\item PendLot;
+\item CS,UAE;
+\item HolShutDown;
+\item HolArray[,4];
+\item HolFirst,HolLast,NextStats,OTbF;
+\item RSI[];
+\item Digit[,2],TF[10]={0,1,5,15,30,60,240,1440,10080,43200};
+\item 
+\item Email[3];
+\item EETime,PbC,PhC,hDDStart,PbMax,PbMin,PhMax,PhMin,LastClosedPL,ClosedPips,SLh,hLvlStart,StatLowEquity,StatHighEquity;
+\item hActive,EECount,TbF,CbC,CaL,FileHandle;
+\item TradesOpen,FileClosed,HedgeTypeDD,hThisChart,hPosCorr,dLabels,FirstRun;
+\item FileName,ID,StatFile;
+\item TPb,StopLevel,TargetPips,LbF,bTS;
+
+\end{itemize}
+
+\section{变量含义}
+\begin{itemize}
+
+\item \textit{CpBL}:Buy limit订单数量
+\item \textit{CpSL}:Sell limit订单数量
+\item \textit{CpBS}:Buy stop订单数量
+\item \textit{CpSS}:Sell stop订单数量
+
+
+\item \textit{CbB}:已开的买单的订单数量，不包括EA所开
+\item \textit{CbS}:已开的卖单的订单数量，不包括EA所开
+\item \textit{LbB}:买单总的手数，不包括EA所开
+\item \textit{LbS}:卖单总的手数，不包括EA所开    
+\item \textit{LbT}:总的手数量，不包括EA所开$$LbT = LbB+LbS $$
+
+
+
+\item \textit{LhB}: EA所开买单总手数
+\item \textit{LhS}: EA所开卖单总手数
+\item \textit{LhT}: EA所开单单子总手数$$LhT = LhB + LhS$$
+\item \textit{BEh}: EA所开单子总的价格$$平均价格=总的价格/总的手数$$
+\item \textit{Ph}: EA单子所赚的总利润。
+\item \textit{OThO}: EA最后开仓单子的开仓时间
+\item \textit{ThO}: EA最后开仓单子的订单号
+\item \textit{OPhO}: EA最后开仓单子的开仓价格
+
+\item OPpBL        =0;     // Buy limit open price
+\item OPpSL        =0;     // Sell limit open price
+\item SLbB         =0;     // stop losses are set to zero if POSL off
+\item SLbS         =0;     // stop losses are set to zero if POSL off
+\item BCb,BCh,BCa;         // 交易商手续费
+\item ProfitPot    =0;     // The Potential Profit of a basket of Trades
+\item PipValue,PipVal2;
+\item OrderLot;
+\item OPbL
+
+\item OTbL;                // last open time
+\item g2,tp2,Entry,RSI\_MA,
+
+\item OPbO,OTbO,
+
+\item TbO
+\item Ticket,ChB,ChS,IndEntry;
+\item \textit{Pb}: 所有单子所赚的总利润，不包括EA所赚
+
+\item PaC,PbPips,PbTarget,DrawDownPC,
+\item \textit{BEb}: 所开单子总的价格，不包括EA
+\item \textit{BEa}: 所有单子的总价格$$BEb(非EA) + BEh(非EB)$$
+\item BuyMe,SellMe,Success,SetPOSL;
+\item IndicatorUsed;
+
+\section{EA流程}
+
+
+\begin{itemize}
+\item 计算相关变量的值,包括所开的订单总数量，订单总价格，等等
+\item 根据均线计算趋势方向。
+\item 
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{itemize}
