@@ -1,25 +1,24 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  15 SEP 2016 17:21
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  23 DEC 2016 17:34
 entering extended mode
 **Z-World.tex
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.tex
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\Z-World.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(C:\CTEX\MiKTeX\tex\latex\base\book.cls
-Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(C:\CTEX\MiKTeX\tex\latex\base\bk12.clo
-File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(C:\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(C:\CTEX\MiKTeX\tex\latex\base\size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 Requested font "cmr12" at 12.0pt
  -> cmr12
 )
 \c@part=\count80
-\c@chapter=\count81
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@subparagraph=\count86
-\c@figure=\count87
-\c@table=\count88
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -47,7 +46,7 @@ Package: l3names 2011/12/30 v3113 L3 Experimental namespace for primitives
 )
 (C:\CTEX\MiKTeX\tex\latex\misc\etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count89
+\et@xins=\count88
 )
 Package: expl3 2012/02/26 v3471 L3 Experimental code bundle wrapper
 
@@ -88,19 +87,19 @@ Package: l3seq 2012/01/09 v3158 L3 Experimental sequences and stacks
 )
 (C:\CTEX\MiKTeX\tex\latex\l3kernel\l3int.sty
 Package: l3int 2012/02/26 v3460 L3 Experimental integers
-\c_max_int=\count90
-\l_tmpa_int=\count91
-\l_tmpb_int=\count92
-\l_tmpc_int=\count93
-\g_tmpa_int=\count94
-\g_tmpb_int=\count95
+\c_max_int=\count89
+\l_tmpa_int=\count90
+\l_tmpb_int=\count91
+\l_tmpc_int=\count92
+\g_tmpa_int=\count93
+\g_tmpb_int=\count94
 )
 (C:\CTEX\MiKTeX\tex\latex\l3kernel\l3quark.sty
 Package: l3quark 2012/02/12 v3384 L3 Experimental quarks
 )
 (C:\CTEX\MiKTeX\tex\latex\l3kernel\l3prg.sty
 Package: l3prg 2012/02/26 v3464 L3 Experimental control structures
-\g_prg_map_int=\count96
+\g_prg_map_int=\count95
 )
 (C:\CTEX\MiKTeX\tex\latex\l3kernel\l3clist.sty
 Package: l3clist 2012/02/26 v3460 L3 Experimental comma separated lists
@@ -116,12 +115,12 @@ Package: l3msg 2012/02/26 v3470 L3 Experimental messages
 )
 (C:\CTEX\MiKTeX\tex\latex\l3kernel\l3file.sty
 Package: l3file 2012/02/26 v3464 L3 Experimental file and I/O operations
-\l_iow_stream_int=\count97
-\l_iow_line_length_int=\count98
-\l_iow_target_length_int=\count99
-\l_iow_current_line_int=\count100
-\l_iow_current_word_int=\count101
-\l_iow_current_indentation_int=\count102
+\l_iow_stream_int=\count96
+\l_iow_line_length_int=\count97
+\l_iow_target_length_int=\count98
+\l_iow_current_line_int=\count99
+\l_iow_current_word_int=\count100
+\l_iow_current_indentation_int=\count101
 )
 (C:\CTEX\MiKTeX\tex\latex\l3kernel\l3skip.sty
 Package: l3skip 2012/02/26 v3460 L3 Experimental dimensions and skips
@@ -138,62 +137,62 @@ Package: l3skip 2012/02/26 v3460 L3 Experimental dimensions and skips
 )
 (C:\CTEX\MiKTeX\tex\latex\l3kernel\l3keys.sty
 Package: l3keys 2011/12/22 v3086 L3 Experimental key-value interfaces
-\g_keyval_level_int=\count103
-\l_keys_choice_int=\count104
+\g_keyval_level_int=\count102
+\l_keys_choice_int=\count103
 )
 (C:\CTEX\MiKTeX\tex\latex\l3kernel\l3fp.sty
 Package: l3fp 2012/02/06 v3315 L3 Experimental floating-point operations
-\c_one_hundred_million=\count105
-\c_five_hundred_million=\count106
-\c_one_thousand_million=\count107
-\c_fp_pi_by_four_decimal_int=\count108
-\c_fp_pi_by_four_extended_int=\count109
-\c_fp_pi_decimal_int=\count110
-\c_fp_pi_extended_int=\count111
-\c_fp_two_pi_decimal_int=\count112
-\c_fp_two_pi_extended_int=\count113
-\l_fp_count_int=\count114
-\l_fp_div_offset_int=\count115
-\l_fp_exp_integer_int=\count116
-\l_fp_exp_decimal_int=\count117
-\l_fp_exp_extended_int=\count118
-\l_fp_exp_exponent_int=\count119
-\l_fp_input_a_sign_int=\count120
-\l_fp_input_a_integer_int=\count121
-\l_fp_input_a_decimal_int=\count122
-\l_fp_input_a_exponent_int=\count123
-\l_fp_input_b_sign_int=\count124
-\l_fp_input_b_integer_int=\count125
-\l_fp_input_b_decimal_int=\count126
-\l_fp_input_b_exponent_int=\count127
-\l_fp_input_a_extended_int=\count128
-\l_fp_input_b_extended_int=\count129
-\l_fp_mul_a_i_int=\count130
-\l_fp_mul_a_ii_int=\count131
-\l_fp_mul_a_iii_int=\count132
-\l_fp_mul_a_iv_int=\count133
-\l_fp_mul_a_v_int=\count134
-\l_fp_mul_a_vi_int=\count135
-\l_fp_mul_b_i_int=\count136
-\l_fp_mul_b_ii_int=\count137
-\l_fp_mul_b_iii_int=\count138
-\l_fp_mul_b_iv_int=\count139
-\l_fp_mul_b_v_int=\count140
-\l_fp_mul_b_vi_int=\count141
-\l_fp_mul_output_int=\count142
-\l_fp_output_sign_int=\count143
-\l_fp_output_integer_int=\count144
-\l_fp_output_decimal_int=\count145
-\l_fp_output_exponent_int=\count146
-\l_fp_output_extended_int=\count147
-\l_fp_round_position_int=\count148
-\l_fp_round_target_int=\count149
-\l_fp_split_sign_int=\count150
-\l_fp_internal_int=\count151
-\l_fp_trig_octant_int=\count152
-\l_fp_trig_sign_int=\count153
-\l_fp_trig_decimal_int=\count154
-\l_fp_trig_extended_int=\count155
+\c_one_hundred_million=\count104
+\c_five_hundred_million=\count105
+\c_one_thousand_million=\count106
+\c_fp_pi_by_four_decimal_int=\count107
+\c_fp_pi_by_four_extended_int=\count108
+\c_fp_pi_decimal_int=\count109
+\c_fp_pi_extended_int=\count110
+\c_fp_two_pi_decimal_int=\count111
+\c_fp_two_pi_extended_int=\count112
+\l_fp_count_int=\count113
+\l_fp_div_offset_int=\count114
+\l_fp_exp_integer_int=\count115
+\l_fp_exp_decimal_int=\count116
+\l_fp_exp_extended_int=\count117
+\l_fp_exp_exponent_int=\count118
+\l_fp_input_a_sign_int=\count119
+\l_fp_input_a_integer_int=\count120
+\l_fp_input_a_decimal_int=\count121
+\l_fp_input_a_exponent_int=\count122
+\l_fp_input_b_sign_int=\count123
+\l_fp_input_b_integer_int=\count124
+\l_fp_input_b_decimal_int=\count125
+\l_fp_input_b_exponent_int=\count126
+\l_fp_input_a_extended_int=\count127
+\l_fp_input_b_extended_int=\count128
+\l_fp_mul_a_i_int=\count129
+\l_fp_mul_a_ii_int=\count130
+\l_fp_mul_a_iii_int=\count131
+\l_fp_mul_a_iv_int=\count132
+\l_fp_mul_a_v_int=\count133
+\l_fp_mul_a_vi_int=\count134
+\l_fp_mul_b_i_int=\count135
+\l_fp_mul_b_ii_int=\count136
+\l_fp_mul_b_iii_int=\count137
+\l_fp_mul_b_iv_int=\count138
+\l_fp_mul_b_v_int=\count139
+\l_fp_mul_b_vi_int=\count140
+\l_fp_mul_output_int=\count141
+\l_fp_output_sign_int=\count142
+\l_fp_output_integer_int=\count143
+\l_fp_output_decimal_int=\count144
+\l_fp_output_exponent_int=\count145
+\l_fp_output_extended_int=\count146
+\l_fp_round_position_int=\count147
+\l_fp_round_target_int=\count148
+\l_fp_split_sign_int=\count149
+\l_fp_internal_int=\count150
+\l_fp_trig_octant_int=\count151
+\l_fp_trig_sign_int=\count152
+\l_fp_trig_decimal_int=\count153
+\l_fp_trig_extended_int=\count154
 \l_fp_internal_dim=\dimen108
 \l_fp_internal_skip=\skip48
 )
@@ -246,20 +245,20 @@ Package: l3color 2011/09/07 v2776 L3 Experimental colour support
 )
 (C:\CTEX\MiKTeX\tex\latex\l3kernel\l3luatex.sty
 Package: l3luatex 2012/02/09 v3355 L3 Experimental LuaTeX-specific functions
-\g_cctab_allocate_int=\count156
-\g_cctab_stack_int=\count157
+\g_cctab_allocate_int=\count155
+\g_cctab_stack_int=\count156
 ))
 (C:\CTEX\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
 Package: xparse 2012/02/26 v3471 L3 Experimental document command parser
-\l_xparse_current_arg_int=\count158
-\l_xparse_m_args_int=\count159
-\l_xparse_mandatory_args_int=\count160
-\l_xparse_processor_int=\count161
-\l_xparse_v_nesting_int=\count162
+\l_xparse_current_arg_int=\count157
+\l_xparse_m_args_int=\count158
+\l_xparse_mandatory_args_int=\count159
+\l_xparse_processor_int=\count160
+\l_xparse_v_nesting_int=\count161
 )
-\l_fontspec_script_int=\count163
-\l_fontspec_language_int=\count164
-\l_fontspec_strnum_int=\count165
+\l_fontspec_script_int=\count162
+\l_fontspec_language_int=\count163
+\l_fontspec_strnum_int=\count164
 \l_fontspec_tmpa_dim=\dimen138
 \l_fontspec_tmpb_dim=\dimen139
 \l_fontspec_tmpc_dim=\dimen140
@@ -327,7 +326,7 @@ File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Requested font "[lmsans10-regular]:mapping=tex-text" at 10.0pt
  -> C:/CTEX/MiKTeX/fonts/opentype/public/lm/lmsans10-regular.otf
 )
-\tipaTiiicode=\count166
+\tipaTiiicode=\count165
 \tipasavetokens=\toks14
 \tipachecktokens=\toks15
 
@@ -448,7 +447,7 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 Variant \prop_gput:cnV already defined; not changing it on line 485
 Variant \prop_gput:cnx already defined; not changing it on line 486
 Variant \keys_set:nx already defined; not changing it on line 963
-\c@fontspec_tmp_int=\count167
+\c@fontspec_tmp_int=\count166
 LaTeX Info: Redefining \itshape on input line 1881.
 LaTeX Info: Redefining \slshape on input line 1885.
 LaTeX Info: Redefining \scshape on input line 1889.
@@ -522,20 +521,20 @@ Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
 (C:\CTEX\MiKTeX\tex\generic\xkeyval\xkeyval.tex
 \XKV@toks=\toks19
 \XKV@tempa@toks=\toks20
-\XKV@depth=\count168
+\XKV@depth=\count167
 File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
 ))
-\xeCJK@cnta=\count169
-\xeCJK@cntb=\count170
-\xeCJK@cntc=\count171
-\xeCJK@cntd=\count172
-\xeCJK@cnte=\count173
+\xeCJK@cnta=\count168
+\xeCJK@cntb=\count169
+\xeCJK@cntc=\count170
+\xeCJK@cntd=\count171
+\xeCJK@cnte=\count172
 \xeCJK@dima=\dimen144
 LaTeX Info: Redefining \normalfont on input line 886.
 LaTeX Info: Redefining \rmfamily on input line 895.
 LaTeX Info: Redefining \sffamily on input line 899.
 LaTeX Info: Redefining \ttfamily on input line 903.
-\xeCJK@featureadded=\count174
+\xeCJK@featureadded=\count173
 \g_xecjk_exspace_dim=\dimen145
 )
 (C:\CTEX\MiKTeX\tex\latex\titlesec\titlesec.sty
@@ -567,23 +566,23 @@ Package: skull 2002/01/23 v0.1 (c) Henrik Christian Grove <grove@math.ku.dk>
 \f@ncyO@orf=\skip59
 )
 (C:\CTEX\MiKTeX\tex\latex\listings\listings.sty
-\lst@mode=\count175
+\lst@mode=\count174
 \lst@gtempboxa=\box37
 \lst@token=\toks22
-\lst@length=\count176
+\lst@length=\count175
 \lst@currlwidth=\dimen151
-\lst@column=\count177
-\lst@pos=\count178
+\lst@column=\count176
+\lst@pos=\count177
 \lst@lostspace=\dimen152
 \lst@width=\dimen153
-\lst@newlines=\count179
-\lst@lineno=\count180
+\lst@newlines=\count178
+\lst@lineno=\count179
 \lst@maxwidth=\dimen154
 
 (C:\CTEX\MiKTeX\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count181
-\lst@skipnumbers=\count182
+\c@lstnumber=\count180
+\lst@skipnumbers=\count181
 \lst@framebox=\box38
 )
 (C:\CTEX\MiKTeX\tex\latex\listings\listings.cfg
@@ -628,13 +627,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count183
+\inf@bad=\count182
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count184
-\leftroot@=\count185
+\uproot@=\count183
+\leftroot@=\count184
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count186
-\DOTSCASE@=\count187
+\classnum@=\count185
+\DOTSCASE@=\count186
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -643,15 +642,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen157
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count188
-\c@MaxMatrixCols=\count189
+\macc@depth=\count187
+\c@MaxMatrixCols=\count188
 \dotsspace@=\muskip10
-\c@parentequation=\count190
-\dspbrk@lvl=\count191
+\c@parentequation=\count189
+\dspbrk@lvl=\count190
 \tag@help=\toks24
-\row@=\count192
-\column@=\count193
-\maxfields@=\count194
+\row@=\count191
+\column@=\count192
+\maxfields@=\count193
 \andhelp@=\toks25
 \eqnshift@=\dimen158
 \alignsep@=\dimen159
@@ -714,13 +713,13 @@ Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
 \@linkdim=\dimen164
-\Hy@linkcounter=\count195
-\Hy@pagecounter=\count196
+\Hy@linkcounter=\count194
+\Hy@pagecounter=\count195
 
 (C:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count197
+\Hy@SavedSpaceFactor=\count196
 
 (C:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -756,14 +755,14 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 tly
 (rerunfilecheck)             and the loading of the package is aborted.
 ))
-\c@Hy@tempcnt=\count198
+\c@Hy@tempcnt=\count197
 
 (C:\CTEX\MiKTeX\tex\xelatex\xetexurl\url.sty
 \Urlmuskip=\muskip11
 Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4637.
-\Fld@menulength=\count199
+\Fld@menulength=\count198
 \Field@Width=\dimen165
 \Fld@charsize=\dimen166
 Package hyperref Info: Hyper figures ON on input line 5755.
@@ -775,10 +774,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 5782.
 Package hyperref Info: PDF/A mode OFF on input line 5787.
 LaTeX Info: Redefining \ref on input line 5827.
 LaTeX Info: Redefining \pageref on input line 5831.
-\Hy@abspage=\count200
-\c@Item=\count201
-Normal \count register pool exhausted, switching to extended pool.
-\c@Hfootnote=\count277
+\Hy@abspage=\count199
+\c@Item=\count200
+\c@Hfootnote=\count201
 )
 
 Package hyperref Message: Driver (autodetected): hxetex.
@@ -793,38 +791,39 @@ File: puenc.def 2012/02/06 v6.82o Hyperref: PDF Unicode definition (HO)
 Package: stringenc 2010/03/01 v1.8 Converts strings between encodings (HO)
 )
 \pdfm@box=\box41
-\c@Hy@AnnotLevel=\count278
-\HyField@AnnotCount=\count279
-\Fld@listcount=\count280
-\c@bookmark@seq@number=\count281
+Normal \count register pool exhausted, switching to extended pool.
+\c@Hy@AnnotLevel=\count277
+\HyField@AnnotCount=\count278
+\Fld@listcount=\count279
+\c@bookmark@seq@number=\count280
 \Hy@SectionHShift=\skip63
 )
 Requested font "Arial Unicode MS" at 10.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+ -> C:/windows/Fonts/arialuni.ttf
 Requested font "Arial Unicode MS/ICU" at 10.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+ -> C:/windows/Fonts/arialuni.ttf
 .................................................
 . fontspec info: "no-scripts"
 . 
 . Font Arial Unicode MS does not contain any OpenType `Script' information.
 .................................................
-\g_fontspec_family_Arial Unicode MS_int=\count282
+\g_fontspec_family_Arial Unicode MS_int=\count281
 Requested font "Arial Unicode MS/B/ICU" at 10.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+ -> C:/windows/Fonts/arialuni.ttf
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font Arial Unicode MS/B (it probably doesn't exist).
 .................................................
 Requested font "Arial Unicode MS/I/ICU" at 10.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+ -> C:/windows/Fonts/arialuni.ttf
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font Arial Unicode MS/I (it probably doesn't exist).
 .................................................
 Requested font "Arial Unicode MS/BI/ICU" at 10.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+ -> C:/windows/Fonts/arialuni.ttf
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -842,7 +841,7 @@ Requested font "Arial Unicode MS/BI/ICU" at 10.0pt
 . <->"Arial Unicode MS/ICU:"
 .................................................
 Requested font "Arial Unicode MS/ICU:" at 10.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+ -> C:/windows/Fonts/arialuni.ttf
 
 (C:\CTEX\MiKTeX\tex\latex\nomencl\nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
@@ -853,8 +852,8 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 \@nomenclaturefile=\write3
 
 Writing nomenclature file Z-World.nlo
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.aux
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Math.aux))
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\Z-World.aux
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\forex.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
 LaTeX Font Info:    ... okay on input line 103.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
@@ -881,7 +880,7 @@ LaTeX Font Info:    ... okay on input line 103.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
 LaTeX Font Info:    ... okay on input line 103.
 Requested font "Arial Unicode MS/ICU:" at 12.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+ -> C:/windows/Fonts/arialuni.ttf
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -953,7 +952,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 103.
-\c@lstlisting=\count283
+\c@lstlisting=\count282
 \AtBeginShipoutBox=\box42
 Package hyperref Info: Link coloring ON on input line 103.
 
@@ -963,17 +962,17 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (C:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count284
+\c@section@level=\count283
 )
 LaTeX Info: Redefining \ref on input line 103.
 LaTeX Info: Redefining \pageref on input line 103.
 LaTeX Info: Redefining \nameref on input line 103.
 
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.out)
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.out)
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\Z-World.out)
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\Z-World.out)
 \@outlinefile=\write4
 Requested font "Arial Unicode MS/ICU:" at 20.74pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+ -> C:/windows/Fonts/arialuni.ttf
 
 
 LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/m/it' undefined
@@ -981,9 +980,9 @@ LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/m/it' undefined
 .
 
 Requested font "Arial Unicode MS/ICU:" at 14.4pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+ -> C:/windows/Fonts/arialuni.ttf
 Requested font "Arial Unicode MS/ICU:" at 7.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
+ -> C:/windows/Fonts/arialuni.ttf
 Requested font "cmmi12" at 14.4pt
  -> cmmi12
 Requested font "cmsy10" at 14.4pt
@@ -1009,7 +1008,7 @@ Requested font "ä»¿å®^^8b/ICU" at 14.4pt
 . 
 . Font 仿宋 does not contain any OpenType `Script' information.
 .................................................
-\g_fontspec_family_仿宋_int=\count285
+\g_fontspec_family_仿宋_int=\count284
 Requested font "ä»¿å®^^8b/ICU" at 14.4pt
  -> C:/windows/Fonts/simfang.ttf
 Requested font "ä»¿å®^^8b/ICU" at 14.4pt
@@ -1048,19 +1047,13 @@ Requested font "ä»¿å®^^8b/ICU:" at 14.4pt
 File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
 ) [1
 
-
 ]
-Requested font "Arial Unicode MS/ICU:" at 24.88pt
- -> C:/windows/Fonts/ARIALUNI.TTF
-
-
-LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/bx/n' undefined
-(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 114
-.
-
-Requested font "ä»¿å®^^8b" at 24.88pt
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\forex.tex
+Requested font "Arial Unicode MS/ICU:" at 12.0pt
+ -> C:/windows/Fonts/arialuni.ttf
+Requested font "ä»¿å®^^8b" at 12.0pt
  -> C:/windows/Fonts/simfang.ttf
-Requested font "ä»¿å®^^8b/ICU" at 24.88pt
+Requested font "ä»¿å®^^8b/ICU" at 12.0pt
  -> C:/windows/Fonts/simfang.ttf
 .................................................
 . fontspec info: "no-scripts"
@@ -1077,13 +1070,10 @@ tures={RawFeature={embolden=4,slant=0.17}}].
 . 
 . This font family consists of the following shapes:
 .................................................
-Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 24.88pt
+Requested font "ä»¿å®^^8b/ICU:slant=0.17;" at 12.0pt
  -> C:/windows/Fonts/simfang.ttf
-Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 24.88pt
+Requested font "ä»¿å®^^8b/ICU:slant=0.17;" at 12.0pt
  -> C:/windows/Fonts/simfang.ttf
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.toc
-Requested font "Arial Unicode MS/ICU:" at 12.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
 Requested font "ä»¿å®^^8b" at 12.0pt
  -> C:/windows/Fonts/simfang.ttf
 Requested font "ä»¿å®^^8b/ICU" at 12.0pt
@@ -1107,103 +1097,28 @@ Requested font "ä»¿å®^^8b/ICU:" at 12.0pt
  -> C:/windows/Fonts/simfang.ttf
 Requested font "ä»¿å®^^8b/ICU:" at 12.0pt
  -> C:/windows/Fonts/simfang.ttf
-Requested font "Arial Unicode MS/ICU:" at 8.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
-Requested font "Arial Unicode MS/ICU:" at 6.0pt
- -> C:/windows/Fonts/ARIALUNI.TTF
-Requested font "cmmi12" at 12.0pt
- -> cmmi12
-Requested font "cmmi8" at 8.0pt
- -> cmmi8
-Requested font "cmmi6" at 6.0pt
- -> cmmi6
-Requested font "cmsy10" at 12.0pt
- -> cmsy10
-Requested font "cmsy8" at 8.0pt
- -> cmsy8
-Requested font "cmsy6" at 6.0pt
- -> cmsy6
-Requested font "cmex10" at 12.0pt
- -> cmex10
-Requested font "cmex8" at 8.0pt
- -> cmex8
-Requested font "cmex7" at 6.0pt
- -> cmex7
-Requested font "skull" at 12.0pt
- -> skull
-Requested font "skull" at 8.0pt
- -> skull
-Requested font "skull" at 6.0pt
- -> skull
-Requested font "cmr8" at 8.0pt
- -> cmr8
-Requested font "cmr6" at 6.0pt
- -> cmr6
-)
-\tf@toc=\write5
- [1
+) [2
 
 ]
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Math.tex
-Chapter 1.
-Requested font "Arial Unicode MS/ICU:" at 24.88pt
- -> C:/windows/Fonts/ARIALUNI.TTF
-Requested font "Arial Unicode MS/ICU:" at 17.28pt
- -> C:/windows/Fonts/ARIALUNI.TTF
-Requested font "Arial Unicode MS/ICU:" at 17.28pt
- -> C:/windows/Fonts/ARIALUNI.TTF
-Requested font "ä»¿å®^^8b" at 17.28pt
- -> C:/windows/Fonts/simfang.ttf
-Requested font "ä»¿å®^^8b/ICU" at 17.28pt
- -> C:/windows/Fonts/simfang.ttf
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font 仿宋 does not contain any OpenType `Script' information.
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family '仿宋(0)' created for font '仿宋' with options
-. [BoldFont={仿宋},BoldFeatures={RawFeature={embolden=4}},ItalicFont={仿宋}
-,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={仿宋},BoldItalicFea
-tures={RawFeature={embolden=4,slant=0.17}}].
-. 
-. This font family consists of the following shapes:
-.................................................
-Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 17.28pt
- -> C:/windows/Fonts/simfang.ttf
-Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 17.28pt
- -> C:/windows/Fonts/simfang.ttf
-[1
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
 
-
-
-])
-
-LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/m/sl' undefined
-(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 126
-.
-
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
- (C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Z-World.aux
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\Blessing\Math.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 156.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 156.
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\Z-World.aux
+(C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\forex.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21480 strings out of 430478
- 402034 string characters out of 3191503
- 441153 words of memory out of 3000000
- 24393 multiletter control sequences out of 15000+200000
- 8704 words of font info for 62 fonts, out of 3000000 for 9000
+ 21409 strings out of 430478
+ 400960 string characters out of 3191503
+ 439467 words of memory out of 3000000
+ 24340 multiletter control sequences out of 15000+200000
+ 5475 words of font info for 39 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 50i,8n,50p,646b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,6n,49p,646b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Z-World.pdf (4 pages).
+Output written on Z-World.pdf (2 pages).
