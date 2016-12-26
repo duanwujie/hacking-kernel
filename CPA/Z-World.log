@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  23 DEC 2016 17:59
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.9.8)  26 DEC 2016 15:27
 entering extended mode
 **Z-World.tex
 (C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\Z-World.tex
@@ -1097,13 +1097,95 @@ Requested font "ä»¿å®^^8b/ICU:" at 12.0pt
  -> C:/windows/Fonts/simfang.ttf
 Requested font "ä»¿å®^^8b/ICU:" at 12.0pt
  -> C:/windows/Fonts/simfang.ttf
-) [2
 
-]
+
+LaTeX Font Warning: Font shape `EU1/ArialUnicodeMS(0)/bx/n' undefined
+(Font)              using `EU1/ArialUnicodeMS(0)/m/n' instead on input line 11.
+
+
+Requested font "ä»¿å®^^8b" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font 仿宋 does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family '仿宋(0)' created for font '仿宋' with options
+. [BoldFont={仿宋},BoldFeatures={RawFeature={embolden=4}},ItalicFont={仿宋}
+,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={仿宋},BoldItalicFea
+tures={RawFeature={embolden=4,slant=0.17}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 12.0pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "Arial Unicode MS/ICU:" at 17.28pt
+ -> C:/windows/Fonts/arialuni.ttf
+Requested font "Arial Unicode MS/ICU:" at 17.28pt
+ -> C:/windows/Fonts/arialuni.ttf
+Requested font "ä»¿å®^^8b" at 17.28pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 17.28pt
+ -> C:/windows/Fonts/simfang.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font 仿宋 does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family '仿宋(0)' created for font '仿宋' with options
+. [BoldFont={仿宋},BoldFeatures={RawFeature={embolden=4}},ItalicFont={仿宋}
+,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={仿宋},BoldItalicFea
+tures={RawFeature={embolden=4,slant=0.17}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 17.28pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 17.28pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "Arial Unicode MS/ICU:" at 14.4pt
+ -> C:/windows/Fonts/arialuni.ttf
+Requested font "ä»¿å®^^8b" at 14.4pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU" at 14.4pt
+ -> C:/windows/Fonts/simfang.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font 仿宋 does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family '仿宋(0)' created for font '仿宋' with options
+. [BoldFont={仿宋},BoldFeatures={RawFeature={embolden=4}},ItalicFont={仿宋}
+,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={仿宋},BoldItalicFea
+tures={RawFeature={embolden=4,slant=0.17}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 14.4pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "ä»¿å®^^8b/ICU:embolden=4;" at 14.4pt
+ -> C:/windows/Fonts/simfang.ttf
+Requested font "Arial Unicode MS/ICU:" at 12.0pt
+ -> C:/windows/Fonts/arialuni.ttf
+[2
+
+] [3]) [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
-
-(C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\Z-World.aux
+ (C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\Z-World.aux
 (C:\Users\duanwujie\Desktop\work\hacking-kernel\CPA\forex.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
@@ -1113,12 +1195,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21409 strings out of 430478
- 400960 string characters out of 3191503
- 440467 words of memory out of 3000000
- 24340 multiletter control sequences out of 15000+200000
- 5475 words of font info for 39 fonts, out of 3000000 for 9000
+ 21480 strings out of 430478
+ 402380 string characters out of 3191503
+ 446467 words of memory out of 3000000
+ 24404 multiletter control sequences out of 15000+200000
+ 5523 words of font info for 45 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 50i,6n,49p,646b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,6n,50p,646b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Z-World.pdf (2 pages).
+Output written on Z-World.pdf (4 pages).
